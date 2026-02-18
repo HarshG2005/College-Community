@@ -34,3 +34,9 @@ build/
 uploads/*
 !uploads/.gitkeep
 
+# Temporary and Debug files
+*.txt
+temp_*
+debug_*
+verify_*
+admin_reports/

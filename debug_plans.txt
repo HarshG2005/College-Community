@@ -1,4 +1,0 @@
-✅ Found 3 recent Study Plans.
-[0] PlanID: 698a315dd17524278581aa5b, UserID: 6987d9503a29b8a327e11d84, Subject: JavaScript Fundamentals (Review), Created: Tue Feb 10 2026 00:41:25 GMT+0530 (India Standard Time)
-[1] PlanID: 698a2f6259a8a11e87d7c4a3, UserID: 698a2f4e59a8a11e87d7c4a2, Subject: Machine Learning, Created: Tue Feb 10 2026 00:32:58 GMT+0530 (India Standard Time)
-[2] PlanID: 698a2f3397f2bc3a3de699f0, UserID: 698a2f1597f2bc3a3de699ef, Subject: Machine Learning, Created: Tue Feb 10 2026 00:32:11 GMT+0530 (India Standard Time)
