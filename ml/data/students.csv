@@ -1,0 +1,701 @@
+usn,name,gender,branch,year,cgpa,backlogs,skills,num_skills,has_internship,internship_months,num_projects,num_certifications,placed,company,package_lpa,placement_score
+1BY23CS001,Arjun Rastogi,Male,CSE,2023,6.86,0,"['Web Development', 'Java']",2,True,4,3,4,True,IBM,8.98,73.51
+1BY23CS002,Aditya Saxena,Male,CSE,2023,5.67,0,"['DBMS', 'Machine Learning', 'C++', 'Python']",4,True,6,2,4,True,Mphasis,11.3,65.89
+1BY23CS003,Pranav Deshmukh,Male,CSE,2023,7.02,0,"['Data Structures', 'Cloud Computing']",2,False,0,2,4,True,Mphasis,6.38,62.12
+1BY23CS004,Krishna Murthy,Male,CSE,2023,7.04,1,"['Web Development', 'Python', 'C++', 'Data Structures']",4,True,1,0,2,True,Mindtree,6.5,54.79
+1BY23CS005,Varun Nair,Male,CSE,2023,4.62,0,"['Data Structures', 'Java', 'Cloud Computing', 'C++', 'DBMS']",5,False,0,3,0,False,,,50.69
+1BY23CS006,Amit Hegde,Male,CSE,2023,6.69,0,"['Machine Learning', 'Python']",2,True,5,0,4,True,Tech Mahindra,9.12,62.81
+1BY23CS007,Sachin Nair,Male,CSE,2023,7.28,0,"['Python', 'DBMS', 'Machine Learning', 'C++', 'Data Structures', 'Web Development']",6,False,0,2,3,True,Cognizant,6.08,67.1
+1BY23CS008,Naveen Kamath,Male,CSE,2023,8.35,0,"['Java', 'Machine Learning', 'Python', 'Web Development']",4,False,0,4,0,True,Infosys,5.68,65.06
+1BY23CS009,Sai Pai,Male,CSE,2023,6.78,0,"['Python', 'Cloud Computing', 'Data Structures', 'Web Development', 'C++']",5,False,0,3,0,True,Mphasis,9.96,50.02
+1BY23CS010,Sahana Rao,Female,CSE,2023,6.15,0,"['Cloud Computing', 'Data Structures', 'Java', 'Machine Learning', 'C++', 'Python']",6,True,3,4,4,True,Google,39.09,97.31
+1BY23CS011,Deepika Deshmukh,Female,CSE,2023,7.81,3,"['Cloud Computing', 'C++']",2,False,0,0,3,False,,,-4.76
+1BY23CS012,Aarav Krishnan,Male,CSE,2023,4.75,0,"['Cloud Computing', 'Data Structures', 'Python']",3,False,0,4,3,False,,,53.33
+1BY23CS013,Megha Krishnan,Female,CSE,2023,6.92,0,"['Data Structures', 'DBMS', 'Web Development', 'Python', 'C++']",5,False,0,2,0,True,TCS,6.24,61.16
+1BY23CS014,Aadhya Mittal,Female,CSE,2023,5.97,0,"['Data Structures', 'C++', 'DBMS', 'Java']",4,False,0,1,0,False,,,31.3
+1BY23CS015,Prateek Dubey,Male,CSE,2023,9.43,1,"['Cloud Computing', 'Web Development', 'Data Structures', 'DBMS', 'Python']",5,True,3,4,0,True,Capgemini,8.36,79.29
+1BY23CS016,Pari Bansal,Female,CSE,2023,9.18,0,"['C++', 'Data Structures', 'DBMS', 'Cloud Computing', 'Web Development']",5,True,1,3,2,True,Accenture,9.82,95.78
+1BY23CS017,Atharva Das,Male,CSE,2023,4.51,0,"['Cloud Computing', 'Web Development', 'Machine Learning', 'Java', 'Python']",5,True,3,0,1,False,,,42.32
+1BY23CS018,Ramesh Goyal,Male,CSE,2023,5.6,2,"['Cloud Computing', 'Web Development', 'Data Structures']",3,True,1,4,0,False,,,35.01
+1BY23CS019,Ishaan Saxena,Male,CSE,2023,7.22,1,"['Web Development', 'Data Structures', 'Machine Learning', 'Java', 'DBMS', 'Cloud Computing']",6,False,0,1,3,False,,,43.68
+1BY23CS020,Prasad Bose,Male,CSE,2023,6.04,0,"['Python', 'Machine Learning']",2,False,0,3,1,False,,,41.36
+1BY23CS021,Advait Deshmukh,Male,CSE,2023,5.25,0,"['Machine Learning', 'Web Development', 'Java', 'DBMS']",4,True,2,4,1,True,Infosys,6.65,61.68
+1BY23CS022,Pranav Rastogi,Male,CSE,2023,7.42,2,"['Cloud Computing', 'Web Development', 'Machine Learning', 'C++', 'Python', 'DBMS']",6,False,0,0,0,False,,,22.98
+1BY23CS023,Ishaan Pandey,Male,CSE,2023,6.4,0,"['C++', 'Data Structures', 'Python', 'Machine Learning', 'Web Development']",5,True,6,3,3,True,Google,43.75,87.64
+1BY23CS024,Myra Saxena,Female,CSE,2023,6.49,0,"['Web Development', 'Machine Learning', 'Cloud Computing', 'Java', 'DBMS', 'Data Structures']",6,True,3,1,1,True,Cognizant,6.72,70.48
+1BY23CS025,Vivaan Naidu,Male,CSE,2023,5.25,1,"['Web Development', 'DBMS']",2,True,1,2,2,False,,,35.75
+1BY23CS026,Rahul Sharma,Male,CSE,2023,8.22,3,"['Cloud Computing', 'Java', 'Data Structures', 'Machine Learning', 'C++']",5,True,2,1,0,False,,,21.64
+1BY23CS027,Deepak Nair,Male,CSE,2023,6.46,1,"['Web Development', 'Python', 'Data Structures']",3,True,3,3,0,True,IBM,4.72,50.98
+1BY23CS028,Darsh Nair,Male,CSE,2023,6.47,2,"['Cloud Computing', 'DBMS', 'Web Development', 'Java']",4,True,1,1,1,False,,,40.8
+1BY23CS029,Harish Rastogi,Male,CSE,2023,9.14,0,"['Java', 'DBMS', 'Machine Learning', 'C++', 'Data Structures', 'Cloud Computing']",6,True,6,3,0,True,Mphasis,7.3,92.41
+1BY23CS030,Pooja Kapoor,Female,CSE,2023,8.96,0,"['Cloud Computing', 'C++', 'Machine Learning']",3,False,0,1,0,True,Mindtree,7.23,57.48
+1BY23CS031,Ritvik Pai,Male,CSE,2023,6.21,1,"['Python', 'C++', 'Data Structures']",3,True,3,4,3,True,Cognizant,4.13,53.78
+1BY23CS032,Varun Shetty,Male,CSE,2023,6.13,0,"['Java', 'Data Structures', 'Web Development']",3,True,3,3,0,True,Capgemini,5.77,65.81
+1BY23CS033,Darsh Chatterjee,Male,CSE,2023,4.64,0,"['Java', 'Web Development', 'DBMS', 'Data Structures', 'C++']",5,False,0,3,0,False,,,56.96
+1BY23CS034,Anika Iyengar,Female,CSE,2023,6.86,0,"['Machine Learning', 'Web Development', 'Python', 'C++', 'Java']",5,False,0,0,1,False,,,45.77
+1BY23CS035,Tejaswini Varma,Female,CSE,2023,4.47,0,"['Web Development', 'Machine Learning', 'Data Structures', 'DBMS']",4,True,1,2,4,False,,,74.97
+1BY23CS036,Tejaswini Naidu,Female,CSE,2023,8.39,0,"['Java', 'Data Structures', 'Python', 'Web Development', 'Machine Learning', 'DBMS']",6,True,4,1,2,True,L&T Infotech,7.77,81.5
+1BY23CS037,Tarun Bansal,Male,CSE,2023,5.84,0,"['Python', 'C++']",2,True,3,0,4,True,L&T Infotech,10.02,53.41
+1BY23CS038,Kabir Chatterjee,Male,CSE,2023,6.12,2,"['Java', 'Data Structures', 'DBMS', 'Python', 'Machine Learning', 'C++']",6,False,0,4,3,False,,,34.95
+1BY23CS039,Neha Deshmukh,Female,CSE,2023,5.85,0,"['Java', 'C++', 'Data Structures', 'Cloud Computing']",4,True,1,1,2,True,TCS,3.7,61.65
+1BY23CS040,Gaurav Ghosh,Male,CSE,2023,5.32,0,"['Machine Learning', 'Java', 'Web Development', 'C++', 'Cloud Computing', 'DBMS']",6,True,6,4,0,True,L&T Infotech,11.35,79.17
+1BY23CS041,Chandana Saxena,Female,CSE,2023,6.16,2,"['Python', 'Machine Learning', 'Data Structures', 'Java']",4,False,0,2,3,False,,,29.54
+1BY23CS042,Atharva Kumar,Male,CSE,2023,6.62,0,"['Cloud Computing', 'Data Structures', 'Java']",3,True,6,3,2,True,Mindtree,9.14,61.55
+1BY23CS043,Mohan Singh,Male,CSE,2023,8.56,1,"['C++', 'Web Development', 'Python', 'Machine Learning', 'DBMS']",5,False,0,0,0,False,,,34.26
+1BY23CS044,Divya Kamath,Female,CSE,2023,6.65,1,"['Cloud Computing', 'Python', 'C++', 'Web Development', 'Java']",5,True,4,1,4,True,Google,28.63,60.66
+1BY23CS045,Kabir Ghosh,Male,CSE,2023,7.23,0,"['Machine Learning', 'Java']",2,True,1,0,2,True,Infosys,6.29,58.78
+1BY23CS046,Meghana Kulkarni,Female,CSE,2023,7.11,0,"['Data Structures', 'Machine Learning']",2,False,0,2,4,True,Capgemini,5.33,60.09
+1BY23CS047,Akash Mishra,Male,CSE,2023,6.94,0,"['Python', 'Java', 'Data Structures', 'C++', 'Web Development', 'DBMS']",6,True,2,3,0,True,TCS,6.68,84.8
+1BY23CS048,Prasad Mittal,Male,CSE,2023,9.27,0,"['Python', 'Java', 'Machine Learning', 'Cloud Computing', 'C++']",5,True,6,1,1,True,Wipro,6.8,71.75
+1BY23CS049,Tarun Goyal,Male,CSE,2023,6.96,0,"['Machine Learning', 'Java', 'Python', 'Data Structures', 'Cloud Computing']",5,True,2,0,0,True,L&T Infotech,11.61,60.54
+1BY23CS050,Sachin Krishnan,Male,CSE,2023,6.83,0,"['Machine Learning', 'C++']",2,False,0,1,0,False,,,30.4
+1BY23CS051,Sai Shetty,Male,CSE,2023,9.31,0,"['Data Structures', 'Web Development', 'Python', 'Machine Learning', 'Cloud Computing', 'DBMS']",6,True,2,3,3,True,Infosys,5.75,93.28
+1BY23CS052,Krishna Dubey,Male,CSE,2023,7.74,0,"['Java', 'Machine Learning', 'DBMS', 'Data Structures', 'Python']",5,True,1,3,0,True,Microsoft,17.32,67.31
+1BY23CS053,Vivaan Kumar,Male,CSE,2023,7.71,0,"['Java', 'Data Structures', 'Python', 'C++']",4,False,0,2,2,True,Infosys,3.84,56.32
+1BY23CS054,Ganesh Krishnan,Male,CSE,2023,8.15,3,"['Data Structures', 'Python', 'Cloud Computing', 'DBMS', 'Machine Learning']",5,False,0,4,2,False,,,36.65
+1BY23CS055,Lakshmi Naidu,Female,CSE,2023,5.87,0,"['Machine Learning', 'Python']",2,False,0,3,0,True,Infosys,4.43,51.53
+1BY23CS056,Deepak Deshmukh,Male,CSE,2023,9.41,0,"['Data Structures', 'Machine Learning']",2,False,0,2,0,True,Wipro,4.6,50.83
+1BY23CS057,Kavya Iyengar,Female,CSE,2023,8.66,0,"['Python', 'DBMS', 'C++', 'Machine Learning', 'Data Structures', 'Web Development']",6,False,0,2,0,True,Accenture,10.8,63.15
+1BY23CS058,Amit Agarwal,Male,CSE,2023,5.43,1,"['Cloud Computing', 'Python', 'DBMS', 'Data Structures', 'Java', 'Machine Learning']",6,False,0,4,4,True,Mindtree,4.23,63.87
+1BY23CS059,Priya Iyengar,Female,CSE,2023,7.21,0,"['Data Structures', 'DBMS', 'Cloud Computing']",3,False,0,1,1,False,,,38.17
+1BY23CS060,Krithika Bose,Female,CSE,2023,9.45,3,"['Java', 'C++', 'Web Development', 'DBMS', 'Machine Learning', 'Data Structures']",6,True,4,3,0,False,,,38.38
+1BY23CS061,Priya Kumar,Female,CSE,2023,8.08,1,"['Python', 'Cloud Computing', 'Java']",3,False,0,2,1,False,,,41.64
+1BY23CS062,Priya Saxena,Female,CSE,2023,6.87,0,"['Cloud Computing', 'Data Structures', 'Python']",3,False,0,2,1,False,,,41.58
+1BY23CS063,Saanvi Mishra,Female,CSE,2023,7.79,2,"['Cloud Computing', 'Java', 'C++', 'Python', 'Machine Learning', 'DBMS']",6,True,6,2,2,False,,,54.06
+1BY23CS064,Ravi Reddy,Male,CSE,2023,7.02,0,"['Python', 'C++', 'Machine Learning', 'Data Structures', 'Web Development', 'Cloud Computing']",6,False,0,0,2,True,Infosys,5.97,59.5
+1BY23CS065,Navya Hegde,Female,CSE,2023,7.94,0,"['Cloud Computing', 'Python']",2,True,1,3,2,True,Mphasis,8.76,78.81
+1BY23CS066,Shreya Hegde,Female,CSE,2023,8.16,0,"['Web Development', 'Python', 'Java', 'Cloud Computing']",4,False,0,4,2,True,Capgemini,7.94,73.74
+1BY23CS067,Aditya Pai,Male,CSE,2023,9.04,0,"['Java', 'Web Development', 'Data Structures']",3,False,0,0,3,True,Accenture,6.56,55.4
+1BY23CS068,Akash Saxena,Male,CSE,2023,8.32,0,"['Cloud Computing', 'DBMS', 'Java', 'Python', 'Machine Learning', 'C++']",6,True,2,0,0,True,Infosys,4.67,62.32
+1BY23CS069,Manoj Kapoor,Male,CSE,2023,7.4,0,"['Machine Learning', 'Web Development']",2,True,2,1,1,True,IBM,9.45,64.17
+1BY23CS070,Pranav Pandey,Male,CSE,2023,8.04,0,"['C++', 'Machine Learning', 'Python', 'Java', 'Web Development']",5,True,5,3,0,True,Microsoft,43.96,80.32
+1BY23CS071,Anil Hegde,Male,CSE,2023,7.39,1,"['DBMS', 'Cloud Computing', 'Machine Learning', 'Python', 'Data Structures']",5,True,5,2,0,True,Amazon,33.93,59.43
+1BY23CS072,Chaitra Pai,Female,CSE,2023,6.96,0,"['Web Development', 'DBMS']",2,True,3,0,0,False,,,43.88
+1BY23CS073,Venkat Ghosh,Male,CSE,2023,5.19,1,"['Machine Learning', 'C++', 'Python', 'Data Structures', 'Java']",5,False,0,1,2,False,,,31.53
+1BY23CS074,Vihaan Goyal,Male,CSE,2023,7.52,0,"['Data Structures', 'Cloud Computing', 'Machine Learning', 'DBMS', 'Java']",5,False,0,0,3,True,Microsoft,37.69,60.11
+1BY23CS075,Diya Goyal,Female,CSE,2023,5.2,1,"['Cloud Computing', 'C++']",2,True,6,0,0,False,,,36.6
+1BY23CS076,Kavya Ghosh,Female,CSE,2023,5.79,0,"['C++', 'Python', 'Data Structures', 'Web Development', 'DBMS', 'Java']",6,True,4,2,3,True,TCS,5.9,84.62
+1BY23CS077,Prateek Kapoor,Male,CSE,2023,9.04,0,"['Machine Learning', 'Cloud Computing', 'DBMS', 'Python', 'C++']",5,False,0,2,2,True,Mindtree,4.39,66.47
+1BY23CS078,Akshata Rao,Female,CSE,2023,9.8,0,"['Data Structures', 'Java', 'DBMS', 'Cloud Computing']",4,True,6,0,0,True,Mphasis,4.77,68.73
+1BY23CS079,Tarun Reddy,Male,CSE,2023,8.57,0,"['Data Structures', 'Cloud Computing', 'Web Development']",3,True,5,2,3,True,Mindtree,4.28,87.21
+1BY23CS080,Chandana Kulkarni,Female,CSE,2023,5.99,0,"['Data Structures', 'Cloud Computing']",2,False,0,0,0,False,,,30.91
+1BY23CS081,Tarun Shetty,Male,CSE,2023,6.17,0,"['Cloud Computing', 'Data Structures']",2,True,5,3,0,True,IBM,11.48,57.8
+1BY23CS082,Nisha Reddy,Female,CSE,2023,6.29,1,"['Web Development', 'Cloud Computing', 'C++', 'Data Structures', 'Machine Learning']",5,True,6,4,2,True,Google,18.81,63.3
+1BY23CS083,Venkat Dubey,Male,CSE,2023,6.3,1,"['Web Development', 'C++']",2,True,4,1,0,False,,,44.43
+1BY23CS084,Manoj Kulkarni,Male,CSE,2023,5.21,0,"['C++', 'Machine Learning', 'Python', 'DBMS']",4,True,3,2,0,True,Google,23.25,55.87
+1BY23CS085,Kabir Mittal,Male,CSE,2023,6.28,0,"['Data Structures', 'Java', 'Web Development', 'Machine Learning', 'DBMS', 'C++']",6,True,4,1,1,True,Microsoft,42.38,69.73
+1BY23CS086,Harish Sen,Male,CSE,2023,6.26,0,"['Machine Learning', 'Python', 'DBMS', 'Cloud Computing', 'Data Structures', 'Java']",6,False,0,2,0,True,Infosys,3.91,58.63
+1BY23CS087,Tejaswini Saxena,Female,CSE,2023,6.11,0,"['Machine Learning', 'C++', 'Java', 'Cloud Computing', 'Data Structures']",5,True,2,2,0,True,Mphasis,7.58,62.69
+1BY23CS088,Mohan Patil,Male,CSE,2023,9.33,1,"['Java', 'Web Development', 'DBMS']",3,True,5,2,3,True,Google,21.8,55.79
+1BY23CS089,Sachin Mahajan,Male,CSE,2023,4.72,0,"['Python', 'Machine Learning', 'Java', 'Web Development']",4,True,1,1,0,False,,,55.63
+1BY23CS090,Prateek Das,Male,CSE,2023,4.77,2,"['Machine Learning', 'DBMS']",2,False,0,3,2,False,,,12.53
+1BY23CS091,Vikram Sharma,Male,CSE,2023,6.15,0,"['Python', 'DBMS', 'Cloud Computing', 'Java', 'C++', 'Web Development']",6,True,4,1,0,True,Accenture,9.41,61.13
+1BY23CS092,Vivaan Rastogi,Male,CSE,2023,7.79,0,"['Cloud Computing', 'C++', 'Web Development', 'Python', 'DBMS', 'Java']",6,True,6,2,0,True,Google,27.32,82.55
+1BY23CS093,Mohan Naidu,Male,CSE,2023,6.87,1,"['Cloud Computing', 'Python', 'DBMS', 'C++']",4,False,0,3,4,True,Accenture,8.22,55.18
+1BY23CS094,Nikhil Patil,Male,CSE,2023,6.24,0,"['Cloud Computing', 'DBMS', 'Java', 'Python', 'Data Structures']",5,False,0,1,0,False,,,39.6
+1BY23CS095,Vihaan Das,Male,CSE,2023,6.66,0,"['DBMS', 'Web Development', 'Machine Learning', 'Data Structures', 'Python']",5,True,1,3,1,True,Google,32.59,75.03
+1BY23CS096,Tarun Kulkarni,Male,CSE,2023,9.01,1,"['Java', 'Web Development', 'C++', 'Data Structures', 'Cloud Computing', 'Python']",6,True,2,1,2,True,IBM,8.21,66.98
+1BY23CS097,Sanjay Pai,Male,CSE,2023,8.03,0,"['Cloud Computing', 'Java', 'Data Structures', 'Python', 'C++']",5,True,6,2,3,True,Capgemini,8.06,75.77
+1BY23CS098,Sai Gowda,Male,CSE,2023,7.05,0,"['Web Development', 'Python', 'DBMS', 'Data Structures', 'Cloud Computing']",5,False,0,0,0,False,,,39.34
+1BY23CS099,Ajay Joshi,Male,CSE,2023,9.43,0,"['Machine Learning', 'Web Development', 'Java', 'Data Structures', 'C++']",5,True,6,0,0,True,Tech Mahindra,5.56,71.49
+1BY23CS100,Ravi Jain,Male,CSE,2023,6.13,0,"['Python', 'Machine Learning', 'C++', 'Data Structures']",4,False,0,0,1,False,,,45.79
+1BY23IS001,Anil Kamath,Male,ISE,2023,8.81,2,"['Web Development', 'Java', 'Data Structures', 'DevOps', 'Testing']",5,False,0,1,3,False,,,35.71
+1BY23IS002,Dhruv Singh,Male,ISE,2023,6.01,0,"['Python', 'Testing', 'DBMS', 'Software Engineering', 'Data Structures', 'Web Development']",6,True,2,3,2,True,SAP,6.04,81.54
+1BY23IS003,Ajay Agarwal,Male,ISE,2023,7.3,0,"['DBMS', 'Web Development', 'Software Engineering', 'Testing']",4,False,0,4,0,True,IBM,5.19,53.39
+1BY23IS004,Navya Dubey,Female,ISE,2023,6.15,2,"['Java', 'DevOps']",2,True,5,3,3,False,,,35.84
+1BY23IS005,Meghana Singh,Female,ISE,2023,6.87,0,"['Java', 'Python', 'Web Development', 'DevOps']",4,True,5,0,1,True,SAP,9.84,61.87
+1BY23IS006,Aarohi Malhotra,Female,ISE,2023,6.82,0,"['Data Structures', 'Testing', 'Java']",3,True,2,4,0,True,SAP,10.03,75.55
+1BY23IS007,Ajay Iyer,Male,ISE,2023,6.12,0,"['Software Engineering', 'Python', 'DBMS']",3,True,4,3,4,True,Wipro,6.2,69.8
+1BY23IS008,Sunil Kulkarni,Male,ISE,2023,6.36,0,"['Data Structures', 'Software Engineering']",2,True,4,0,2,True,HCL,9.36,54.32
+1BY23IS009,Prasad Murthy,Male,ISE,2023,6.39,0,"['Web Development', 'DevOps', 'Software Engineering', 'Python', 'Data Structures']",5,True,2,1,3,True,SAP,5.34,74.32
+1BY23IS010,Aarohi Chatterjee,Female,ISE,2023,9.2,1,"['Python', 'Testing', 'DBMS', 'Data Structures', 'DevOps', 'Web Development']",6,True,1,0,0,True,IBM,11.45,61.06
+1BY23IS011,Sunita Gupta,Female,ISE,2023,5.91,1,"['Software Engineering', 'Java', 'DBMS', 'Testing', 'Data Structures', 'Web Development']",6,True,2,2,1,True,HCL,7.44,51.33
+1BY23IS012,Venkat Kamath,Male,ISE,2023,9.1,1,"['DBMS', 'Web Development', 'Data Structures', 'Testing']",4,True,5,1,0,True,IBM,4.98,56.93
+1BY23IS013,Megha Pai,Female,ISE,2023,8.91,1,"['Web Development', 'Java', 'DevOps', 'Python', 'DBMS']",5,True,6,3,0,True,Accenture,7.27,62.8
+1BY23IS014,Naveen Malhotra,Male,ISE,2023,4.74,0,"['Data Structures', 'Web Development', 'Python', 'DBMS']",4,False,0,3,0,False,,,53.87
+1BY23IS015,Tarun Das,Male,ISE,2023,8.78,1,"['DBMS', 'Web Development', 'DevOps', 'Java']",4,False,0,2,0,False,,,41.36
+1BY23IS016,Harish Murthy,Male,ISE,2023,6.81,0,"['Python', 'DBMS', 'Software Engineering', 'Web Development']",4,True,4,0,0,True,Accenture,4.84,58.36
+1BY23IS017,Megha Iyer,Female,ISE,2023,7.3,0,"['Web Development', 'DBMS', 'Python', 'Software Engineering', 'Data Structures', 'DevOps']",6,False,0,2,0,True,Cognizant,6.23,66.99
+1BY23IS018,Reyansh Murthy,Male,ISE,2023,6.04,0,"['Java', 'Python', 'Data Structures', 'Testing']",4,True,2,1,4,True,Accenture,4.08,76.64
+1BY23IS019,Sachin Singh,Male,ISE,2023,7.19,1,"['Python', 'Java', 'Testing', 'Software Engineering', 'Data Structures']",5,True,4,3,3,True,Tech Mahindra,7.69,71.02
+1BY23IS020,Saanvi Shetty,Female,ISE,2023,8.66,3,"['Data Structures', 'DBMS', 'Software Engineering', 'Testing', 'Python', 'Java']",6,False,0,3,2,False,,,37.8
+1BY23IS021,Saanvi Dubey,Female,ISE,2023,6.48,0,"['DBMS', 'DevOps', 'Data Structures']",3,True,6,0,0,True,TCS,4.99,54.39
+1BY23IS022,Ayaan Choudhary,Male,ISE,2023,8.93,0,"['Web Development', 'Testing', 'Data Structures']",3,True,5,1,1,True,Wipro,3.86,70.97
+1BY23IS023,Ramesh Goyal,Male,ISE,2023,5.7,0,"['Java', 'Data Structures', 'DevOps', 'Software Engineering']",4,True,2,1,2,True,HCL,8.83,69.66
+1BY23IS024,Ganesh Bansal,Male,ISE,2023,5.96,1,"['Web Development', 'Data Structures', 'Software Engineering', 'DBMS', 'Java']",5,True,5,3,1,True,Wipro,5.89,50.1
+1BY23IS025,Dhruv Patel,Male,ISE,2023,4.74,0,"['Data Structures', 'Web Development', 'DevOps', 'Python', 'DBMS']",5,True,1,1,0,False,,,47.84
+1BY23IS026,Sneha Srivastava,Female,ISE,2023,9.22,2,"['Data Structures', 'Python']",2,True,6,0,1,False,,,39.76
+1BY23IS027,Anil Kamath,Male,ISE,2023,6.94,0,"['Data Structures', 'DevOps']",2,False,0,1,1,False,,,34.96
+1BY23IS028,Rahul Pillai,Male,ISE,2023,6.65,0,"['DevOps', 'Software Engineering', 'Java']",3,True,3,3,4,True,Wipro,4.77,76.87
+1BY23IS029,Naveen Patil,Male,ISE,2023,6.83,0,"['Python', 'DBMS']",2,True,2,1,2,True,SAP,7.93,51.29
+1BY23IS030,Vikram Dubey,Male,ISE,2023,6.52,0,"['Software Engineering', 'Testing', 'Java', 'Web Development']",4,True,5,2,0,True,Accenture,11.36,69.3
+1BY23IS031,Aditya Agarwal,Male,ISE,2023,7.6,0,"['Data Structures', 'DBMS', 'Software Engineering']",3,True,4,3,0,True,Infosys,3.89,67.43
+1BY23IS032,Deepika Pandey,Female,ISE,2023,9.01,0,"['DevOps', 'Python', 'DBMS', 'Java', 'Data Structures', 'Testing']",6,False,0,4,2,True,Accenture,10.25,79.28
+1BY23IS033,Aarohi Pillai,Female,ISE,2023,7.34,1,"['Software Engineering', 'Data Structures']",2,False,0,2,1,False,,,32.16
+1BY23IS034,Sunita Reddy,Female,ISE,2023,7.17,0,"['DBMS', 'Data Structures', 'Testing', 'Web Development']",4,True,6,3,4,True,Wipro,6.89,92.4
+1BY23IS035,Anil Murthy,Male,ISE,2023,8.05,0,"['DevOps', 'Java', 'Web Development', 'Software Engineering', 'Data Structures']",5,False,0,0,0,True,Tech Mahindra,5.3,54.92
+1BY23IS036,Meghana Saxena,Female,ISE,2023,7.5,0,"['Java', 'DBMS', 'Data Structures', 'Python', 'DevOps', 'Web Development']",6,False,0,1,2,True,Capgemini,6.02,53.95
+1BY23IS037,Amit Ghosh,Male,ISE,2023,6.07,1,"['Web Development', 'Data Structures']",2,True,6,0,0,False,,,33.04
+1BY23IS038,Darsh Bansal,Male,ISE,2023,5.8,0,"['Testing', 'Data Structures', 'Java']",3,True,3,0,0,True,Mindtree,6.93,55.55
+1BY23IS039,Divya Bhat,Female,ISE,2023,7.09,1,"['DBMS', 'Web Development', 'Java', 'Testing', 'DevOps', 'Software Engineering']",6,True,1,0,2,False,,,43.23
+1BY23IS040,Arjun Patel,Male,ISE,2023,7.35,0,"['DBMS', 'Software Engineering']",2,False,0,0,1,False,,,38.91
+1BY23IS041,Arjun Gupta,Male,ISE,2023,7.28,0,"['DevOps', 'Java', 'Data Structures']",3,True,4,0,0,True,Accenture,8.59,56.75
+1BY23IS042,Prasad Joshi,Male,ISE,2023,7.92,0,"['Software Engineering', 'Testing']",2,False,0,1,0,False,,,40.4
+1BY23IS043,Ravi Iyer,Male,ISE,2023,7.52,1,"['Software Engineering', 'Python', 'DevOps']",3,False,0,4,0,True,Accenture,4.34,53.93
+1BY23IS044,Saanvi Singh,Female,ISE,2023,5.18,0,"['Web Development', 'Python']",2,True,5,0,0,True,Oracle,5.02,51.35
+1BY23IS045,Shalini Patel,Female,ISE,2023,5.38,0,"['Python', 'Software Engineering', 'DBMS', 'Data Structures']",4,False,0,1,0,False,,,46.21
+1BY23IS046,Shreya Krishnan,Female,ISE,2023,8.14,0,"['Data Structures', 'Web Development', 'DBMS']",3,True,2,0,2,True,IBM,5.48,61.33
+1BY23IS047,Naveen Srivastava,Male,ISE,2023,9.19,0,"['DevOps', 'Software Engineering', 'Web Development', 'Data Structures', 'Python']",5,True,2,4,0,True,Mindtree,6.35,78.62
+1BY23IS048,Ganesh Deshmukh,Male,ISE,2023,7.98,0,"['Data Structures', 'Python', 'DevOps', 'DBMS', 'Web Development']",5,False,0,2,3,True,Wipro,3.92,68.88
+1BY23IS049,Advait Iyer,Male,ISE,2023,8.49,0,"['Java', 'Software Engineering', 'DBMS', 'Python', 'Web Development', 'Testing']",6,False,0,1,0,True,Mindtree,7.75,53.86
+1BY23IS050,Anil Mahajan,Male,ISE,2023,4.47,0,"['Web Development', 'Testing', 'Java', 'Software Engineering', 'Python', 'DBMS']",6,False,0,4,0,False,,,52.98
+1BY23IS051,Chaitra Murthy,Female,ISE,2023,8.62,0,"['Web Development', 'Data Structures', 'Java']",3,True,1,2,0,True,Capgemini,7.34,65.01
+1BY23IS052,Vivaan Agarwal,Male,ISE,2023,8.0,2,"['Testing', 'Software Engineering', 'Java', 'Data Structures', 'DBMS']",5,True,3,2,0,False,,,32.47
+1BY23IS053,Akash Choudhary,Male,ISE,2023,7.62,0,"['DBMS', 'DevOps', 'Software Engineering', 'Testing', 'Java', 'Data Structures']",6,True,3,4,0,True,Mindtree,10.75,83.04
+1BY23IS054,Diya Pai,Female,ISE,2023,7.99,0,"['DBMS', 'Web Development', 'DevOps', 'Java', 'Testing', 'Python']",6,True,5,4,2,True,Cognizant,5.26,85.52
+1BY23IS055,Nisha Singh,Female,ISE,2023,7.37,0,"['Data Structures', 'DBMS']",2,True,6,1,0,False,,,47.11
+1BY23IS056,Tanvi Varma,Female,ISE,2023,7.5,0,"['DevOps', 'Web Development', 'Data Structures', 'Python', 'Testing']",5,False,0,2,0,True,Wipro,4.62,55.22
+1BY23IS057,Ajay Bhat,Male,ISE,2023,7.32,0,"['Web Development', 'Software Engineering', 'Testing', 'Java', 'DBMS']",5,False,0,2,1,True,Mindtree,8.13,61.68
+1BY23IS058,Aditya Chatterjee,Male,ISE,2023,9.96,0,"['DBMS', 'Java', 'DevOps', 'Testing', 'Python', 'Web Development']",6,True,5,3,2,True,Wipro,4.8,85.02
+1BY23IS059,Shreya Pai,Female,ISE,2023,5.88,0,"['Java', 'DBMS', 'Python', 'Testing']",4,True,1,0,0,True,HCL,8.31,56.53
+1BY23IS060,Advait Rajan,Male,ISE,2023,7.37,0,"['Testing', 'Data Structures']",2,False,0,4,3,True,HCL,8.71,58.36
+1BY23IS061,Akash Bose,Male,ISE,2023,6.13,0,"['DevOps', 'Java', 'DBMS', 'Data Structures', 'Web Development']",5,False,0,2,2,False,,,47.17
+1BY23IS062,Rahul Rao,Male,ISE,2023,6.3,0,"['Python', 'Web Development']",2,False,0,0,0,False,,,40.46
+1BY23IS063,Ravi Deshmukh,Male,ISE,2023,4.75,0,"['Java', 'DevOps', 'Python', 'Testing', 'Data Structures', 'Web Development']",6,True,4,0,4,False,,,59.23
+1BY23IS064,Tanvi Iyer,Female,ISE,2023,8.59,0,"['DevOps', 'DBMS']",2,True,3,2,2,True,Oracle,7.97,63.9
+1BY23IS065,Harish Kamath,Male,ISE,2023,7.08,0,"['Data Structures', 'DevOps']",2,False,0,2,4,False,,,48.81
+1BY23IS066,Aanya Iyengar,Female,ISE,2023,8.16,0,"['Java', 'Testing', 'DevOps']",3,False,0,1,0,True,Mphasis,11.25,52.36
+1BY23IS067,Suresh Pandey,Male,ISE,2023,5.64,0,"['DBMS', 'Software Engineering', 'Data Structures', 'Web Development', 'Python']",5,False,0,3,3,True,Accenture,10.18,62.18
+1BY23IS068,Karthik Nair,Male,ISE,2023,5.49,2,"['Web Development', 'Data Structures', 'Testing', 'DevOps', 'Java', 'Software Engineering']",6,True,4,0,0,False,,,18.24
+1BY23IS069,Shreya Patel,Female,ISE,2023,6.84,0,"['Web Development', 'Data Structures', 'Software Engineering']",3,True,2,3,0,True,Mindtree,7.56,73.06
+1BY23IS070,Riya Rao,Female,ISE,2023,7.65,0,"['DBMS', 'Testing', 'Java', 'Python', 'Web Development']",5,True,6,1,0,True,Mindtree,8.04,68.67
+1BY23IS071,Vidya Khanna,Female,ISE,2023,7.21,0,"['Web Development', 'DevOps', 'DBMS', 'Data Structures', 'Java']",5,False,0,2,1,True,Mphasis,10.47,57.54
+1BY23IS072,Aditya Reddy,Male,ISE,2023,7.53,2,"['DevOps', 'Testing', 'Data Structures', 'Java', 'Python', 'Web Development']",6,True,6,4,2,False,,,61.36
+1BY23IS073,Lakshmi Sharma,Female,ISE,2023,8.64,0,"['DevOps', 'Testing']",2,True,3,4,1,True,Infosys,4.17,80.31
+1BY23IS074,Ishaan Saxena,Male,ISE,2023,7.84,0,"['DevOps', 'Testing', 'Python', 'Java', 'DBMS', 'Software Engineering']",6,True,4,2,0,True,Capgemini,5.37,65.75
+1BY23IS075,Pranav Kapoor,Male,ISE,2023,7.02,0,"['DevOps', 'Python']",2,False,0,3,4,True,Infosys,6.34,65.25
+1BY23IS076,Swati Patel,Female,ISE,2023,8.98,2,"['Web Development', 'DevOps', 'DBMS', 'Data Structures', 'Software Engineering', 'Testing']",6,True,2,0,0,False,,,34.35
+1BY23IS077,Deepak Joshi,Male,ISE,2023,7.53,0,"['Data Structures', 'DBMS']",2,False,0,4,3,True,Infosys,6.72,70.14
+1BY23IS078,Sai Dubey,Male,ISE,2023,5.61,2,"['Python', 'Software Engineering', 'DevOps', 'Data Structures']",4,True,1,0,3,False,,,28.49
+1BY23IS079,Saanvi Mittal,Female,ISE,2023,4.39,0,"['Testing', 'Web Development', 'Java', 'Python']",4,True,2,3,4,False,,,69.86
+1BY23IS080,Ajay Sharma,Male,ISE,2023,5.73,1,"['DevOps', 'DBMS', 'Data Structures', 'Software Engineering']",4,True,6,3,0,True,HCL,4.86,56.19
+1BY23IS081,Tanvi Rastogi,Female,ISE,2023,7.49,0,"['Software Engineering', 'DBMS', 'Data Structures', 'Testing']",4,False,0,1,4,True,Wipro,4.02,63.1
+1BY23IS082,Rahul Goyal,Male,ISE,2023,5.79,0,"['Testing', 'Python', 'Data Structures', 'Java', 'Software Engineering']",5,False,0,2,0,False,,,41.5
+1BY23IS083,Harish Pillai,Male,ISE,2023,7.31,0,"['Java', 'Python', 'DevOps', 'Web Development', 'Data Structures']",5,False,0,2,4,True,Tech Mahindra,5.94,65.83
+1BY23IS084,Venkat Shetty,Male,ISE,2023,7.8,1,"['DevOps', 'Software Engineering', 'Testing', 'Java']",4,True,1,0,2,True,Infosys,3.9,51.81
+1BY23IS085,Deepak Kulkarni,Male,ISE,2023,5.93,1,"['Web Development', 'Testing']",2,True,4,0,0,False,,,24.09
+1BY23IS086,Aadhya Kamath,Female,ISE,2023,6.65,1,"['DevOps', 'Java', 'Software Engineering', 'Data Structures']",4,True,2,3,0,False,,,49.21
+1BY23IS087,Ishita Saxena,Female,ISE,2023,4.2,0,"['Java', 'DBMS', 'DevOps', 'Data Structures', 'Python', 'Software Engineering']",6,True,6,2,0,False,,,54.88
+1BY23IS088,Nikhil Choudhary,Male,ISE,2023,5.11,0,"['Software Engineering', 'Java', 'Web Development', 'Data Structures']",4,True,3,2,0,False,,,48.4
+1BY23IS089,Suresh Naidu,Male,ISE,2023,5.21,0,"['Data Structures', 'Web Development', 'Java']",3,True,2,0,0,False,,,46.87
+1BY23IS090,Sachin Iyengar,Male,ISE,2023,5.77,0,"['Web Development', 'Python', 'Testing']",3,True,6,0,2,True,Tech Mahindra,10.29,59.13
+1BY23IS091,Kavya Malhotra,Female,ISE,2023,4.71,0,"['Python', 'Testing', 'Web Development']",3,True,2,1,4,False,,,54.12
+1BY23IS092,Pari Saxena,Female,ISE,2023,5.6,0,"['Python', 'DevOps', 'Web Development']",3,False,0,2,3,True,Wipro,6.15,52.95
+1BY23IS093,Darsh Khanna,Male,ISE,2023,6.05,0,"['Web Development', 'DevOps', 'Data Structures', 'Testing']",4,True,1,3,2,True,IBM,4.88,72.63
+1BY23IS094,Pari Sharma,Female,ISE,2023,4.63,0,"['Data Structures', 'Python', 'Testing', 'DevOps', 'Java']",5,False,0,3,4,False,,,63.79
+1BY23IS095,Darsh Mishra,Male,ISE,2023,7.16,0,"['Web Development', 'Testing', 'DBMS', 'Java', 'Data Structures', 'Software Engineering']",6,True,2,4,0,True,Capgemini,11.45,80.11
+1BY23IS096,Saanvi Varma,Female,ISE,2023,4.65,0,"['Testing', 'DBMS', 'Web Development', 'Python', 'Software Engineering']",5,False,0,4,0,False,,,55.44
+1BY23IS097,Naveen Kulkarni,Male,ISE,2023,8.11,0,"['Testing', 'Java']",2,True,3,2,2,True,TCS,3.73,71.36
+1BY23IS098,Navya Patil,Female,ISE,2023,5.87,0,"['DevOps', 'Web Development', 'DBMS', 'Python']",4,True,4,0,1,True,Infosys,6.78,59.27
+1BY23IS099,Varun Gowda,Male,ISE,2023,8.38,0,"['DevOps', 'Python', 'Web Development', 'DBMS']",4,False,0,4,0,True,Infosys,5.01,62.08
+1BY23IS100,Harish Dubey,Male,ISE,2023,9.17,0,"['Web Development', 'Java', 'DevOps', 'Testing']",4,True,4,2,3,True,IBM,7.16,75.02
+1BY23EC001,Ritvik Dubey,Male,ECE,2023,9.6,0,"['Communication Systems', 'C', 'Embedded Systems']",3,False,0,3,0,True,Bosch,6.6,58.97
+1BY23EC002,Aanya Pillai,Female,ECE,2023,6.61,2,"['Embedded Systems', 'PCB Design', 'Communication Systems', 'IoT', 'VLSI', 'C']",6,True,4,0,0,False,,,26.56
+1BY23EC003,Vidya Kumar,Female,ECE,2023,5.48,0,"['VLSI', 'C']",2,False,0,3,4,False,,,45.58
+1BY23EC004,Arnav Bose,Male,ECE,2023,8.66,1,"['Signal Processing', 'Microcontrollers', 'C', 'VLSI', 'Communication Systems', 'Embedded Systems']",6,True,3,0,1,True,Infosys,5.41,58.58
+1BY23EC005,Tarun Patel,Male,ECE,2023,6.64,0,"['IoT', 'Communication Systems', 'C']",3,True,3,3,0,True,Samsung,4.7,62.6
+1BY23EC006,Varun Ghosh,Male,ECE,2023,4.91,0,"['IoT', 'Signal Processing', 'Embedded Systems']",3,True,6,2,1,False,,,53.36
+1BY23EC007,Krishna Krishnan,Male,ECE,2023,6.23,0,"['C', 'Microcontrollers', 'Communication Systems', 'Signal Processing']",4,True,6,0,0,False,,,45.88
+1BY23EC008,Anil Hegde,Male,ECE,2023,8.67,0,"['Embedded Systems', 'Microcontrollers', 'C']",3,False,0,4,0,True,Infosys,5.98,70.62
+1BY23EC009,Priya Singh,Female,ECE,2023,6.14,0,"['PCB Design', 'Microcontrollers', 'IoT', 'VLSI']",4,True,1,3,1,True,Wipro,5.79,64.86
+1BY23EC010,Rahul Saxena,Male,ECE,2023,7.24,0,"['PCB Design', 'Microcontrollers', 'Communication Systems']",3,True,3,4,0,True,Siemens,5.35,72.04
+1BY23EC011,Krishna Mittal,Male,ECE,2023,6.67,0,"['Microcontrollers', 'Embedded Systems', 'Communication Systems', 'VLSI', 'Signal Processing', 'PCB Design']",6,False,0,4,4,True,Texas Instruments,10.59,69.47
+1BY23EC012,Karthik Kulkarni,Male,ECE,2023,7.75,0,"['C', 'Microcontrollers', 'Communication Systems']",3,False,0,4,3,True,Qualcomm,7.74,59.97
+1BY23EC013,Vivaan Mahajan,Male,ECE,2023,5.88,0,"['Communication Systems', 'IoT', 'Embedded Systems']",3,True,4,4,1,True,Schneider,10.62,66.25
+1BY23EC014,Anika Singh,Female,ECE,2023,8.41,0,"['IoT', 'C', 'Microcontrollers', 'Embedded Systems', 'VLSI', 'PCB Design']",6,False,0,2,0,True,Samsung,10.88,52.45
+1BY23EC015,Amit Patel,Male,ECE,2023,8.38,1,"['PCB Design', 'Embedded Systems']",2,True,1,3,2,True,TCS,6.32,51.5
+1BY23EC016,Amit Saxena,Male,ECE,2023,5.92,1,"['VLSI', 'IoT', 'Embedded Systems', 'Communication Systems', 'Signal Processing']",5,False,0,3,0,False,,,28.74
+1BY23EC017,Aanya Krishnan,Female,ECE,2023,7.42,0,"['VLSI', 'C', 'Embedded Systems', 'Signal Processing', 'Microcontrollers', 'Communication Systems']",6,False,0,0,3,True,Samsung,9.8,65.14
+1BY23EC018,Rajesh Deshmukh,Male,ECE,2023,7.49,1,"['Communication Systems', 'VLSI', 'IoT', 'PCB Design']",4,True,1,4,4,True,Infosys,5.33,83.1
+1BY23EC019,Ishaan Naidu,Male,ECE,2023,4.67,0,"['C', 'IoT']",2,False,0,1,0,False,,,32.82
+1BY23EC020,Neha Pandey,Female,ECE,2023,8.25,0,"['IoT', 'C', 'VLSI', 'Embedded Systems', 'Microcontrollers', 'PCB Design']",6,True,5,1,3,True,Intel,4.51,80.97
+1BY23EC021,Aarohi Tiwari,Female,ECE,2023,9.37,0,"['C', 'Microcontrollers']",2,True,5,2,0,True,Texas Instruments,6.12,77.98
+1BY23EC022,Saanvi Dubey,Female,ECE,2023,8.88,0,"['Embedded Systems', 'Signal Processing', 'Microcontrollers', 'VLSI']",4,True,2,4,0,True,Siemens,8.82,91.68
+1BY23EC023,Ayaan Rastogi,Male,ECE,2023,4.4,0,"['VLSI', 'Signal Processing']",2,False,0,3,0,False,,,47.07
+1BY23EC024,Sai Kapoor,Male,ECE,2023,7.07,0,"['C', 'Microcontrollers', 'IoT']",3,False,0,2,0,True,ABB,11.33,54.31
+1BY23EC025,Advait Jain,Male,ECE,2023,5.92,0,"['IoT', 'VLSI', 'Embedded Systems']",3,True,6,1,3,True,TCS,5.89,54.21
+1BY23EC026,Myra Deshmukh,Female,ECE,2023,6.63,2,"['PCB Design', 'IoT', 'Communication Systems', 'C', 'Embedded Systems', 'Microcontrollers']",6,True,3,1,3,False,,,44.61
+1BY23EC027,Aparna Mishra,Female,ECE,2023,8.46,0,"['C', 'Embedded Systems', 'VLSI']",3,True,5,1,0,True,Schneider,4.88,53.8
+1BY23EC028,Rohan Dubey,Male,ECE,2023,7.87,2,"['Communication Systems', 'VLSI']",2,True,5,4,0,False,,,33.62
+1BY23EC029,Manoj Mahajan,Male,ECE,2023,9.64,0,"['PCB Design', 'IoT', 'Communication Systems', 'C', 'Microcontrollers']",5,False,0,4,4,True,Bosch,9.85,78.32
+1BY23EC030,Divya Ghosh,Female,ECE,2023,6.38,0,"['IoT', 'C', 'Communication Systems', 'VLSI']",4,True,2,0,3,True,TCS,6.29,61.27
+1BY23EC031,Aparna Rajan,Female,ECE,2023,7.17,0,"['VLSI', 'PCB Design', 'C']",3,True,1,3,0,True,Bosch,8.67,59.8
+1BY23EC032,Deepak Krishnan,Male,ECE,2023,6.18,0,"['PCB Design', 'VLSI', 'Embedded Systems', 'Signal Processing']",4,True,3,1,0,True,Intel,9.15,60.22
+1BY23EC033,Arnav Patil,Male,ECE,2023,7.3,0,"['Embedded Systems', 'C', 'Microcontrollers', 'Signal Processing', 'Communication Systems', 'IoT']",6,True,2,4,4,True,Texas Instruments,10.21,97.58
+1BY23EC034,Divya Bansal,Female,ECE,2023,8.63,0,"['Signal Processing', 'PCB Design', 'Embedded Systems', 'C']",4,False,0,4,1,True,Samsung,8.42,71.02
+1BY23EC035,Rahul Reddy,Male,ECE,2023,6.77,0,"['Embedded Systems', 'IoT', 'VLSI', 'Communication Systems', 'Microcontrollers', 'C']",6,True,1,2,4,True,Samsung,5.14,84.73
+1BY23EC036,Aarav Hegde,Male,ECE,2023,8.0,1,"['IoT', 'Signal Processing', 'Microcontrollers']",3,True,6,2,0,False,,,49.39
+1BY23EC037,Arjun Khanna,Male,ECE,2023,8.09,0,"['IoT', 'Microcontrollers', 'PCB Design', 'Communication Systems']",4,False,0,2,1,True,Intel,8.77,66.8
+1BY23EC038,Ravi Murthy,Male,ECE,2023,8.37,0,"['Embedded Systems', 'Communication Systems', 'C', 'VLSI', 'PCB Design', 'Microcontrollers']",6,True,1,4,2,True,Texas Instruments,4.54,100.91
+1BY23EC039,Manoj Srivastava,Male,ECE,2023,6.85,1,"['IoT', 'PCB Design']",2,True,4,2,0,True,Samsung,4.94,52.83
+1BY23EC040,Arjun Kamath,Male,ECE,2023,6.18,0,"['VLSI', 'Communication Systems', 'Microcontrollers', 'IoT', 'Embedded Systems']",5,True,2,4,3,True,Texas Instruments,11.95,78.11
+1BY23EC041,Krithika Varma,Female,ECE,2023,6.98,0,"['Communication Systems', 'PCB Design', 'VLSI']",3,False,0,4,0,True,Samsung,8.22,66.52
+1BY23EC042,Rashmi Khanna,Female,ECE,2023,8.48,0,"['VLSI', 'IoT', 'Microcontrollers']",3,False,0,2,3,True,Qualcomm,11.99,60.75
+1BY23EC043,Ishita Iyengar,Female,ECE,2023,6.42,0,"['C', 'Embedded Systems', 'PCB Design', 'Signal Processing', 'Communication Systems', 'IoT']",6,True,2,1,3,True,Infosys,5.61,63.84
+1BY23EC044,Vihaan Das,Male,ECE,2023,8.54,2,"['Communication Systems', 'Embedded Systems']",2,True,3,4,0,False,,,46.07
+1BY23EC045,Krishna Gupta,Male,ECE,2023,4.81,0,"['Microcontrollers', 'Communication Systems']",2,True,6,0,2,False,,,40.09
+1BY23EC046,Aanya Hegde,Female,ECE,2023,5.79,0,"['PCB Design', 'IoT', 'Microcontrollers', 'Communication Systems', 'Embedded Systems', 'C']",6,False,0,0,0,False,,,34.83
+1BY23EC047,Mahesh Rajan,Male,ECE,2023,7.27,0,"['Microcontrollers', 'VLSI']",2,True,3,0,4,True,Qualcomm,5.79,57.65
+1BY23EC048,Lakshmi Hegde,Female,ECE,2023,9.67,1,"['Embedded Systems', 'IoT', 'VLSI', 'Microcontrollers', 'Communication Systems', 'PCB Design']",6,True,1,3,3,True,Qualcomm,10.53,78.65
+1BY23EC049,Arnav Patel,Male,ECE,2023,8.09,3,"['C', 'Communication Systems', 'PCB Design', 'Signal Processing']",4,False,0,3,2,False,,,26.59
+1BY23EC050,Rahul Iyengar,Male,ECE,2023,8.76,0,"['IoT', 'Signal Processing', 'PCB Design', 'VLSI', 'Communication Systems', 'Embedded Systems']",6,False,0,1,4,True,Intel,7.45,64.98
+1BY23EC051,Varun Kamath,Male,ECE,2023,8.32,0,"['C', 'Signal Processing', 'IoT', 'Communication Systems']",4,False,0,3,4,True,Schneider,11.72,69.86
+1BY23EC052,Riya Khanna,Female,ECE,2023,7.84,0,"['VLSI', 'C', 'Communication Systems']",3,True,6,2,1,True,Samsung,9.72,76.77
+1BY23EC053,Kabir Choudhary,Male,ECE,2023,9.36,0,"['PCB Design', 'Microcontrollers']",2,False,0,3,0,False,,,49.82
+1BY23EC054,Aditya Singh,Male,ECE,2023,7.74,0,"['C', 'VLSI', 'Signal Processing']",3,False,0,2,4,True,L&T,10.38,56.18
+1BY23EC055,Sai Chatterjee,Male,ECE,2023,7.18,0,"['Microcontrollers', 'IoT', 'Embedded Systems', 'PCB Design', 'VLSI', 'Signal Processing']",6,False,0,0,0,True,Infosys,5.21,51.38
+1BY23EC056,Naveen Pillai,Male,ECE,2023,8.11,0,"['C', 'VLSI']",2,True,1,0,3,True,L&T,5.62,54.69
+1BY23EC057,Aadhya Sen,Female,ECE,2023,6.94,1,"['IoT', 'PCB Design']",2,False,0,4,0,False,,,30.36
+1BY23EC058,Kavya Deshmukh,Female,ECE,2023,8.87,0,"['IoT', 'Communication Systems', 'C', 'Signal Processing']",4,False,0,1,0,False,,,49.84
+1BY23EC059,Rahul Kamath,Male,ECE,2023,8.08,0,"['C', 'Embedded Systems', 'IoT', 'Communication Systems']",4,True,4,0,1,True,Schneider,7.31,64.2
+1BY23EC060,Prateek Mishra,Male,ECE,2023,7.69,0,"['Microcontrollers', 'PCB Design', 'Signal Processing', 'VLSI']",4,True,2,4,0,True,Schneider,10.08,83.43
+1BY23EC061,Naveen Mishra,Male,ECE,2023,6.15,1,"['Embedded Systems', 'Signal Processing', 'PCB Design', 'C', 'IoT', 'Microcontrollers']",6,False,0,1,1,False,,,31.65
+1BY23EC062,Rohan Pai,Male,ECE,2023,6.38,0,"['Communication Systems', 'Embedded Systems', 'VLSI']",3,True,4,3,1,True,Qualcomm,10.78,66.03
+1BY23EC063,Ajay Rajan,Male,ECE,2023,7.33,0,"['VLSI', 'Signal Processing', 'PCB Design', 'Microcontrollers', 'Communication Systems']",5,False,0,3,0,True,L&T,5.14,55.94
+1BY23EC064,Krithika Saxena,Female,ECE,2023,7.26,1,"['Communication Systems', 'Embedded Systems']",2,True,1,2,0,False,,,47.39
+1BY23EC065,Aditya Choudhary,Male,ECE,2023,8.0,0,"['Signal Processing', 'C', 'Communication Systems', 'Microcontrollers']",4,True,4,3,0,True,Wipro,6.05,73.27
+1BY23EC066,Ganesh Kapoor,Male,ECE,2023,5.97,1,"['VLSI', 'PCB Design', 'Embedded Systems']",3,False,0,0,0,False,,,20.49
+1BY23EC067,Arnav Varma,Male,ECE,2023,8.03,0,"['PCB Design', 'IoT', 'Microcontrollers', 'Embedded Systems']",4,False,0,3,0,True,Texas Instruments,8.84,58.33
+1BY23EC068,Ananya Gowda,Female,ECE,2023,6.7,0,"['Communication Systems', 'C', 'Microcontrollers', 'IoT']",4,True,5,4,0,True,Wipro,6.59,79.25
+1BY23EC069,Vidya Pai,Female,ECE,2023,7.36,0,"['IoT', 'VLSI', 'Microcontrollers']",3,True,3,3,0,True,Schneider,7.15,76.39
+1BY23EC070,Megha Das,Female,ECE,2023,5.56,1,"['VLSI', 'IoT']",2,True,1,0,3,False,,,44.28
+1BY23EC071,Sai Hegde,Male,ECE,2023,8.83,0,"['Signal Processing', 'C', 'VLSI', 'Communication Systems']",4,True,3,4,1,True,Qualcomm,4.21,87.12
+1BY23EC072,Vivaan Nair,Male,ECE,2023,6.13,1,"['Communication Systems', 'Microcontrollers']",2,True,3,1,0,False,,,28.92
+1BY23EC073,Kabir Pai,Male,ECE,2023,5.23,0,"['PCB Design', 'VLSI', 'Communication Systems', 'C', 'Signal Processing']",5,True,1,3,1,True,Infosys,6.55,61.37
+1BY23EC074,Aarav Sharma,Male,ECE,2023,5.49,0,"['IoT', 'PCB Design', 'C']",3,True,5,2,0,False,,,48.66
+1BY23EC075,Amit Sen,Male,ECE,2023,6.73,1,"['VLSI', 'Communication Systems', 'Embedded Systems', 'Microcontrollers', 'IoT']",5,False,0,1,0,False,,,23.37
+1BY23EC076,Vihaan Gowda,Male,ECE,2023,9.42,0,"['Signal Processing', 'Embedded Systems', 'PCB Design', 'IoT', 'C', 'VLSI']",6,True,6,2,0,True,Samsung,8.44,88.38
+1BY23EC077,Sneha Srivastava,Female,ECE,2023,6.86,0,"['Signal Processing', 'Microcontrollers']",2,True,6,2,0,True,Infosys,5.69,59.34
+1BY23EC078,Tejaswini Varma,Female,ECE,2023,7.49,0,"['Microcontrollers', 'PCB Design']",2,True,3,2,0,True,Schneider,7.5,58.08
+1BY23EC079,Ravi Goyal,Male,ECE,2023,6.98,0,"['PCB Design', 'Communication Systems', 'Signal Processing']",3,False,0,1,0,False,,,46.73
+1BY23EC080,Sneha Mishra,Female,ECE,2023,6.89,0,"['Communication Systems', 'VLSI', 'PCB Design', 'Embedded Systems', 'IoT']",5,True,2,0,4,True,Qualcomm,11.18,71.39
+1BY23EC081,Shalini Bhat,Female,ECE,2023,4.99,2,"['PCB Design', 'IoT', 'Communication Systems', 'C']",4,False,0,4,0,False,,,12.32
+1BY23EC082,Naveen Varma,Male,ECE,2023,7.41,1,"['Signal Processing', 'Communication Systems', 'Microcontrollers', 'PCB Design']",4,False,0,3,4,True,Intel,5.58,57.31
+1BY23EC083,Tanvi Rajan,Female,ECE,2023,8.06,1,"['Microcontrollers', 'VLSI', 'IoT', 'Communication Systems', 'C']",5,True,3,1,0,True,Qualcomm,8.38,50.89
+1BY23EC084,Diya Rajan,Female,ECE,2023,7.22,0,"['IoT', 'Embedded Systems']",2,False,0,3,3,True,Bosch,10.7,55.22
+1BY23EC085,Aarohi Gupta,Female,ECE,2023,5.24,0,"['IoT', 'C', 'VLSI', 'PCB Design', 'Microcontrollers', 'Embedded Systems']",6,False,0,0,2,False,,,47.9
+1BY23EC086,Pooja Menon,Female,ECE,2023,4.64,0,"['PCB Design', 'Embedded Systems', 'Microcontrollers', 'VLSI', 'C']",5,True,3,3,3,False,,,70.96
+1BY23EC087,Naveen Choudhary,Male,ECE,2023,5.74,0,"['C', 'Embedded Systems', 'IoT', 'Microcontrollers', 'Communication Systems', 'Signal Processing']",6,False,0,4,0,True,TCS,6.49,64.5
+1BY23EC088,Darsh Dubey,Male,ECE,2023,8.39,0,"['VLSI', 'IoT', 'Communication Systems', 'C', 'Signal Processing']",5,False,0,1,0,True,Bosch,10.15,58.7
+1BY23EC089,Anil Gowda,Male,ECE,2023,7.12,0,"['Communication Systems', 'PCB Design', 'Signal Processing', 'Microcontrollers', 'Embedded Systems']",5,True,2,3,2,True,Samsung,11.75,70.15
+1BY23EC090,Ramesh Malhotra,Male,ECE,2023,6.68,0,"['Embedded Systems', 'Signal Processing', 'Microcontrollers', 'PCB Design']",4,True,3,2,0,True,Siemens,4.22,65.46
+1BY23EC091,Sachin Malhotra,Male,ECE,2023,6.68,0,"['VLSI', 'Microcontrollers', 'Communication Systems', 'IoT']",4,False,0,2,2,True,L&T,6.19,52.5
+1BY23EC092,Atharva Kulkarni,Male,ECE,2023,4.79,0,"['C', 'VLSI', 'PCB Design', 'Signal Processing', 'Embedded Systems', 'Communication Systems']",6,True,6,0,1,False,,,63.67
+1BY23EC093,Anil Chatterjee,Male,ECE,2023,5.24,1,"['Signal Processing', 'IoT', 'Communication Systems', 'VLSI', 'Microcontrollers']",5,False,0,0,0,False,,,29.61
+1BY23EC094,Tejaswini Iyengar,Female,ECE,2023,6.22,2,"['IoT', 'PCB Design', 'Signal Processing', 'Communication Systems']",4,False,0,1,1,False,,,8.84
+1BY23EC095,Vikram Jain,Male,ECE,2023,5.63,1,"['VLSI', 'C', 'Signal Processing']",3,True,1,3,2,False,,,47.26
+1BY23EC096,Lakshmi Tiwari,Female,ECE,2023,4.59,0,"['Communication Systems', 'VLSI', 'Microcontrollers', 'Signal Processing', 'C']",5,True,3,2,0,False,,,65.38
+1BY23EC097,Krishna Tiwari,Male,ECE,2023,6.88,0,"['IoT', 'VLSI', 'Embedded Systems', 'Microcontrollers']",4,False,0,4,1,True,Texas Instruments,10.22,56.68
+1BY23EC098,Rohan Menon,Male,ECE,2023,6.67,0,"['C', 'Embedded Systems', 'PCB Design']",3,False,0,3,0,False,,,42.17
+1BY23EC099,Aparna Nair,Female,ECE,2023,7.24,0,"['IoT', 'Microcontrollers', 'PCB Design', 'VLSI', 'Signal Processing']",5,True,4,3,3,True,Samsung,4.13,76.04
+1BY23EC100,Nisha Pai,Female,ECE,2023,9.24,0,"['VLSI', 'Communication Systems', 'IoT', 'C']",4,False,0,0,3,True,Siemens,7.15,61.26
+1BY23EE001,Sunil Sen,Male,EEE,2023,8.13,1,"['Circuit Design', 'Renewable Energy', 'Power Systems', 'PLC', 'Control Systems']",5,False,0,3,0,True,ABB,6.72,52.42
+1BY23EE002,Riya Menon,Female,EEE,2023,7.25,1,"['Circuit Design', 'PLC', 'Electrical Machines', 'Control Systems']",4,True,2,3,0,False,,,46.8
+1BY23EE003,Rashmi Pandey,Female,EEE,2023,7.67,0,"['Electrical Machines', 'Power Systems']",2,True,5,3,4,True,L&T,4.13,74.53
+1BY23EE004,Naveen Das,Male,EEE,2023,5.99,2,"['Control Systems', 'MATLAB', 'Power Systems', 'Circuit Design', 'Renewable Energy', 'Electrical Machines']",6,False,0,1,0,False,,,22.59
+1BY23EE005,Atharva Kulkarni,Male,EEE,2023,6.49,0,"['Renewable Energy', 'Circuit Design', 'Control Systems', 'Electrical Machines', 'MATLAB', 'Power Systems']",6,True,2,1,0,True,Schneider,5.6,72.88
+1BY23EE006,Aaditya Chatterjee,Male,EEE,2023,4.99,0,"['Electrical Machines', 'Circuit Design', 'Renewable Energy', 'PLC', 'Power Systems']",5,False,0,1,0,False,,,30.42
+1BY23EE007,Chaitra Tiwari,Female,EEE,2023,7.98,0,"['Control Systems', 'Power Systems', 'Electrical Machines', 'PLC', 'Circuit Design', 'Renewable Energy']",6,False,0,4,3,True,Schneider,11.37,71.8
+1BY23EE008,Shaurya Kapoor,Male,EEE,2023,7.74,0,"['Renewable Energy', 'PLC', 'Power Systems']",3,True,3,1,3,True,Schneider,8.86,73.97
+1BY23EE009,Chandana Menon,Female,EEE,2023,4.28,1,"['PLC', 'Power Systems', 'Renewable Energy', 'Control Systems', 'Electrical Machines', 'MATLAB']",6,False,0,3,1,False,,,40.29
+1BY23EE010,Pallavi Goyal,Female,EEE,2023,7.1,1,"['Renewable Energy', 'MATLAB', 'Control Systems', 'Electrical Machines']",4,False,0,2,3,False,,,38.0
+1BY23EE011,Meghana Kapoor,Female,EEE,2023,4.92,0,"['PLC', 'Control Systems', 'Circuit Design']",3,True,4,2,0,False,,,58.32
+1BY23EE012,Krithika Srivastava,Female,EEE,2023,7.65,0,"['Renewable Energy', 'MATLAB', 'PLC', 'Circuit Design', 'Control Systems', 'Electrical Machines']",6,True,3,1,4,True,ABB,9.68,78.78
+1BY23EE013,Suresh Deshmukh,Male,EEE,2023,7.17,0,"['Control Systems', 'Circuit Design', 'Renewable Energy']",3,True,1,4,0,True,BHEL,4.37,67.0
+1BY23EE014,Akshata Kapoor,Female,EEE,2023,5.11,0,"['Power Systems', 'Circuit Design', 'PLC', 'MATLAB', 'Renewable Energy']",5,True,4,1,0,True,Torrent Power,5.77,52.19
+1BY23EE015,Arnav Gupta,Male,EEE,2023,7.5,0,"['PLC', 'MATLAB', 'Renewable Energy', 'Circuit Design', 'Control Systems']",5,False,0,4,2,True,Siemens,4.81,70.19
+1BY23EE016,Vihaan Hegde,Male,EEE,2023,5.9,0,"['MATLAB', 'Renewable Energy', 'Electrical Machines', 'Circuit Design', 'PLC', 'Power Systems']",6,True,3,1,0,True,BHEL,4.1,62.07
+1BY23EE017,Darsh Mahajan,Male,EEE,2023,7.45,2,"['PLC', 'MATLAB']",2,False,0,4,4,False,,,37.82
+1BY23EE018,Harish Patel,Male,EEE,2023,5.39,0,"['Circuit Design', 'PLC', 'MATLAB', 'Electrical Machines', 'Control Systems', 'Renewable Energy']",6,False,0,4,0,True,Adani,10.15,68.6
+1BY23EE019,Sai Kumar,Male,EEE,2023,7.09,0,"['Circuit Design', 'PLC', 'MATLAB', 'Power Systems']",4,False,0,1,0,True,L&T,9.01,53.46
+1BY23EE020,Prasad Khanna,Male,EEE,2023,8.53,2,"['Power Systems', 'PLC']",2,False,0,4,2,False,,,37.87
+1BY23EE021,Chandana Pandey,Female,EEE,2023,5.97,1,"['PLC', 'Control Systems', 'Electrical Machines', 'MATLAB']",4,True,2,2,3,True,Schneider,9.32,62.14
+1BY23EE022,Rahul Hegde,Male,EEE,2023,5.61,0,"['MATLAB', 'Electrical Machines']",2,False,0,0,0,False,,,23.96
+1BY23EE023,Anika Hegde,Female,EEE,2023,4.61,0,"['PLC', 'Electrical Machines', 'Circuit Design', 'Power Systems']",4,True,5,1,0,False,,,53.55
+1BY23EE024,Reyansh Gupta,Male,EEE,2023,6.42,1,"['MATLAB', 'Power Systems', 'PLC', 'Electrical Machines']",4,False,0,0,0,False,,,32.48
+1BY23EE025,Megha Chatterjee,Female,EEE,2023,7.49,0,"['Circuit Design', 'Renewable Energy', 'Control Systems', 'Power Systems', 'PLC', 'MATLAB']",6,False,0,0,4,True,Adani,11.2,62.87
+1BY23EE026,Aarav Iyengar,Male,EEE,2023,6.92,0,"['Circuit Design', 'Electrical Machines', 'Power Systems']",3,True,2,2,0,True,BHEL,11.99,65.67
+1BY23EE027,Riya Pai,Female,EEE,2023,6.02,0,"['Power Systems', 'Renewable Energy', 'PLC']",3,True,5,3,0,True,Torrent Power,7.24,55.94
+1BY23EE028,Suresh Menon,Male,EEE,2023,7.48,1,"['Renewable Energy', 'Control Systems']",2,True,5,0,3,True,L&T,7.92,52.45
+1BY23EE029,Abhishek Malhotra,Male,EEE,2023,5.41,0,"['MATLAB', 'Control Systems', 'Electrical Machines', 'Renewable Energy', 'Power Systems']",5,True,2,2,0,True,Crompton,10.01,54.05
+1BY23EE030,Aarav Sen,Male,EEE,2023,7.4,0,"['Circuit Design', 'Electrical Machines', 'PLC', 'Power Systems', 'Control Systems']",5,True,5,3,0,True,NTPC,9.78,76.36
+1BY23EE031,Darsh Hegde,Male,EEE,2023,6.77,0,"['Electrical Machines', 'Circuit Design']",2,True,2,0,0,True,Siemens,6.96,57.57
+1BY23EE032,Aditya Nair,Male,EEE,2023,8.52,0,"['Circuit Design', 'Electrical Machines', 'PLC', 'Control Systems', 'MATLAB']",5,True,6,1,0,True,ABB,8.19,66.7
+1BY23EE033,Advait Bhat,Male,EEE,2023,5.5,0,"['Electrical Machines', 'PLC', 'Power Systems', 'MATLAB', 'Circuit Design', 'Renewable Energy']",6,False,0,3,0,True,Torrent Power,8.45,57.72
+1BY23EE034,Chandana Varma,Female,EEE,2023,6.94,0,"['Power Systems', 'Control Systems', 'MATLAB', 'Renewable Energy', 'PLC']",5,True,5,1,0,True,NTPC,9.08,63.39
+1BY23EE035,Darsh Nair,Male,EEE,2023,4.65,0,"['PLC', 'Control Systems', 'Power Systems', 'Electrical Machines']",4,True,6,1,0,False,,,57.13
+1BY23EE036,Myra Rao,Female,EEE,2023,7.52,0,"['Circuit Design', 'Renewable Energy', 'PLC', 'Control Systems', 'Power Systems', 'Electrical Machines']",6,True,3,4,0,True,BHEL,8.02,76.81
+1BY23EE037,Atharva Iyer,Male,EEE,2023,7.66,1,"['Renewable Energy', 'PLC']",2,True,2,1,2,True,L&T,11.27,56.77
+1BY23EE038,Anjali Bose,Female,EEE,2023,5.09,1,"['PLC', 'Power Systems', 'Control Systems', 'Circuit Design', 'Electrical Machines']",5,False,0,3,2,False,,,31.45
+1BY23EE039,Amit Patil,Male,EEE,2023,7.46,0,"['Power Systems', 'Electrical Machines', 'Control Systems', 'Renewable Energy']",4,True,2,3,3,True,Torrent Power,11.05,86.42
+1BY23EE040,Bhavana Pillai,Female,EEE,2023,6.52,0,"['PLC', 'Electrical Machines', 'Circuit Design', 'Power Systems']",4,True,6,3,0,True,Schneider,11.53,65.54
+1BY23EE041,Swati Gowda,Female,EEE,2023,5.66,0,"['Electrical Machines', 'MATLAB', 'Renewable Energy']",3,True,2,0,3,True,Schneider,4.23,63.25
+1BY23EE042,Pranav Bose,Male,EEE,2023,7.8,0,"['PLC', 'Power Systems', 'MATLAB']",3,True,2,2,3,True,BHEL,4.61,82.76
+1BY23EE043,Sachin Sharma,Male,EEE,2023,8.66,0,"['Renewable Energy', 'Electrical Machines']",2,False,0,0,4,True,ABB,5.36,53.6
+1BY23EE044,Gaurav Kumar,Male,EEE,2023,6.7,1,"['Power Systems', 'MATLAB', 'Circuit Design', 'Renewable Energy', 'PLC']",5,False,0,3,2,False,,,48.67
+1BY23EE045,Rohan Ghosh,Male,EEE,2023,6.15,1,"['PLC', 'Electrical Machines', 'Power Systems', 'MATLAB', 'Circuit Design']",5,True,2,4,1,True,Crompton,6.64,60.47
+1BY23EE046,Prateek Mishra,Male,EEE,2023,6.44,0,"['PLC', 'Renewable Energy']",2,True,1,2,2,True,Torrent Power,10.28,70.29
+1BY23EE047,Shalini Kamath,Female,EEE,2023,7.1,0,"['Power Systems', 'Control Systems', 'MATLAB', 'PLC', 'Electrical Machines']",5,False,0,3,0,True,Tata Power,8.33,58.31
+1BY23EE048,Ritvik Bose,Male,EEE,2023,9.79,0,"['Renewable Energy', 'Power Systems']",2,True,1,1,3,True,Torrent Power,5.35,83.37
+1BY23EE049,Aadhya Menon,Female,EEE,2023,5.78,0,"['MATLAB', 'Renewable Energy', 'Electrical Machines', 'Circuit Design', 'Control Systems']",5,True,6,2,0,True,L&T,9.35,53.17
+1BY23EE050,Mohan Kapoor,Male,EEE,2023,6.76,0,"['Electrical Machines', 'Power Systems', 'Control Systems', 'Renewable Energy', 'MATLAB']",5,True,5,4,0,True,NTPC,10.09,75.65
+1BY23EE051,Rohan Nair,Male,EEE,2023,7.37,0,"['Renewable Energy', 'Electrical Machines', 'MATLAB', 'Power Systems', 'Control Systems']",5,True,1,0,3,True,BHEL,6.24,77.22
+1BY23EE052,Prateek Das,Male,EEE,2023,6.97,0,"['MATLAB', 'Renewable Energy', 'PLC', 'Power Systems', 'Circuit Design', 'Electrical Machines']",6,True,3,2,2,True,Adani,7.68,79.4
+1BY23EE053,Vivaan Bansal,Male,EEE,2023,6.1,0,"['Electrical Machines', 'Control Systems', 'MATLAB']",3,True,4,4,0,True,Torrent Power,9.14,58.85
+1BY23EE054,Advait Rastogi,Male,EEE,2023,5.14,1,"['Electrical Machines', 'Power Systems', 'MATLAB', 'Renewable Energy', 'Control Systems']",5,True,3,3,2,True,ABB,4.05,51.7
+1BY23EE055,Sanjay Pai,Male,EEE,2023,5.65,1,"['Renewable Energy', 'Control Systems', 'Circuit Design', 'MATLAB']",4,True,5,2,2,False,,,48.99
+1BY23EE056,Aditya Goyal,Male,EEE,2023,6.67,0,"['Circuit Design', 'Control Systems', 'Renewable Energy', 'Electrical Machines']",4,True,5,3,0,True,Tata Power,5.06,75.74
+1BY23EE057,Ishaan Varma,Male,EEE,2023,8.4,0,"['Power Systems', 'Control Systems', 'MATLAB', 'Electrical Machines']",4,True,2,2,0,True,BHEL,9.28,63.06
+1BY23EE058,Arjun Khanna,Male,EEE,2023,8.21,0,"['Renewable Energy', 'Power Systems', 'Circuit Design', 'MATLAB', 'Electrical Machines', 'Control Systems']",6,False,0,3,0,True,Tata Power,6.77,74.46
+1BY23EE059,Atharva Rastogi,Male,EEE,2023,7.12,0,"['Power Systems', 'PLC', 'Electrical Machines', 'Circuit Design', 'Renewable Energy', 'Control Systems']",6,False,0,2,0,True,L&T,11.88,53.61
+1BY23EE060,Amit Kulkarni,Male,EEE,2023,7.44,0,"['PLC', 'Control Systems', 'Circuit Design', 'MATLAB']",4,False,0,3,1,True,Tata Power,8.81,58.53
+1BY23EE061,Varun Chatterjee,Male,EEE,2023,6.45,0,"['Power Systems', 'MATLAB']",2,False,0,1,2,False,,,33.07
+1BY23EE062,Aadhya Ghosh,Female,EEE,2023,8.39,2,"['Control Systems', 'Electrical Machines', 'Renewable Energy', 'Circuit Design', 'Power Systems', 'MATLAB']",6,True,3,4,0,False,,,51.9
+1BY23EE063,Suresh Rao,Male,EEE,2023,6.63,2,"['Control Systems', 'MATLAB']",2,True,3,0,0,False,,,10.5
+1BY23EE064,Sanjay Iyer,Male,EEE,2023,6.88,0,"['Circuit Design', 'MATLAB']",2,False,0,3,3,True,Tata Power,8.92,63.29
+1BY23EE065,Atharva Iyengar,Male,EEE,2023,5.58,0,"['Renewable Energy', 'Circuit Design']",2,False,0,4,2,False,,,47.8
+1BY23EE066,Anika Nair,Female,EEE,2023,6.37,0,"['Circuit Design', 'Control Systems', 'PLC', 'Renewable Energy', 'MATLAB']",5,True,1,4,0,True,ABB,11.22,83.76
+1BY23EE067,Aditya Rajan,Male,EEE,2023,9.2,1,"['MATLAB', 'Electrical Machines', 'Circuit Design', 'PLC']",4,False,0,2,0,False,,,47.5
+1BY23EE068,Shaurya Mishra,Male,EEE,2023,5.89,0,"['MATLAB', 'PLC']",2,True,3,1,0,True,Crompton,10.85,54.67
+1BY23EE069,Akshata Iyer,Female,EEE,2023,8.98,0,"['Power Systems', 'Circuit Design', 'PLC', 'Renewable Energy']",4,False,0,1,0,True,Crompton,10.1,52.42
+1BY23EE070,Tanvi Mishra,Female,EEE,2023,6.15,0,"['Renewable Energy', 'Circuit Design', 'Power Systems']",3,True,3,4,0,True,Torrent Power,4.94,64.8
+1BY23EE071,Abhishek Iyengar,Male,EEE,2023,5.43,0,"['Circuit Design', 'Electrical Machines', 'Control Systems', 'PLC', 'Renewable Energy']",5,True,3,4,2,True,L&T,5.24,82.21
+1BY23EE072,Myra Iyer,Female,EEE,2023,4.9,0,"['Control Systems', 'Circuit Design', 'MATLAB', 'PLC', 'Power Systems', 'Renewable Energy']",6,True,3,1,2,False,,,56.29
+1BY23EE073,Ravi Sen,Male,EEE,2023,8.88,0,"['MATLAB', 'PLC', 'Control Systems']",3,True,1,4,3,True,L&T,4.45,95.96
+1BY23EE074,Tarun Sharma,Male,EEE,2023,8.28,0,"['Power Systems', 'MATLAB']",2,True,3,3,0,True,NTPC,8.07,69.09
+1BY23EE075,Bhavana Varma,Female,EEE,2023,6.06,0,"['MATLAB', 'Electrical Machines', 'Control Systems', 'Power Systems', 'PLC', 'Renewable Energy']",6,False,0,3,0,False,,,47.41
+1BY23EE076,Chaitra Naidu,Female,EEE,2023,7.17,0,"['Electrical Machines', 'Control Systems']",2,False,0,1,2,True,NTPC,4.18,50.19
+1BY23EE077,Chaitra Joshi,Female,EEE,2023,6.69,1,"['Control Systems', 'MATLAB']",2,True,6,1,0,False,,,43.37
+1BY23EE078,Manoj Rastogi,Male,EEE,2023,9.12,0,"['Power Systems', 'PLC', 'Electrical Machines', 'Control Systems']",4,True,3,1,4,True,Siemens,7.6,75.78
+1BY23EE079,Ishaan Goyal,Male,EEE,2023,4.79,0,"['Control Systems', 'PLC', 'Renewable Energy']",3,False,0,4,2,False,,,51.4
+1BY23EE080,Suresh Choudhary,Male,EEE,2023,4.59,0,"['Power Systems', 'Electrical Machines', 'Circuit Design', 'PLC', 'Control Systems', 'Renewable Energy']",6,True,2,0,0,False,,,58.06
+1BY23EE081,Ajay Murthy,Male,EEE,2023,6.86,1,"['Electrical Machines', 'Circuit Design', 'Power Systems']",3,True,4,4,0,True,Tata Power,8.58,65.15
+1BY23EE082,Arnav Chatterjee,Male,EEE,2023,6.31,0,"['PLC', 'Circuit Design', 'MATLAB']",3,False,0,1,4,True,Tata Power,11.15,51.24
+1BY23EE083,Vidya Iyer,Female,EEE,2023,8.36,0,"['Electrical Machines', 'Control Systems', 'PLC']",3,True,5,2,1,True,Torrent Power,6.28,79.3
+1BY23EE084,Mahesh Patil,Male,EEE,2023,7.14,0,"['Power Systems', 'Renewable Energy', 'Circuit Design', 'Electrical Machines']",4,True,1,4,0,True,Adani,10.41,67.03
+1BY23EE085,Darsh Khanna,Male,EEE,2023,9.15,0,"['Control Systems', 'Circuit Design']",2,True,6,0,3,True,Tata Power,11.3,73.54
+1BY23EE086,Suresh Kamath,Male,EEE,2023,6.65,0,"['Power Systems', 'Control Systems', 'Renewable Energy']",3,True,1,0,0,False,,,44.99
+1BY23EE087,Tanvi Rastogi,Female,EEE,2023,6.15,0,"['PLC', 'Electrical Machines', 'Circuit Design', 'Control Systems']",4,True,6,2,4,True,Torrent Power,11.16,82.81
+1BY23EE088,Prateek Sharma,Male,EEE,2023,7.76,0,"['Circuit Design', 'Control Systems', 'Power Systems', 'MATLAB', 'Renewable Energy']",5,True,6,2,0,True,BHEL,6.36,76.16
+1BY23EE089,Mohan Das,Male,EEE,2023,7.49,0,"['Renewable Energy', 'Power Systems', 'Electrical Machines']",3,False,0,0,0,False,,,42.67
+1BY23EE090,Anika Das,Female,EEE,2023,8.52,0,"['Renewable Energy', 'PLC', 'MATLAB', 'Electrical Machines', 'Circuit Design']",5,False,0,2,2,True,Crompton,11.76,67.6
+1BY23EE091,Bhavana Bose,Female,EEE,2023,5.05,0,"['MATLAB', 'Renewable Energy', 'Electrical Machines', 'Control Systems']",4,False,0,4,4,True,Schneider,11.07,72.4
+1BY23EE092,Shreya Bhat,Female,EEE,2023,4.43,0,"['MATLAB', 'Electrical Machines', 'Circuit Design', 'Renewable Energy', 'Power Systems', 'PLC']",6,True,4,0,0,False,,,51.46
+1BY23EE093,Anil Hegde,Male,EEE,2023,6.9,0,"['PLC', 'Power Systems', 'MATLAB', 'Electrical Machines']",4,True,1,3,4,True,Siemens,7.85,80.01
+1BY23EE094,Vihaan Goyal,Male,EEE,2023,5.81,1,"['Renewable Energy', 'Electrical Machines', 'MATLAB']",3,True,2,3,3,True,Crompton,9.32,60.81
+1BY23EE095,Sanjay Patil,Male,EEE,2023,5.05,1,"['Renewable Energy', 'Circuit Design', 'PLC', 'MATLAB', 'Control Systems', 'Power Systems']",6,True,2,4,1,True,L&T,7.29,60.33
+1BY23EE096,Varun Deshmukh,Male,EEE,2023,8.17,0,"['PLC', 'Control Systems', 'MATLAB', 'Circuit Design', 'Electrical Machines']",5,False,0,1,0,True,NTPC,5.4,57.66
+1BY23EE097,Kabir Kamath,Male,EEE,2023,8.83,2,"['Control Systems', 'PLC', 'Electrical Machines']",3,True,2,0,2,False,,,30.83
+1BY23EE098,Atharva Bose,Male,EEE,2023,6.54,0,"['MATLAB', 'Electrical Machines', 'Control Systems']",3,False,0,2,0,True,Tata Power,11.53,50.06
+1BY23EE099,Riya Naidu,Female,EEE,2023,8.22,0,"['Renewable Energy', 'Electrical Machines']",2,True,3,2,0,True,Crompton,8.58,59.96
+1BY23EE100,Chandana Hegde,Female,EEE,2023,6.47,0,"['Renewable Energy', 'Electrical Machines', 'Power Systems']",3,False,0,3,0,True,Crompton,8.51,51.33
+1BY23ME001,Dhruv Verma,Male,MECH,2023,5.93,0,"['FEA', 'Thermodynamics', 'AutoCAD', 'CATIA', 'SolidWorks']",5,True,3,4,0,True,Ashok Leyland,4.21,70.46
+1BY23ME002,Prateek Gupta,Male,MECH,2023,6.33,0,"['Thermodynamics', 'AutoCAD']",2,True,3,4,1,True,L&T,9.54,74.37
+1BY23ME003,Krishna Kapoor,Male,MECH,2023,5.39,0,"['CATIA', 'CNC', 'Manufacturing', 'AutoCAD', 'Thermodynamics', 'SolidWorks']",6,True,2,2,0,True,Ashok Leyland,7.38,62.57
+1BY23ME004,Vikram Menon,Male,MECH,2023,7.76,1,"['CATIA', 'SolidWorks', 'FEA', 'CNC', 'Fluid Mechanics', 'Thermodynamics']",6,True,2,4,3,True,Tata Motors,11.15,74.16
+1BY23ME005,Harish Jain,Male,MECH,2023,6.47,0,"['AutoCAD', 'FEA', 'Fluid Mechanics', 'Manufacturing']",4,False,0,1,2,True,JCB,10.58,55.12
+1BY23ME006,Krishna Tiwari,Male,MECH,2023,7.99,0,"['Manufacturing', 'Fluid Mechanics', 'AutoCAD', 'Thermodynamics', 'CATIA']",5,True,5,0,0,True,Caterpillar,11.9,62.62
+1BY23ME007,Akshata Gowda,Female,MECH,2023,9.74,0,"['Manufacturing', 'CNC', 'SolidWorks']",3,True,6,4,4,True,TVS,5.61,91.65
+1BY23ME008,Arjun Chatterjee,Male,MECH,2023,6.53,1,"['Manufacturing', 'Fluid Mechanics', 'Thermodynamics', 'FEA']",4,True,2,4,0,False,,,49.09
+1BY23ME009,Ishaan Joshi,Male,MECH,2023,7.2,0,"['AutoCAD', 'Manufacturing', 'CATIA']",3,True,5,2,1,True,Toyota,7.97,71.0
+1BY23ME010,Sai Tiwari,Male,MECH,2023,8.15,0,"['AutoCAD', 'Manufacturing', 'CNC', 'FEA', 'Thermodynamics']",5,True,6,0,1,True,Honda,8.06,71.02
+1BY23ME011,Priya Malhotra,Female,MECH,2023,6.23,0,"['CNC', 'Manufacturing']",2,False,0,0,0,False,,,39.99
+1BY23ME012,Sneha Varma,Female,MECH,2023,7.01,1,"['Fluid Mechanics', 'AutoCAD', 'CATIA', 'SolidWorks']",4,False,0,3,0,False,,,33.73
+1BY23ME013,Shaurya Patil,Male,MECH,2023,7.37,0,"['Manufacturing', 'CNC', 'CATIA', 'FEA']",4,True,2,4,0,True,Mahindra,5.42,71.54
+1BY23ME014,Rajesh Gupta,Male,MECH,2023,7.54,0,"['Thermodynamics', 'AutoCAD', 'FEA', 'CNC']",4,True,1,2,0,True,Mahindra,6.57,66.57
+1BY23ME015,Ananya Naidu,Female,MECH,2023,5.14,0,"['CATIA', 'Fluid Mechanics', 'Manufacturing', 'Thermodynamics', 'AutoCAD', 'CNC']",6,True,3,2,1,True,Toyota,6.82,68.88
+1BY23ME016,Ishaan Saxena,Male,MECH,2023,8.7,0,"['CNC', 'AutoCAD', 'CATIA', 'Fluid Mechanics', 'FEA', 'Thermodynamics']",6,False,0,2,3,True,Caterpillar,11.6,80.59
+1BY23ME017,Prasad Verma,Male,MECH,2023,7.22,0,"['CNC', 'CATIA', 'Manufacturing']",3,True,5,2,0,True,Bosch,6.42,69.64
+1BY23ME018,Nisha Mittal,Female,MECH,2023,7.07,0,"['Thermodynamics', 'CNC', 'CATIA', 'AutoCAD', 'FEA']",5,True,2,1,4,True,Ashok Leyland,5.9,83.65
+1BY23ME019,Ritvik Verma,Male,MECH,2023,7.64,1,"['AutoCAD', 'SolidWorks', 'Manufacturing', 'FEA', 'Thermodynamics']",5,False,0,2,3,True,TVS,6.09,55.71
+1BY23ME020,Karthik Bhat,Male,MECH,2023,8.11,0,"['CATIA', 'Fluid Mechanics']",2,False,0,1,3,True,JCB,8.09,57.42
+1BY23ME021,Mahesh Naidu,Male,MECH,2023,7.82,0,"['Fluid Mechanics', 'CNC', 'Thermodynamics', 'SolidWorks']",4,True,2,2,2,True,Mahindra,8.04,70.73
+1BY23ME022,Vikram Sen,Male,MECH,2023,8.85,0,"['CNC', 'CATIA']",2,False,0,2,3,True,Toyota,10.87,61.71
+1BY23ME023,Nisha Chatterjee,Female,MECH,2023,8.4,0,"['SolidWorks', 'Fluid Mechanics', 'FEA']",3,True,5,3,3,True,JCB,8.35,83.29
+1BY23ME024,Chaitra Mishra,Female,MECH,2023,7.19,0,"['Fluid Mechanics', 'Thermodynamics', 'AutoCAD']",3,True,3,4,0,True,Tata Motors,9.48,80.96
+1BY23ME025,Ananya Nair,Female,MECH,2023,7.91,0,"['SolidWorks', 'CATIA']",2,True,5,3,1,True,Mahindra,8.63,63.72
+1BY23ME026,Ritvik Choudhary,Male,MECH,2023,8.01,0,"['Thermodynamics', 'CATIA', 'Manufacturing', 'Fluid Mechanics']",4,True,3,2,0,True,TVS,11.09,68.91
+1BY23ME027,Prasad Rao,Male,MECH,2023,8.05,0,"['SolidWorks', 'FEA', 'CNC']",3,True,1,4,0,True,Mahindra,11.13,81.61
+1BY23ME028,Arnav Patel,Male,MECH,2023,8.09,0,"['Fluid Mechanics', 'FEA', 'AutoCAD']",3,True,4,1,0,True,L&T,7.57,66.13
+1BY23ME029,Rajesh Naidu,Male,MECH,2023,7.56,0,"['Manufacturing', 'CNC', 'SolidWorks', 'Fluid Mechanics', 'CATIA', 'FEA']",6,False,0,4,3,True,Bosch,9.13,70.87
+1BY23ME030,Amit Iyengar,Male,MECH,2023,7.84,0,"['Manufacturing', 'SolidWorks', 'Thermodynamics', 'CATIA']",4,True,5,1,3,True,Bosch,8.52,79.76
+1BY23ME031,Vihaan Patil,Male,MECH,2023,6.31,0,"['CNC', 'Manufacturing', 'Thermodynamics', 'AutoCAD', 'CATIA']",5,True,6,3,1,True,Toyota,7.3,83.0
+1BY23ME032,Prasad Bhat,Male,MECH,2023,4.53,0,"['CNC', 'AutoCAD', 'Manufacturing', 'SolidWorks', 'Fluid Mechanics']",5,False,0,0,0,False,,,23.74
+1BY23ME033,Tarun Patel,Male,MECH,2023,5.86,0,"['SolidWorks', 'CNC', 'Thermodynamics', 'Fluid Mechanics', 'FEA', 'CATIA']",6,True,6,1,1,True,L&T,6.68,60.4
+1BY23ME034,Akshata Gowda,Female,MECH,2023,6.67,0,"['SolidWorks', 'Thermodynamics', 'Manufacturing']",3,True,2,3,0,True,Ashok Leyland,7.31,71.23
+1BY23ME035,Advait Das,Male,MECH,2023,8.5,1,"['Fluid Mechanics', 'Thermodynamics']",2,False,0,2,2,False,,,49.84
+1BY23ME036,Krishna Sharma,Male,MECH,2023,7.11,0,"['Manufacturing', 'Fluid Mechanics', 'CATIA', 'FEA', 'SolidWorks']",5,True,6,2,2,True,Caterpillar,11.08,80.1
+1BY23ME037,Ritvik Murthy,Male,MECH,2023,6.16,1,"['Manufacturing', 'Thermodynamics', 'FEA']",3,True,6,1,0,False,,,43.39
+1BY23ME038,Akash Tiwari,Male,MECH,2023,7.62,0,"['CNC', 'CATIA', 'Thermodynamics']",3,False,0,4,0,True,TVS,10.1,50.53
+1BY23ME039,Shalini Singh,Female,MECH,2023,9.12,0,"['AutoCAD', 'Thermodynamics', 'Fluid Mechanics', 'Manufacturing']",4,True,1,4,2,True,Toyota,9.4,96.55
+1BY23ME040,Deepak Krishnan,Male,MECH,2023,7.99,0,"['Fluid Mechanics', 'AutoCAD', 'CNC', 'SolidWorks']",4,True,4,0,3,True,Mahindra,5.32,65.77
+1BY23ME041,Aaditya Gowda,Male,MECH,2023,7.13,0,"['CATIA', 'Thermodynamics', 'FEA', 'Fluid Mechanics']",4,True,6,0,4,True,Mahindra,4.91,69.24
+1BY23ME042,Tarun Saxena,Male,MECH,2023,7.1,0,"['CATIA', 'SolidWorks', 'CNC', 'Thermodynamics']",4,False,0,1,0,True,TVS,5.69,51.7
+1BY23ME043,Suresh Pandey,Male,MECH,2023,7.99,1,"['CATIA', 'AutoCAD', 'FEA', 'CNC', 'Fluid Mechanics', 'Thermodynamics']",6,False,0,2,3,False,,,45.72
+1BY23ME044,Shalini Joshi,Female,MECH,2023,6.16,0,"['Manufacturing', 'CATIA']",2,True,2,4,1,True,Honda,10.47,70.58
+1BY23ME045,Saanvi Kulkarni,Female,MECH,2023,7.04,0,"['FEA', 'CNC']",2,True,2,3,3,True,TVS,11.98,72.3
+1BY23ME046,Ravi Murthy,Male,MECH,2023,5.08,0,"['Manufacturing', 'FEA', 'AutoCAD']",3,False,0,2,3,True,Honda,7.62,56.45
+1BY23ME047,Sunita Pandey,Female,MECH,2023,7.35,0,"['Fluid Mechanics', 'SolidWorks', 'Manufacturing']",3,True,4,0,0,False,,,46.12
+1BY23ME048,Rohan Rajan,Male,MECH,2023,6.53,0,"['CATIA', 'SolidWorks', 'AutoCAD', 'Manufacturing', 'FEA']",5,True,2,2,3,True,Caterpillar,11.22,72.8
+1BY23ME049,Harish Dubey,Male,MECH,2023,6.76,0,"['Thermodynamics', 'CNC']",2,True,1,4,0,True,Tata Motors,8.26,74.11
+1BY23ME050,Deepak Patel,Male,MECH,2023,6.1,0,"['AutoCAD', 'Manufacturing']",2,True,2,4,4,True,Toyota,8.18,73.9
+1BY23ME051,Gaurav Mishra,Male,MECH,2023,4.95,2,"['SolidWorks', 'Fluid Mechanics', 'CATIA', 'Thermodynamics']",4,True,3,3,0,False,,,39.94
+1BY23ME052,Rahul Bhat,Male,MECH,2023,7.73,0,"['SolidWorks', 'CATIA', 'AutoCAD', 'Fluid Mechanics', 'Thermodynamics', 'Manufacturing']",6,True,4,1,1,True,L&T,4.53,77.8
+1BY23ME053,Sunita Singh,Female,MECH,2023,7.55,3,"['Thermodynamics', 'AutoCAD', 'SolidWorks', 'Fluid Mechanics', 'CATIA']",5,False,0,4,2,False,,,27.72
+1BY23ME054,Vikram Murthy,Male,MECH,2023,8.27,0,"['Manufacturing', 'CATIA']",2,True,3,0,0,False,,,47.62
+1BY23ME055,Deepak Pillai,Male,MECH,2023,7.32,0,"['FEA', 'CNC', 'Thermodynamics', 'AutoCAD']",4,True,1,0,0,True,Toyota,4.63,59.61
+1BY23ME056,Naveen Kamath,Male,MECH,2023,6.0,0,"['Thermodynamics', 'SolidWorks', 'CATIA']",3,True,6,4,0,True,Tata Motors,11.56,66.9
+1BY23ME057,Meghana Menon,Female,MECH,2023,7.3,0,"['Manufacturing', 'FEA', 'Thermodynamics']",3,True,3,0,0,True,JCB,11.33,59.75
+1BY23ME058,Aaditya Gowda,Male,MECH,2023,8.05,0,"['AutoCAD', 'Thermodynamics', 'Fluid Mechanics', 'CATIA', 'FEA']",5,True,4,3,0,True,JCB,7.58,72.38
+1BY23ME059,Aarav Tiwari,Male,MECH,2023,7.35,1,"['FEA', 'CNC']",2,True,4,2,0,True,Tata Motors,4.96,50.5
+1BY23ME060,Navya Rao,Female,MECH,2023,8.16,0,"['SolidWorks', 'CNC', 'CATIA']",3,True,5,2,0,True,Toyota,10.56,66.58
+1BY23ME061,Ishaan Gupta,Male,MECH,2023,6.46,0,"['FEA', 'CATIA', 'Thermodynamics', 'SolidWorks', 'AutoCAD', 'Fluid Mechanics']",6,False,0,2,4,True,Toyota,4.14,60.71
+1BY23ME062,Vikram Varma,Male,MECH,2023,6.84,0,"['CATIA', 'CNC']",2,True,2,2,4,True,Tata Motors,4.24,61.62
+1BY23ME063,Mahesh Rastogi,Male,MECH,2023,8.7,1,"['SolidWorks', 'AutoCAD']",2,False,0,1,0,False,,,39.51
+1BY23ME064,Sanjay Deshmukh,Male,MECH,2023,8.99,1,"['Manufacturing', 'Thermodynamics', 'AutoCAD', 'CATIA', 'SolidWorks']",5,True,5,4,0,True,TVS,7.06,71.24
+1BY23ME065,Aditya Reddy,Male,MECH,2023,8.41,0,"['AutoCAD', 'CATIA']",2,True,4,3,0,True,JCB,4.18,67.94
+1BY23ME066,Aarohi Saxena,Female,MECH,2023,6.36,0,"['SolidWorks', 'Manufacturing', 'FEA', 'AutoCAD', 'Fluid Mechanics', 'CATIA']",6,True,2,3,3,True,Honda,11.56,84.74
+1BY23ME067,Atharva Patel,Male,MECH,2023,4.67,0,"['FEA', 'Manufacturing', 'AutoCAD', 'Fluid Mechanics']",4,False,0,3,0,False,,,40.85
+1BY23ME068,Divya Bose,Female,MECH,2023,6.84,0,"['CNC', 'Manufacturing', 'AutoCAD', 'SolidWorks', 'Fluid Mechanics', 'CATIA']",6,False,0,2,3,True,Honda,9.25,71.42
+1BY23ME069,Aaditya Bose,Male,MECH,2023,9.34,0,"['SolidWorks', 'CATIA']",2,False,0,0,3,True,JCB,10.86,52.12
+1BY23ME070,Rohan Patil,Male,MECH,2023,6.21,0,"['CATIA', 'Manufacturing', 'Thermodynamics', 'SolidWorks', 'AutoCAD']",5,False,0,3,0,True,L&T,9.67,64.46
+1BY23ME071,Reyansh Singh,Male,MECH,2023,7.08,1,"['CATIA', 'CNC', 'Thermodynamics', 'AutoCAD', 'SolidWorks']",5,True,5,3,1,True,JCB,4.89,65.98
+1BY23ME072,Rahul Deshmukh,Male,MECH,2023,7.04,1,"['Manufacturing', 'Thermodynamics', 'Fluid Mechanics', 'CNC']",4,True,5,2,0,True,Toyota,4.79,53.16
+1BY23ME073,Amit Mahajan,Male,MECH,2023,5.18,0,"['Manufacturing', 'FEA', 'CNC', 'Fluid Mechanics', 'Thermodynamics', 'SolidWorks']",6,True,3,3,4,True,Mahindra,7.32,81.49
+1BY23ME074,Prateek Kumar,Male,MECH,2023,6.18,0,"['Thermodynamics', 'Fluid Mechanics', 'Manufacturing', 'CNC', 'AutoCAD']",5,True,5,0,4,True,L&T,6.95,63.87
+1BY23ME075,Ayaan Tiwari,Male,MECH,2023,7.67,0,"['Thermodynamics', 'SolidWorks', 'Manufacturing', 'AutoCAD', 'CNC']",5,True,4,0,2,True,Tata Motors,7.48,73.75
+1BY23ME076,Gaurav Sharma,Male,MECH,2023,7.74,0,"['SolidWorks', 'CNC', 'FEA', 'AutoCAD']",4,True,3,0,2,True,Tata Motors,9.67,58.59
+1BY23ME077,Akash Singh,Male,MECH,2023,6.73,1,"['CNC', 'CATIA', 'AutoCAD', 'Manufacturing']",4,False,0,4,0,True,Toyota,5.44,51.63
+1BY23ME078,Sanjay Malhotra,Male,MECH,2023,4.87,0,"['Thermodynamics', 'CNC', 'CATIA', 'Manufacturing']",4,True,6,4,0,False,,,56.99
+1BY23ME079,Vivaan Varma,Male,MECH,2023,8.52,0,"['SolidWorks', 'Fluid Mechanics']",2,True,2,3,0,True,Tata Motors,9.77,66.83
+1BY23ME080,Anil Joshi,Male,MECH,2023,6.6,1,"['Thermodynamics', 'Fluid Mechanics', 'CATIA', 'CNC', 'AutoCAD']",5,True,6,2,0,True,Honda,9.3,53.93
+1BY23ME081,Rohan Kapoor,Male,MECH,2023,8.76,0,"['Fluid Mechanics', 'CATIA', 'CNC', 'Manufacturing']",4,True,5,4,0,True,Caterpillar,5.14,75.2
+1BY23ME082,Ravi Ghosh,Male,MECH,2023,8.29,0,"['FEA', 'Fluid Mechanics', 'CATIA']",3,True,1,1,0,True,Tata Motors,6.9,56.87
+1BY23ME083,Shalini Gowda,Female,MECH,2023,6.39,0,"['AutoCAD', 'CNC', 'Manufacturing']",3,True,4,2,1,True,Honda,4.84,52.6
+1BY23ME084,Darsh Jain,Male,MECH,2023,7.82,0,"['Thermodynamics', 'Manufacturing', 'CNC']",3,False,0,4,0,True,Tata Motors,10.42,65.69
+1BY23ME085,Ananya Rajan,Female,MECH,2023,6.98,0,"['Manufacturing', 'CNC']",2,True,4,0,2,False,,,48.81
+1BY23ME086,Manoj Sharma,Male,MECH,2023,6.74,2,"['Fluid Mechanics', 'AutoCAD']",2,True,5,0,2,False,,,17.72
+1BY23ME087,Pooja Rajan,Female,MECH,2023,8.52,0,"['CATIA', 'CNC']",2,True,4,3,3,True,Mahindra,8.69,71.74
+1BY23ME088,Neha Rastogi,Female,MECH,2023,9.06,2,"['SolidWorks', 'Manufacturing']",2,False,0,2,1,False,,,15.9
+1BY23ME089,Sahana Sen,Female,MECH,2023,7.45,1,"['FEA', 'Fluid Mechanics', 'AutoCAD', 'Thermodynamics', 'Manufacturing', 'CNC']",6,True,1,2,3,True,Ashok Leyland,11.03,68.57
+1BY23ME090,Vihaan Rao,Male,MECH,2023,6.95,0,"['CNC', 'CATIA', 'Thermodynamics', 'FEA', 'Fluid Mechanics', 'Manufacturing']",6,False,0,4,4,True,Caterpillar,4.94,82.43
+1BY23ME091,Aadhya Kamath,Female,MECH,2023,8.09,0,"['CATIA', 'CNC', 'SolidWorks', 'Fluid Mechanics', 'FEA', 'Thermodynamics']",6,True,4,0,4,True,JCB,6.0,79.38
+1BY23ME092,Karthik Rajan,Male,MECH,2023,7.34,0,"['SolidWorks', 'Manufacturing']",2,True,2,2,0,True,Bosch,7.76,51.16
+1BY23ME093,Mahesh Pillai,Male,MECH,2023,8.41,0,"['Thermodynamics', 'Manufacturing', 'Fluid Mechanics', 'SolidWorks', 'AutoCAD', 'FEA']",6,False,0,0,0,True,Mahindra,5.37,56.89
+1BY23ME094,Deepika Rao,Female,MECH,2023,7.3,0,"['CATIA', 'CNC', 'Fluid Mechanics']",3,False,0,0,3,False,,,39.16
+1BY23ME095,Chaitra Murthy,Female,MECH,2023,6.42,0,"['AutoCAD', 'CNC']",2,True,5,0,0,False,,,37.57
+1BY23ME096,Ritvik Varma,Male,MECH,2023,5.3,1,"['SolidWorks', 'CATIA', 'Fluid Mechanics']",3,False,0,4,0,False,,,26.89
+1BY23ME097,Aarohi Patel,Female,MECH,2023,7.14,1,"['CNC', 'AutoCAD', 'Manufacturing', 'CATIA']",4,True,2,1,3,False,,,47.54
+1BY23ME098,Ishita Malhotra,Female,MECH,2023,7.81,0,"['AutoCAD', 'FEA', 'CNC', 'Thermodynamics', 'SolidWorks']",5,True,2,3,3,True,L&T,10.1,79.87
+1BY23ME099,Shaurya Patel,Male,MECH,2023,7.39,1,"['CATIA', 'CNC', 'SolidWorks']",3,False,0,3,0,False,,,34.0
+1BY23ME100,Sunita Dubey,Female,MECH,2023,8.18,0,"['Fluid Mechanics', 'FEA', 'Thermodynamics']",3,True,2,0,1,True,Tata Motors,11.97,69.02
+1BY23CV001,Ritvik Singh,Male,CIVIL,2023,5.75,0,"['Surveying', 'AutoCAD', 'Revit']",3,True,6,4,0,True,NHAI,10.04,67.17
+1BY23CV002,Mahesh Rao,Male,CIVIL,2023,8.96,1,"['Surveying', 'Structural Design', 'Revit', 'Project Management', 'STAAD Pro', 'Concrete Technology']",6,False,0,3,0,True,DLF,6.91,58.92
+1BY23CV003,Chandana Chatterjee,Female,CIVIL,2023,6.42,1,"['Concrete Technology', 'STAAD Pro', 'Surveying']",3,True,2,0,0,False,,,40.77
+1BY23CV004,Tejaswini Rajan,Female,CIVIL,2023,7.14,0,"['Concrete Technology', 'Surveying', 'STAAD Pro', 'Project Management', 'Structural Design', 'AutoCAD']",6,True,3,0,1,True,Brigade,7.39,71.16
+1BY23CV005,Anika Ghosh,Female,CIVIL,2023,5.5,2,"['AutoCAD', 'Surveying', 'Concrete Technology', 'Project Management', 'Revit']",5,True,6,3,0,False,,,42.23
+1BY23CV006,Shreya Gowda,Female,CIVIL,2023,9.19,0,"['AutoCAD', 'Revit', 'Structural Design']",3,True,4,4,4,True,KPWD,7.12,97.89
+1BY23CV007,Ishaan Mishra,Male,CIVIL,2023,8.33,0,"['Revit', 'AutoCAD', 'STAAD Pro', 'Structural Design', 'Surveying', 'Concrete Technology']",6,False,0,4,0,True,Godrej Properties,9.52,80.91
+1BY23CV008,Karthik Pandey,Male,CIVIL,2023,9.7,0,"['AutoCAD', 'Surveying', 'Structural Design', 'Concrete Technology', 'STAAD Pro']",5,False,0,4,0,True,KPWD,8.63,68.73
+1BY23CV009,Manoj Iyer,Male,CIVIL,2023,6.96,0,"['Structural Design', 'Project Management', 'AutoCAD', 'Surveying', 'Concrete Technology', 'STAAD Pro']",6,True,4,0,0,True,NHAI,10.59,64.38
+1BY23CV010,Neha Kapoor,Female,CIVIL,2023,8.73,0,"['Surveying', 'Project Management', 'Concrete Technology']",3,True,4,0,0,True,Godrej Properties,5.78,52.66
+1BY23CV011,Sunil Rastogi,Male,CIVIL,2023,7.14,0,"['Surveying', 'AutoCAD']",2,True,4,1,0,False,,,48.48
+1BY23CV012,Ravi Goyal,Male,CIVIL,2023,7.57,1,"['Surveying', 'Structural Design', 'Revit', 'STAAD Pro', 'Concrete Technology']",5,True,6,3,0,True,Brigade,5.83,57.99
+1BY23CV013,Anjali Singh,Female,CIVIL,2023,7.45,0,"['Concrete Technology', 'STAAD Pro', 'AutoCAD']",3,False,0,3,4,True,Shapoorji Pallonji,11.03,60.01
+1BY23CV014,Rahul Patil,Male,CIVIL,2023,7.46,0,"['AutoCAD', 'Project Management']",2,False,0,2,1,True,Shapoorji Pallonji,4.27,51.77
+1BY23CV015,Aaditya Rajan,Male,CIVIL,2023,6.76,0,"['Concrete Technology', 'Project Management', 'Surveying', 'STAAD Pro']",4,True,4,3,0,True,Godrej Properties,10.88,65.5
+1BY23CV016,Tarun Goyal,Male,CIVIL,2023,5.93,0,"['Surveying', 'Concrete Technology', 'STAAD Pro', 'Revit', 'AutoCAD']",5,True,5,2,0,True,NHAI,4.7,69.73
+1BY23CV017,Atharva Saxena,Male,CIVIL,2023,8.5,0,"['AutoCAD', 'STAAD Pro']",2,True,3,0,1,True,KPWD,9.38,62.06
+1BY23CV018,Nikhil Dubey,Male,CIVIL,2023,8.47,0,"['Surveying', 'AutoCAD', 'Project Management', 'Structural Design']",4,True,4,1,1,True,DLF,5.23,78.82
+1BY23CV019,Arnav Jain,Male,CIVIL,2023,8.16,0,"['Structural Design', 'Concrete Technology', 'Revit']",3,True,4,1,3,True,L&T,6.0,78.17
+1BY23CV020,Rashmi Dubey,Female,CIVIL,2023,6.03,0,"['Structural Design', 'Revit']",2,True,3,2,1,True,KPWD,9.75,56.71
+1BY23CV021,Vivaan Murthy,Male,CIVIL,2023,5.51,1,"['STAAD Pro', 'Structural Design', 'Revit', 'Surveying', 'Project Management']",5,True,2,3,0,False,,,43.06
+1BY23CV022,Rajesh Nair,Male,CIVIL,2023,7.39,0,"['Revit', 'Structural Design', 'Project Management', 'Concrete Technology', 'AutoCAD']",5,False,0,1,0,False,,,41.57
+1BY23CV023,Anjali Ghosh,Female,CIVIL,2023,6.56,0,"['Structural Design', 'Surveying', 'Concrete Technology']",3,False,0,0,2,False,,,49.76
+1BY23CV024,Neha Iyer,Female,CIVIL,2023,5.97,1,"['Revit', 'Surveying']",2,True,5,0,1,False,,,35.13
+1BY23CV025,Lakshmi Das,Female,CIVIL,2023,6.02,0,"['Structural Design', 'Concrete Technology', 'Project Management', 'STAAD Pro']",4,False,0,0,0,False,,,36.86
+1BY23CV026,Prateek Choudhary,Male,CIVIL,2023,5.85,0,"['STAAD Pro', 'Concrete Technology', 'Structural Design', 'Surveying', 'Project Management']",5,True,1,2,0,True,KPWD,11.25,68.19
+1BY23CV027,Pooja Sharma,Female,CIVIL,2023,7.12,0,"['Concrete Technology', 'Structural Design', 'Surveying']",3,False,0,4,0,True,Prestige,10.48,67.4
+1BY23CV028,Sunita Chatterjee,Female,CIVIL,2023,7.47,0,"['Surveying', 'AutoCAD']",2,False,0,3,1,True,DLF,10.3,50.44
+1BY23CV029,Aparna Gowda,Female,CIVIL,2023,6.95,0,"['Structural Design', 'Project Management', 'Concrete Technology', 'AutoCAD', 'Revit']",5,True,3,0,1,True,Shapoorji Pallonji,10.89,55.99
+1BY23CV030,Manoj Naidu,Male,CIVIL,2023,8.8,0,"['Structural Design', 'STAAD Pro', 'Revit', 'Concrete Technology', 'Project Management']",5,True,3,3,0,True,NHAI,8.99,82.08
+1BY23CV031,Anika Patil,Female,CIVIL,2023,6.67,0,"['Structural Design', 'AutoCAD', 'Project Management', 'Concrete Technology', 'Revit']",5,False,0,3,0,True,Prestige,4.86,55.04
+1BY23CV032,Shaurya Chatterjee,Male,CIVIL,2023,7.12,0,"['Concrete Technology', 'STAAD Pro', 'Project Management', 'Surveying', 'AutoCAD', 'Structural Design']",6,True,4,3,4,True,Godrej Properties,4.81,87.33
+1BY23CV033,Naveen Bhat,Male,CIVIL,2023,6.34,0,"['Project Management', 'AutoCAD', 'STAAD Pro', 'Revit', 'Concrete Technology']",5,True,2,0,0,True,KPWD,8.61,52.43
+1BY23CV034,Gaurav Iyengar,Male,CIVIL,2023,7.83,0,"['STAAD Pro', 'Revit', 'Surveying', 'Project Management', 'Concrete Technology']",5,True,4,3,2,True,DLF,11.35,88.02
+1BY23CV035,Tanvi Rajan,Female,CIVIL,2023,8.69,0,"['Surveying', 'Concrete Technology', 'Structural Design', 'AutoCAD', 'Project Management', 'Revit']",6,True,4,3,4,True,Sobha,6.52,103.49
+1BY23CV036,Atharva Iyer,Male,CIVIL,2023,6.74,0,"['STAAD Pro', 'Surveying', 'Revit', 'AutoCAD', 'Project Management']",5,True,6,2,3,True,L&T,5.64,77.82
+1BY23CV037,Kabir Patel,Male,CIVIL,2023,8.67,0,"['AutoCAD', 'Structural Design']",2,False,0,4,0,True,DLF,8.59,57.34
+1BY23CV038,Ajay Goyal,Male,CIVIL,2023,5.48,0,"['Concrete Technology', 'Revit', 'Surveying']",3,True,1,4,3,True,NHAI,5.21,68.68
+1BY23CV039,Vivaan Patel,Male,CIVIL,2023,6.08,0,"['STAAD Pro', 'Concrete Technology']",2,True,4,0,0,True,Prestige,11.26,53.48
+1BY23CV040,Aarohi Bose,Female,CIVIL,2023,7.41,2,"['Concrete Technology', 'STAAD Pro', 'Project Management', 'Revit', 'Surveying', 'Structural Design']",6,False,0,2,2,False,,,41.48
+1BY23CV041,Advait Kapoor,Male,CIVIL,2023,8.7,0,"['STAAD Pro', 'Project Management', 'Structural Design', 'Concrete Technology', 'Revit', 'Surveying']",6,False,0,3,4,True,Shapoorji Pallonji,11.86,71.31
+1BY23CV042,Atharva Patel,Male,CIVIL,2023,8.97,0,"['Project Management', 'Structural Design']",2,True,4,4,0,True,KPWD,4.38,80.93
+1BY23CV043,Deepak Patil,Male,CIVIL,2023,9.05,0,"['Structural Design', 'Surveying', 'Revit', 'AutoCAD']",4,False,0,3,4,True,KPWD,7.56,70.44
+1BY23CV044,Sanjay Deshmukh,Male,CIVIL,2023,7.58,0,"['Surveying', 'AutoCAD', 'STAAD Pro', 'Revit', 'Concrete Technology', 'Project Management']",6,True,3,4,4,True,Prestige,11.22,93.53
+1BY23CV045,Suresh Patel,Male,CIVIL,2023,8.08,0,"['AutoCAD', 'Revit', 'Surveying', 'STAAD Pro', 'Structural Design', 'Concrete Technology']",6,True,6,3,1,True,Shapoorji Pallonji,7.41,85.71
+1BY23CV046,Anil Goyal,Male,CIVIL,2023,8.14,0,"['Surveying', 'STAAD Pro', 'AutoCAD', 'Structural Design', 'Project Management']",5,True,6,1,2,True,DLF,7.66,68.29
+1BY23CV047,Meghana Pai,Female,CIVIL,2023,7.91,0,"['Surveying', 'Revit', 'Structural Design', 'AutoCAD', 'Project Management']",5,True,2,1,0,True,DLF,6.72,63.54
+1BY23CV048,Deepika Shetty,Female,CIVIL,2023,7.02,0,"['Revit', 'Structural Design', 'STAAD Pro']",3,True,5,0,2,True,Shapoorji Pallonji,10.14,54.06
+1BY23CV049,Sachin Krishnan,Male,CIVIL,2023,7.85,1,"['Structural Design', 'Revit', 'AutoCAD', 'STAAD Pro']",4,False,0,3,0,False,,,45.1
+1BY23CV050,Ramesh Pandey,Male,CIVIL,2023,4.95,1,"['Structural Design', 'STAAD Pro', 'Concrete Technology', 'Surveying']",4,True,4,4,4,False,,,59.24
+1BY23CV051,Ramesh Tiwari,Male,CIVIL,2023,8.55,0,"['Concrete Technology', 'Project Management']",2,True,4,2,0,True,KPWD,6.82,60.55
+1BY23CV052,Chandana Deshmukh,Female,CIVIL,2023,6.83,0,"['Surveying', 'Structural Design']",2,False,0,4,0,True,NHAI,9.66,51.25
+1BY23CV053,Meghana Gupta,Female,CIVIL,2023,7.21,0,"['Structural Design', 'STAAD Pro', 'Concrete Technology', 'AutoCAD', 'Project Management', 'Revit']",6,False,0,0,3,True,KPWD,7.87,56.11
+1BY23CV054,Varun Kapoor,Male,CIVIL,2023,5.57,2,"['Structural Design', 'STAAD Pro']",2,True,3,4,0,False,,,28.76
+1BY23CV055,Ramesh Kulkarni,Male,CIVIL,2023,8.59,0,"['Project Management', 'Concrete Technology', 'Revit', 'AutoCAD', 'Surveying', 'Structural Design']",6,True,1,3,2,True,KPWD,11.19,82.17
+1BY23CV056,Rashmi Dubey,Female,CIVIL,2023,4.7,1,"['STAAD Pro', 'Structural Design', 'AutoCAD', 'Concrete Technology', 'Surveying']",5,True,5,0,4,False,,,52.05
+1BY23CV057,Gaurav Hegde,Male,CIVIL,2023,6.08,0,"['Revit', 'AutoCAD', 'Structural Design']",3,True,4,2,0,True,Prestige,7.07,64.27
+1BY23CV058,Ganesh Dubey,Male,CIVIL,2023,6.61,0,"['Structural Design', 'Surveying']",2,True,3,0,3,True,Godrej Properties,4.87,52.37
+1BY23CV059,Aarav Saxena,Male,CIVIL,2023,8.82,0,"['Revit', 'AutoCAD', 'STAAD Pro', 'Project Management']",4,False,0,3,0,True,KPWD,6.04,60.25
+1BY23CV060,Sunita Tiwari,Female,CIVIL,2023,5.69,0,"['AutoCAD', 'Concrete Technology', 'Project Management']",3,False,0,2,1,False,,,46.31
+1BY23CV061,Aaditya Goyal,Male,CIVIL,2023,6.39,0,"['Concrete Technology', 'Surveying']",2,True,2,4,1,True,NHAI,8.15,70.57
+1BY23CV062,Megha Kulkarni,Female,CIVIL,2023,7.9,0,"['STAAD Pro', 'Project Management']",2,False,0,1,4,False,,,45.2
+1BY23CV063,Ritvik Jain,Male,CIVIL,2023,8.86,0,"['Revit', 'STAAD Pro', 'Surveying', 'Concrete Technology']",4,False,0,4,0,True,KPWD,8.06,66.96
+1BY23CV064,Saanvi Malhotra,Female,CIVIL,2023,7.58,0,"['STAAD Pro', 'Concrete Technology', 'AutoCAD', 'Revit', 'Surveying']",5,False,0,0,0,False,,,38.75
+1BY23CV065,Aparna Iyer,Female,CIVIL,2023,7.02,0,"['Project Management', 'Structural Design']",2,False,0,4,0,True,Brigade,4.6,62.46
+1BY23CV066,Sai Hegde,Male,CIVIL,2023,7.27,0,"['AutoCAD', 'Concrete Technology', 'Structural Design', 'Revit', 'STAAD Pro', 'Surveying']",6,False,0,3,0,True,Prestige,10.28,61.19
+1BY23CV067,Vivaan Naidu,Male,CIVIL,2023,4.92,0,"['STAAD Pro', 'Structural Design', 'Concrete Technology', 'Surveying', 'AutoCAD']",5,False,0,0,2,False,,,38.72
+1BY23CV068,Ishaan Rao,Male,CIVIL,2023,5.54,0,"['Structural Design', 'STAAD Pro', 'Revit', 'Concrete Technology']",4,True,6,1,0,True,Godrej Properties,8.91,59.89
+1BY23CV069,Neha Agarwal,Female,CIVIL,2023,6.57,0,"['Revit', 'AutoCAD', 'Structural Design', 'Surveying', 'Concrete Technology']",5,False,0,2,0,True,Prestige,5.16,52.53
+1BY23CV070,Tanvi Bhat,Female,CIVIL,2023,5.63,2,"['Project Management', 'STAAD Pro']",2,False,0,2,0,False,,,15.92
+1BY23CV071,Aparna Naidu,Female,CIVIL,2023,6.27,3,"['Surveying', 'STAAD Pro', 'AutoCAD', 'Project Management']",4,True,1,1,0,False,,,9.38
+1BY23CV072,Ayaan Singh,Male,CIVIL,2023,6.64,0,"['Revit', 'Project Management', 'AutoCAD']",3,False,0,1,2,True,NHAI,7.56,51.88
+1BY23CV073,Prateek Srivastava,Male,CIVIL,2023,9.19,0,"['STAAD Pro', 'Project Management', 'Revit', 'Concrete Technology', 'Surveying', 'AutoCAD']",6,True,5,3,0,True,Prestige,9.76,80.73
+1BY23CV074,Amit Menon,Male,CIVIL,2023,7.43,0,"['Project Management', 'Surveying', 'STAAD Pro', 'Structural Design', 'Concrete Technology']",5,False,0,2,0,True,Godrej Properties,10.37,56.11
+1BY23CV075,Naveen Ghosh,Male,CIVIL,2023,5.29,0,"['Surveying', 'Project Management', 'STAAD Pro']",3,True,5,2,0,False,,,49.12
+1BY23CV076,Pranav Goyal,Male,CIVIL,2023,6.54,0,"['STAAD Pro', 'Concrete Technology', 'Revit', 'Surveying', 'Structural Design', 'AutoCAD']",6,True,3,0,4,True,DLF,5.53,63.81
+1BY23CV077,Darsh Ghosh,Male,CIVIL,2023,7.31,0,"['Structural Design', 'Project Management', 'AutoCAD', 'Surveying', 'Revit', 'Concrete Technology']",6,True,4,1,1,True,DLF,8.78,76.82
+1BY23CV078,Meghana Varma,Female,CIVIL,2023,7.6,1,"['Structural Design', 'Project Management', 'AutoCAD', 'Concrete Technology']",4,False,0,4,0,False,,,47.01
+1BY23CV079,Dhruv Sharma,Male,CIVIL,2023,7.42,0,"['Revit', 'Concrete Technology']",2,True,3,1,2,True,L&T,9.41,68.36
+1BY23CV080,Pari Reddy,Female,CIVIL,2023,6.67,0,"['Project Management', 'STAAD Pro']",2,True,3,4,4,True,Godrej Properties,7.81,87.29
+1BY23CV081,Atharva Hegde,Male,CIVIL,2023,5.54,2,"['Structural Design', 'Concrete Technology', 'AutoCAD', 'STAAD Pro', 'Project Management', 'Surveying']",6,False,0,2,0,False,,,21.04
+1BY23CV082,Akash Iyengar,Male,CIVIL,2023,6.27,0,"['Structural Design', 'Concrete Technology', 'Revit', 'AutoCAD']",4,True,4,4,0,True,KPWD,6.73,76.29
+1BY23CV083,Vidya Choudhary,Female,CIVIL,2023,8.58,0,"['Structural Design', 'AutoCAD', 'Surveying', 'STAAD Pro']",4,False,0,4,1,True,Brigade,8.96,62.43
+1BY23CV084,Anil Verma,Male,CIVIL,2023,7.02,0,"['Project Management', 'Surveying', 'STAAD Pro', 'AutoCAD', 'Revit']",5,True,1,2,2,True,NHAI,11.86,81.67
+1BY23CV085,Tarun Singh,Male,CIVIL,2023,7.99,0,"['Structural Design', 'Concrete Technology', 'AutoCAD', 'Surveying', 'STAAD Pro', 'Revit']",6,True,1,3,0,True,Brigade,4.21,75.82
+1BY23CV086,Ayaan Dubey,Male,CIVIL,2023,6.62,0,"['AutoCAD', 'Structural Design', 'Surveying', 'Concrete Technology', 'Revit', 'Project Management']",6,True,2,4,2,True,L&T,6.02,81.9
+1BY23CV087,Aarav Bose,Male,CIVIL,2023,6.04,0,"['Revit', 'AutoCAD', 'STAAD Pro']",3,True,4,4,0,True,DLF,4.56,65.52
+1BY23CV088,Vivaan Kumar,Male,CIVIL,2023,6.21,0,"['STAAD Pro', 'AutoCAD']",2,False,0,0,4,False,,,34.07
+1BY23CV089,Vihaan Tiwari,Male,CIVIL,2023,5.01,0,"['Project Management', 'Concrete Technology']",2,True,2,2,0,False,,,41.07
+1BY23CV090,Ajay Pillai,Male,CIVIL,2023,5.92,1,"['Revit', 'Surveying', 'STAAD Pro']",3,True,6,2,3,False,,,41.69
+1BY23CV091,Nikhil Das,Male,CIVIL,2023,9.21,0,"['STAAD Pro', 'Structural Design', 'Project Management', 'AutoCAD', 'Concrete Technology']",5,True,3,2,3,True,L&T,8.46,78.96
+1BY23CV092,Lakshmi Pai,Female,CIVIL,2023,5.38,1,"['Structural Design', 'Concrete Technology', 'Revit', 'Surveying', 'Project Management', 'AutoCAD']",6,True,6,3,0,True,Godrej Properties,8.08,62.95
+1BY23CV093,Rajesh Goyal,Male,CIVIL,2023,7.87,0,"['Revit', 'Concrete Technology']",2,False,0,0,3,True,Brigade,7.06,50.59
+1BY23CV094,Aditya Ghosh,Male,CIVIL,2023,7.84,0,"['Structural Design', 'Concrete Technology', 'STAAD Pro']",3,True,6,3,2,True,Brigade,8.48,85.91
+1BY23CV095,Diya Das,Female,CIVIL,2023,7.8,0,"['Structural Design', 'Concrete Technology', 'STAAD Pro', 'AutoCAD', 'Project Management']",5,True,6,2,0,True,NHAI,5.54,78.35
+1BY23CV096,Ganesh Pandey,Male,CIVIL,2023,7.14,0,"['AutoCAD', 'Revit', 'STAAD Pro', 'Surveying', 'Structural Design', 'Concrete Technology']",6,False,0,2,1,True,Sobha,4.94,54.73
+1BY23CV097,Akash Krishnan,Male,CIVIL,2023,9.56,0,"['Structural Design', 'Concrete Technology', 'Surveying', 'STAAD Pro', 'AutoCAD', 'Project Management']",6,False,0,1,3,True,Prestige,5.2,74.63
+1BY23CV098,Vihaan Iyer,Male,CIVIL,2023,8.6,1,"['Concrete Technology', 'Structural Design', 'AutoCAD']",3,True,3,3,0,True,Shapoorji Pallonji,10.2,50.37
+1BY23CV099,Venkat Pillai,Male,CIVIL,2023,8.14,0,"['Structural Design', 'STAAD Pro', 'Revit', 'Project Management', 'Surveying']",5,False,0,2,1,True,NHAI,7.26,58.53
+1BY23CV100,Sneha Goyal,Female,CIVIL,2023,4.39,0,"['Concrete Technology', 'STAAD Pro']",2,True,1,4,0,False,,,53.89
+1BY23AI001,Deepak Patel,Male,AIML,2023,7.14,3,"['Deep Learning', 'Data Science', 'Machine Learning', 'TensorFlow']",4,True,1,2,2,False,,,20.31
+1BY23AI002,Rahul Gowda,Male,AIML,2023,5.06,1,"['Data Science', 'SQL', 'Python', 'Machine Learning']",4,False,0,1,2,False,,,38.1
+1BY23AI003,Ganesh Murthy,Male,AIML,2023,5.42,0,"['NLP', 'SQL', 'Statistics', 'Data Science', 'Deep Learning']",5,True,5,2,4,True,Fractal Analytics,10.17,73.34
+1BY23AI004,Ajay Tiwari,Male,AIML,2023,7.73,0,"['Deep Learning', 'TensorFlow', 'Machine Learning', 'NLP', 'SQL']",5,True,6,2,0,True,Tiger Analytics,4.01,79.89
+1BY23AI005,Pooja Bose,Female,AIML,2023,6.9,0,"['Statistics', 'Data Science']",2,False,0,4,0,False,,,46.57
+1BY23AI006,Pranav Patel,Male,AIML,2023,5.64,0,"['Deep Learning', 'Statistics', 'Python']",3,True,4,2,0,True,Tiger Analytics,9.09,63.15
+1BY23AI007,Advait Khanna,Male,AIML,2023,8.54,1,"['Data Science', 'NLP']",2,True,3,1,0,False,,,44.83
+1BY23AI008,Akash Kamath,Male,AIML,2023,5.76,2,"['Python', 'Deep Learning', 'Machine Learning', 'Statistics', 'Data Science']",5,False,0,3,3,False,,,27.86
+1BY23AI009,Krithika Reddy,Female,AIML,2023,5.8,1,"['Statistics', 'SQL', 'Machine Learning', 'TensorFlow']",4,True,4,4,4,True,Fractal Analytics,9.97,67.66
+1BY23AI010,Mahesh Rajan,Male,AIML,2023,8.75,0,"['Machine Learning', 'TensorFlow', 'Statistics', 'SQL', 'Deep Learning']",5,True,2,4,4,True,Microsoft,36.65,93.91
+1BY23AI011,Nikhil Goyal,Male,AIML,2023,5.8,0,"['NLP', 'Machine Learning', 'Data Science']",3,True,5,0,3,True,Google,40.31,50.25
+1BY23AI012,Ayaan Kapoor,Male,AIML,2023,6.16,0,"['Machine Learning', 'Deep Learning']",2,True,3,0,2,True,Fractal Analytics,9.14,60.09
+1BY23AI013,Tejaswini Gupta,Female,AIML,2023,7.27,0,"['TensorFlow', 'Deep Learning']",2,True,3,0,3,True,Tiger Analytics,6.63,56.57
+1BY23AI014,Venkat Naidu,Male,AIML,2023,7.38,1,"['Python', 'SQL', 'Statistics', 'Machine Learning', 'Deep Learning']",5,True,3,3,1,True,Fractal Analytics,8.77,57.15
+1BY23AI015,Navya Chatterjee,Female,AIML,2023,9.17,0,"['TensorFlow', 'Data Science', 'NLP', 'Deep Learning']",4,True,1,0,3,True,Amazon,15.47,71.36
+1BY23AI016,Aparna Pandey,Female,AIML,2023,5.49,0,"['TensorFlow', 'Statistics', 'NLP', 'Python', 'Data Science']",5,True,1,3,0,True,Latent View,6.52,58.27
+1BY23AI017,Pranav Mahajan,Male,AIML,2023,6.35,0,"['Python', 'SQL', 'Machine Learning']",3,True,4,0,3,True,TCS,5.83,62.46
+1BY23AI018,Aarav Chatterjee,Male,AIML,2023,6.12,1,"['Python', 'NLP', 'TensorFlow']",3,True,1,2,0,False,,,40.97
+1BY23AI019,Chaitra Naidu,Female,AIML,2023,8.14,0,"['Deep Learning', 'SQL', 'Python', 'Data Science']",4,False,0,0,2,False,,,43.18
+1BY23AI020,Krithika Saxena,Female,AIML,2023,4.93,2,"['NLP', 'TensorFlow', 'Deep Learning', 'Data Science']",4,True,2,2,0,False,,,19.12
+1BY23AI021,Amit Iyengar,Male,AIML,2023,5.26,0,"['TensorFlow', 'Data Science', 'Python', 'SQL', 'Statistics', 'Machine Learning']",6,True,6,0,0,True,Latent View,6.83,58.12
+1BY23AI022,Pranav Saxena,Male,AIML,2023,7.79,0,"['SQL', 'Data Science', 'Machine Learning', 'Deep Learning', 'TensorFlow', 'Python']",6,True,4,3,3,True,Mu Sigma,9.43,94.78
+1BY23AI023,Neha Saxena,Female,AIML,2023,6.46,0,"['Statistics', 'Data Science', 'Machine Learning', 'NLP', 'Deep Learning']",5,True,1,4,1,True,Wipro,6.01,88.4
+1BY23AI024,Chaitra Nair,Female,AIML,2023,8.83,0,"['Python', 'Deep Learning']",2,True,4,0,3,True,TCS,5.49,68.81
+1BY23AI025,Ishita Sharma,Female,AIML,2023,7.79,0,"['Data Science', 'Statistics', 'Machine Learning', 'NLP', 'Deep Learning']",5,False,0,4,0,True,Fractal Analytics,9.06,58.53
+1BY23AI026,Ayaan Choudhary,Male,AIML,2023,7.65,0,"['Data Science', 'NLP', 'TensorFlow', 'Machine Learning']",4,False,0,3,0,False,,,49.33
+1BY23AI027,Karthik Nair,Male,AIML,2023,7.41,1,"['Deep Learning', 'Python']",2,True,3,0,0,False,,,43.37
+1BY23AI028,Mohan Rastogi,Male,AIML,2023,6.17,1,"['Data Science', 'SQL', 'Machine Learning', 'TensorFlow', 'Statistics']",5,True,4,2,1,False,,,46.09
+1BY23AI029,Aparna Tiwari,Female,AIML,2023,5.37,1,"['Deep Learning', 'SQL', 'NLP']",3,True,6,0,0,False,,,39.1
+1BY23AI030,Karthik Pandey,Male,AIML,2023,7.27,0,"['Deep Learning', 'NLP', 'TensorFlow', 'Data Science', 'Statistics']",5,False,0,3,2,True,Microsoft,33.79,65.89
+1BY23AI031,Atharva Patel,Male,AIML,2023,6.2,0,"['Python', 'NLP', 'Machine Learning', 'TensorFlow', 'SQL']",5,True,5,3,3,True,Google,27.59,87.54
+1BY23AI032,Suresh Srivastava,Male,AIML,2023,8.17,0,"['Machine Learning', 'TensorFlow', 'Statistics', 'Data Science']",4,True,1,4,1,True,Tiger Analytics,10.84,82.56
+1BY23AI033,Rahul Choudhary,Male,AIML,2023,4.94,0,"['Machine Learning', 'Python', 'Statistics', 'NLP', 'Deep Learning', 'SQL']",6,False,0,2,0,False,,,49.37
+1BY23AI034,Darsh Iyer,Male,AIML,2023,7.11,1,"['NLP', 'Deep Learning', 'Python', 'Statistics', 'SQL']",5,False,0,2,0,False,,,37.61
+1BY23AI035,Ravi Iyer,Male,AIML,2023,6.9,1,"['Deep Learning', 'Statistics', 'NLP', 'SQL', 'TensorFlow']",5,True,6,3,0,True,TCS,3.84,63.4
+1BY23AI036,Rahul Agarwal,Male,AIML,2023,7.64,0,"['SQL', 'Machine Learning', 'Statistics', 'Python', 'Data Science', 'NLP']",6,False,0,1,1,True,Amazon,31.65,50.09
+1BY23AI037,Aditya Verma,Male,AIML,2023,5.17,0,"['Python', 'Statistics', 'Data Science', 'SQL', 'TensorFlow', 'Deep Learning']",6,True,3,3,4,True,Wipro,6.08,84.84
+1BY23AI038,Ramesh Hegde,Male,AIML,2023,5.51,0,"['NLP', 'Statistics', 'TensorFlow', 'Deep Learning', 'Python', 'SQL']",6,False,0,1,0,False,,,48.15
+1BY23AI039,Sanjay Shetty,Male,AIML,2023,7.05,0,"['TensorFlow', 'Python', 'Deep Learning', 'Statistics', 'NLP', 'Data Science']",6,True,1,1,0,True,Latent View,9.05,57.68
+1BY23AI040,Prasad Rajan,Male,AIML,2023,6.25,1,"['Deep Learning', 'NLP', 'SQL', 'TensorFlow']",4,True,4,1,0,False,,,33.28
+1BY23AI041,Aparna Pai,Female,AIML,2023,6.1,1,"['Statistics', 'TensorFlow', 'Machine Learning', 'Deep Learning', 'Python', 'SQL']",6,False,0,3,0,False,,,46.87
+1BY23AI042,Riya Srivastava,Female,AIML,2023,7.84,0,"['Python', 'TensorFlow', 'Statistics']",3,True,2,3,4,True,Latent View,4.04,77.94
+1BY23AI043,Gaurav Singh,Male,AIML,2023,7.1,0,"['Data Science', 'TensorFlow', 'Python', 'NLP']",4,False,0,3,1,True,Mu Sigma,9.35,50.65
+1BY23AI044,Anjali Pai,Female,AIML,2023,8.16,0,"['Python', 'Deep Learning', 'Data Science', 'SQL', 'NLP', 'Statistics']",6,False,0,3,4,True,TCS,4.56,76.19
+1BY23AI045,Swati Hegde,Female,AIML,2023,9.52,0,"['TensorFlow', 'Statistics', 'NLP', 'Python', 'Deep Learning', 'SQL']",6,False,0,1,0,True,Wipro,3.76,53.36
+1BY23AI046,Meghana Rastogi,Female,AIML,2023,5.7,2,"['Statistics', 'Data Science', 'Deep Learning', 'SQL', 'TensorFlow', 'Machine Learning']",6,False,0,2,0,False,,,24.44
+1BY23AI047,Kavya Verma,Female,AIML,2023,6.98,0,"['NLP', 'Deep Learning', 'Statistics', 'Python', 'Machine Learning']",5,False,0,2,1,True,Wipro,4.19,56.24
+1BY23AI048,Kabir Krishnan,Male,AIML,2023,7.88,0,"['Deep Learning', 'Data Science', 'Python', 'Machine Learning']",4,False,0,4,0,True,TCS,3.87,64.23
+1BY23AI049,Vivaan Gupta,Male,AIML,2023,4.38,0,"['Deep Learning', 'SQL', 'NLP', 'Python', 'Data Science']",5,True,4,1,0,False,,,61.49
+1BY23AI050,Sahana Verma,Female,AIML,2023,5.18,0,"['NLP', 'SQL']",2,True,2,1,4,True,Latent View,9.93,64.93
+1BY23AI051,Darsh Menon,Male,AIML,2023,5.54,1,"['Data Science', 'SQL', 'Machine Learning', 'Python']",4,False,0,0,0,False,,,20.38
+1BY23AI052,Arnav Saxena,Male,AIML,2023,5.88,0,"['Machine Learning', 'Python']",2,False,0,1,4,True,Amazon,18.51,50.52
+1BY23AI053,Venkat Patel,Male,AIML,2023,6.62,2,"['TensorFlow', 'Data Science', 'NLP', 'Python']",4,True,5,3,0,False,,,33.68
+1BY23AI054,Harish Shetty,Male,AIML,2023,7.17,0,"['Deep Learning', 'Data Science', 'NLP']",3,False,0,3,3,True,Mu Sigma,7.67,56.29
+1BY23AI055,Advait Iyer,Male,AIML,2023,6.91,0,"['Statistics', 'TensorFlow', 'Machine Learning']",3,False,0,0,0,False,,,28.85
+1BY23AI056,Anika Deshmukh,Female,AIML,2023,8.3,0,"['SQL', 'NLP']",2,False,0,2,0,False,,,45.46
+1BY23AI057,Nikhil Nair,Male,AIML,2023,9.37,0,"['SQL', 'TensorFlow']",2,True,4,0,1,True,Microsoft,19.46,56.4
+1BY23AI058,Navya Pai,Female,AIML,2023,8.16,0,"['NLP', 'Machine Learning', 'Statistics', 'TensorFlow', 'Python']",5,False,0,3,3,True,Tiger Analytics,10.18,71.89
+1BY23AI059,Anil Verma,Male,AIML,2023,8.98,0,"['Deep Learning', 'Python']",2,False,0,2,0,True,Latent View,4.51,57.02
+1BY23AI060,Shalini Bansal,Female,AIML,2023,6.24,0,"['TensorFlow', 'Data Science', 'Statistics']",3,False,0,2,0,False,,,49.34
+1BY23AI061,Akash Deshmukh,Male,AIML,2023,7.69,0,"['Data Science', 'Statistics']",2,True,2,3,0,True,Microsoft,25.29,60.42
+1BY23AI062,Ritvik Joshi,Male,AIML,2023,6.19,0,"['TensorFlow', 'Statistics', 'Deep Learning', 'NLP', 'Machine Learning']",5,True,6,2,3,True,Microsoft,41.58,71.36
+1BY23AI063,Aparna Kumar,Female,AIML,2023,7.0,0,"['Python', 'Machine Learning', 'TensorFlow', 'Data Science']",4,True,1,3,0,True,Tiger Analytics,11.42,72.43
+1BY23AI064,Ravi Sen,Male,AIML,2023,7.89,0,"['SQL', 'Statistics', 'TensorFlow', 'Deep Learning', 'Data Science', 'Python']",6,False,0,0,3,True,Infosys,6.54,55.67
+1BY23AI065,Sai Tiwari,Male,AIML,2023,5.42,1,"['NLP', 'SQL']",2,True,1,3,1,False,,,36.41
+1BY23AI066,Anil Mahajan,Male,AIML,2023,8.33,0,"['Data Science', 'Statistics', 'Deep Learning', 'SQL', 'Python', 'Machine Learning']",6,False,0,0,2,True,Mu Sigma,11.23,58.0
+1BY23AI067,Tanvi Reddy,Female,AIML,2023,8.77,0,"['SQL', 'NLP', 'Statistics', 'Machine Learning', 'Python', 'TensorFlow']",6,True,5,1,0,True,Microsoft,39.94,75.21
+1BY23AI068,Swati Bose,Female,AIML,2023,6.14,1,"['Statistics', 'Deep Learning', 'TensorFlow', 'Machine Learning', 'SQL']",5,True,3,4,4,True,Infosys,5.71,72.19
+1BY23AI069,Tejaswini Pandey,Female,AIML,2023,5.64,0,"['Statistics', 'SQL', 'TensorFlow', 'Python']",4,True,1,2,0,False,,,49.89
+1BY23AI070,Rahul Kamath,Male,AIML,2023,8.22,0,"['Machine Learning', 'Python', 'TensorFlow', 'Statistics']",4,True,4,0,4,True,Fractal Analytics,10.72,75.06
+1BY23AI071,Navya Krishnan,Female,AIML,2023,5.82,0,"['Data Science', 'Deep Learning', 'Python', 'NLP']",4,True,3,3,3,True,Amazon,42.84,65.07
+1BY23AI072,Varun Rajan,Male,AIML,2023,6.63,0,"['Deep Learning', 'NLP', 'Data Science', 'Machine Learning']",4,False,0,4,0,True,TCS,6.06,50.02
+1BY23AI073,Vidya Rao,Female,AIML,2023,5.93,0,"['Python', 'NLP', 'Machine Learning', 'Deep Learning', 'TensorFlow']",5,False,0,4,0,True,Tiger Analytics,8.8,63.75
+1BY23AI074,Ravi Agarwal,Male,AIML,2023,9.11,0,"['Data Science', 'SQL', 'Deep Learning', 'Machine Learning', 'Statistics']",5,True,4,4,1,True,Latent View,9.02,81.27
+1BY23AI075,Priya Srivastava,Female,AIML,2023,6.08,0,"['Statistics', 'Python', 'SQL', 'Machine Learning']",4,True,5,1,0,True,Amazon,32.22,57.95
+1BY23AI076,Swati Gupta,Female,AIML,2023,5.07,0,"['Data Science', 'NLP', 'Python', 'SQL', 'Statistics']",5,True,2,3,0,True,Latent View,7.72,60.07
+1BY23AI077,Priya Mittal,Female,AIML,2023,8.15,0,"['Statistics', 'Data Science', 'Python']",3,True,5,3,2,True,TCS,5.02,83.29
+1BY23AI078,Akshata Choudhary,Female,AIML,2023,6.27,0,"['NLP', 'Deep Learning', 'Machine Learning', 'Statistics', 'Python']",5,True,4,0,0,True,TCS,5.4,59.18
+1BY23AI079,Gaurav Srivastava,Male,AIML,2023,5.74,0,"['Python', 'Machine Learning', 'Data Science']",3,True,3,2,0,True,Microsoft,26.19,50.59
+1BY23AI080,Pallavi Reddy,Female,AIML,2023,7.83,0,"['Statistics', 'SQL']",2,True,6,1,0,True,Google,35.99,57.98
+1BY23AI081,Sunil Kamath,Male,AIML,2023,7.53,3,"['TensorFlow', 'Statistics', 'Python', 'Machine Learning']",4,False,0,2,2,False,,,6.4
+1BY23AI082,Arjun Varma,Male,AIML,2023,6.12,0,"['Deep Learning', 'Statistics', 'NLP']",3,False,0,2,0,False,,,34.15
+1BY23AI083,Ananya Deshmukh,Female,AIML,2023,7.7,0,"['Machine Learning', 'Statistics']",2,False,0,1,0,False,,,33.48
+1BY23AI084,Dhruv Joshi,Male,AIML,2023,7.19,0,"['SQL', 'TensorFlow']",2,True,5,1,0,True,Mu Sigma,10.66,57.61
+1BY23AI085,Ganesh Pandey,Male,AIML,2023,9.77,0,"['Deep Learning', 'TensorFlow', 'Statistics', 'SQL']",4,True,1,1,2,True,Fractal Analytics,6.83,77.69
+1BY23AI086,Anil Patil,Male,AIML,2023,5.39,0,"['Python', 'Statistics', 'Deep Learning', 'Machine Learning', 'Data Science', 'TensorFlow']",6,False,0,4,0,True,Amazon,44.26,56.03
+1BY23AI087,Anjali Goyal,Female,AIML,2023,6.66,0,"['Python', 'NLP']",2,True,6,3,0,True,Google,24.3,63.21
+1BY23AI088,Aaditya Murthy,Male,AIML,2023,7.17,1,"['Deep Learning', 'Data Science']",2,False,0,2,0,False,,,28.79
+1BY23AI089,Reyansh Choudhary,Male,AIML,2023,5.45,0,"['NLP', 'Machine Learning']",2,True,1,1,0,False,,,43.3
+1BY23AI090,Aditya Krishnan,Male,AIML,2023,5.8,0,"['Python', 'Statistics', 'Machine Learning', 'NLP']",4,True,1,4,3,True,Amazon,15.13,84.05
+1BY23AI091,Vikram Patel,Male,AIML,2023,6.93,2,"['Statistics', 'Deep Learning', 'TensorFlow', 'Data Science', 'Machine Learning', 'NLP']",6,True,4,4,0,False,,,49.07
+1BY23AI092,Kavya Rao,Female,AIML,2023,7.23,0,"['TensorFlow', 'Data Science', 'SQL', 'Deep Learning', 'Statistics']",5,False,0,4,2,True,TCS,4.45,69.22
+1BY23AI093,Sunita Pandey,Female,AIML,2023,8.79,0,"['NLP', 'Statistics', 'SQL']",3,True,5,0,0,True,Google,42.19,57.73
+1BY23AI094,Ravi Agarwal,Male,AIML,2023,7.13,0,"['Statistics', 'NLP', 'SQL', 'Machine Learning', 'TensorFlow', 'Data Science']",6,True,2,0,0,True,Wipro,3.88,55.52
+1BY23AI095,Akshata Pai,Female,AIML,2023,8.44,1,"['TensorFlow', 'NLP']",2,True,3,1,0,False,,,42.2
+1BY23AI096,Ishaan Bose,Male,AIML,2023,9.58,2,"['Python', 'Data Science', 'Machine Learning', 'Deep Learning']",4,True,4,2,2,False,,,46.29
+1BY23AI097,Chandana Ghosh,Female,AIML,2023,6.2,0,"['Statistics', 'Python', 'TensorFlow']",3,True,6,4,2,True,Wipro,4.46,80.27
+1BY23AI098,Ishaan Iyer,Male,AIML,2023,6.98,0,"['Machine Learning', 'Deep Learning', 'Statistics', 'Python', 'Data Science', 'TensorFlow']",6,True,1,1,0,True,Microsoft,16.04,66.1
+1BY23AI099,Nisha Iyer,Female,AIML,2023,9.03,0,"['Data Science', 'Python', 'Machine Learning']",3,False,0,4,2,True,Google,36.96,69.31
+1BY23AI100,Dhruv Bhat,Male,AIML,2023,8.15,0,"['Data Science', 'TensorFlow', 'Statistics', 'Python', 'SQL']",5,True,2,3,0,True,Mu Sigma,6.8,79.45

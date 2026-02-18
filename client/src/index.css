@@ -1,0 +1,297 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Notion-style base styles */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #191919;
+    color: #ebebeb;
+  }
+
+  /* Scrollbar styles - Notion-like */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #404040;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+  }
+}
+
+/* Notion-style component classes */
+@layer components {
+
+  /* Clean card - no gradients */
+  .notion-card {
+    background: #202020;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    transition: all 0.15s ease;
+  }
+
+  .notion-card:hover {
+    background: #252525;
+    border-color: #404040;
+  }
+
+  /* Primary button - subtle blue */
+  .btn-primary {
+    padding: 8px 16px;
+    background: #1E3A8A;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-size: 14px;
+  }
+
+  .btn-primary:hover {
+    background: #172554;
+  }
+
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #191919, 0 0 0 4px #10b981;
+  }
+
+  /* Secondary button */
+  .btn-secondary {
+    padding: 8px 16px;
+    background: #2f2f2f;
+    border: 1px solid #404040;
+    color: #ebebeb;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-size: 14px;
+  }
+
+  .btn-secondary:hover {
+    background: #3d3d3d;
+    border-color: #555555;
+  }
+
+  /* Ghost button */
+  .btn-ghost {
+    padding: 6px 12px;
+    color: #9b9b9b;
+    font-weight: 500;
+    border-radius: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-size: 14px;
+  }
+
+  .btn-ghost:hover {
+    background: #2f2f2f;
+    color: #ebebeb;
+  }
+
+  /* Input field */
+  .input-field {
+    width: 100%;
+    padding: 10px 12px;
+    background: #202020;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    color: #ebebeb;
+    font-size: 14px;
+    transition: all 0.15s ease;
+  }
+
+  .input-field::placeholder {
+    color: #6b6b6b;
+  }
+
+  .input-field:focus {
+    outline: none;
+    border-color: #10b981;
+    box-shadow: 0 0 0 2px rgba(35, 131, 226, 0.2);
+  }
+
+  /* Sidebar link */
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    color: #9b9b9b;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.1s ease;
+  }
+
+  .sidebar-link:hover {
+    background: #2f2f2f;
+    color: #ebebeb;
+  }
+
+  .sidebar-link.active {
+    background: #2f2f2f;
+    color: #ebebeb;
+  }
+
+  /* Badge styles - clean, no gradients */
+  .badge {
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+
+  .badge-blue {
+    background: rgba(35, 131, 226, 0.15);
+    color: #5aa3e8;
+  }
+
+  .badge-green {
+    background: rgba(15, 118, 110, 0.15);
+    color: #34d399;
+  }
+
+  .badge-yellow {
+    background: rgba(217, 119, 6, 0.15);
+    color: #fbbf24;
+  }
+
+  .badge-red {
+    background: rgba(220, 38, 38, 0.15);
+    color: #f87171;
+  }
+
+  .badge-gray {
+    background: #2f2f2f;
+    color: #9b9b9b;
+  }
+
+  /* Page container */
+  .page-container {
+    min-height: 100vh;
+    background-color: #191919;
+  }
+
+  /* Content wrapper */
+  .content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+
+  /* Section heading */
+  .section-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ebebeb;
+    margin-bottom: 16px;
+  }
+
+  /* Subtle divider */
+  .divider {
+    height: 1px;
+    background: #333333;
+    margin: 24px 0;
+  }
+
+  /* Loading spinner */
+  .spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333333;
+    border-top-color: #10b981;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Text styles */
+  .text-primary {
+    color: #ebebeb;
+  }
+
+  .text-secondary {
+    color: #9b9b9b;
+  }
+
+  .text-tertiary {
+    color: #6b6b6b;
+  }
+
+  .text-accent {
+    color: #10b981;
+  }
+
+  /* Legacy support - redirect gradient-text to accent */
+  .gradient-text {
+    color: #10b981;
+  }
+
+  /* Legacy glass-card support */
+  .glass-card {
+    background: #202020;
+    border: 1px solid #333333;
+    border-radius: 8px;
+  }
+
+  .glass-card-hover {
+    background: #202020;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    transition: all 0.15s ease;
+  }
+
+  .glass-card-hover:hover {
+    background: #252525;
+    border-color: #404040;
+  }
+
+  /* Legacy badge-primary support */
+  .badge-primary {
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+    background: rgba(35, 131, 226, 0.15);
+    color: #5aa3e8;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

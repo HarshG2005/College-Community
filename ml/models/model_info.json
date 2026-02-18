@@ -1,0 +1,70 @@
+{
+  "feature_names": [
+    "cgpa",
+    "backlogs",
+    "num_skills",
+    "has_internship",
+    "internship_months",
+    "num_projects",
+    "num_certifications",
+    "branch"
+  ],
+  "branches": [
+    "AIML",
+    "CIVIL",
+    "CSE",
+    "ECE",
+    "EEE",
+    "ISE",
+    "MECH"
+  ],
+  "best_model": "Random Forest",
+  "final_metrics": {
+    "accuracy": 0.8857142857142857,
+    "precision": 0.8648648648648649,
+    "recall": 0.9896907216494846,
+    "f1": 0.9230769230769231,
+    "confusion_matrix": [
+      [
+        28,
+        15
+      ],
+      [
+        1,
+        96
+      ]
+    ]
+  },
+  "model_comparison": {
+    "Random Forest": {
+      "accuracy": 0.8928571428571429,
+      "accuracy_std": 0.01916629694999821,
+      "f1_score": 0.9240302796135216
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.8857142857142858,
+      "accuracy_std": 0.010101525445522118,
+      "f1_score": 0.9196853890025631
+    },
+    "SVM (RBF Kernel)": {
+      "accuracy": 0.8714285714285713,
+      "accuracy_std": 0.016288220358559133,
+      "f1_score": 0.9047351091888587
+    },
+    "K-Nearest Neighbors": {
+      "accuracy": 0.8585714285714285,
+      "accuracy_std": 0.011428571428571439,
+      "f1_score": 0.9032127838519765
+    },
+    "Logistic Regression": {
+      "accuracy": 0.8628571428571428,
+      "accuracy_std": 0.022314999074019022,
+      "f1_score": 0.8967089361574121
+    },
+    "AdaBoost": {
+      "accuracy": 0.8885714285714286,
+      "accuracy_std": 0.009689042833036109,
+      "f1_score": 0.9209245018502534
+    }
+  }
+}

@@ -1,0 +1,300 @@
+﻿    at process.processTick
+sAndRejections (node:inter
+nal/process/task_queues:10
+5:5)
+    at async executeTool (
+file:///C:/Users/76311/One
+Drive/Desktop/Active/coleg
+e_community_platform/serve
+r/agent/tools.js:161:12)
+    at async 
+Module.execute (file:///C:
+/Users/76311/OneDrive/Desk
+top/Active/colege_communit
+y_platform/server/agent/br
+ain.js:46:28)
+    at async file:///C:/Us
+ers/76311/OneDrive/Desktop
+/Active/colege_community_p
+latform/server/agent/agent
+.routes.js:31:25
+🤖 Agent Tool: Creating detailed schedule for Unsupervised Learning: Clustering and Dimensionality Reduction...
+❌ Agent Tool Failed: 
+Error: OpenRouter API 
+Error: 404 - 
+{"error":{"message":"No 
+endpoints found for meta-l
+lama/llama-3-8b-instruct:f
+ree.","code":404},"user_id
+":"user_39RgoHnWs7J1CiORBs
+LlPC6impI"}
+    at 
+create_study_schedule (fil
+e:///C:/Users/76311/OneDri
+ve/Desktop/Active/colege_c
+ommunity_platform/server/a
+gent/tools.js:70:19)
+    at process.processTick
+sAndRejections (node:inter
+nal/process/task_queues:10
+5:5)
+    at async executeTool (
+file:///C:/Users/76311/One
+Drive/Desktop/Active/coleg
+e_community_platform/serve
+r/agent/tools.js:161:12)
+    at async 
+Module.execute (file:///C:
+/Users/76311/OneDrive/Desk
+top/Active/colege_communit
+y_platform/server/agent/br
+ain.js:46:28)
+    at async file:///C:/Us
+ers/76311/OneDrive/Desktop
+/Active/colege_community_p
+latform/server/agent/agent
+.routes.js:31:25
+🤖 Agent Tool: Creating detailed schedule for Practical Project: Building a Machine Learning Model...
+❌ Agent Tool Failed: 
+Error: OpenRouter API 
+Error: 404 - 
+{"error":{"message":"No 
+endpoints found for meta-l
+lama/llama-3-8b-instruct:f
+ree.","code":404},"user_id
+":"user_39RgoHnWs7J1CiORBs
+LlPC6impI"}
+    at 
+create_study_schedule (fil
+e:///C:/Users/76311/OneDri
+ve/Desktop/Active/colege_c
+ommunity_platform/server/a
+gent/tools.js:70:19)
+    at process.processTick
+sAndRejections (node:inter
+nal/process/task_queues:10
+5:5)
+    at async executeTool (
+file:///C:/Users/76311/One
+Drive/Desktop/Active/coleg
+e_community_platform/serve
+r/agent/tools.js:161:12)
+    at async 
+Module.execute (file:///C:
+/Users/76311/OneDrive/Desk
+top/Active/colege_communit
+y_platform/server/agent/br
+ain.js:46:28)
+    at async file:///C:/Us
+ers/76311/OneDrive/Desktop
+/Active/colege_community_p
+latform/server/agent/agent
+.routes.js:31:25
+[2026-02-09T19:48:32.162Z] GET /api/study-planner/my-plans
+[2026-02-09T19:48:32.232Z] GET /api/study-planner/my-plans
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Attempting to connect to MongoDB...
+URI: mongodb+srv://harshbackup2145_db_user:****@cluster0.qo68ark.mongodb.net/college_community?appName=Cluster0
+✅ Mongoose connected to DB Cluster
+🚀 Server running on port 5000
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Attempting to connect to MongoDB...
+URI: mongodb+srv://harshbackup2145_db_user:****@cluster0.qo68ark.mongodb.net/college_community?appName=Cluster0
+✅ Mongoose connected to DB Cluster
+🚀 Server running on port 5000
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+Attempting to connect to MongoDB...
+URI: mongodb+srv://harshbackup2145_db_user:****@cluster0.qo68ark.mongodb.net/college_community?appName=Cluster0
+✅ Mongoose connected to DB Cluster
+🚀 Server running on port 5000
+[2026-02-09T19:52:26.480Z] POST /api/agent/init
+[2026-02-09T19:52:26.717Z] POST /api/agent/plan
+🤖 Agent Planner: Using OpenRouter (google/gemini-2.0-flash-001)...
+[2026-02-09T19:52:48.025Z] POST /api/agent/execute
+🤖 Agent Tool: Creating detailed schedule for Vectors and Matrices Fundamentals...
+❌ Agent Tool Failed: 
+Error: OpenRouter API 
+Error: 404 - 
+{"error":{"message":"No 
+endpoints found for meta-l
+lama/llama-3-8b-instruct:f
+ree.","code":404},"user_id
+":"user_39RgoHnWs7J1CiORBs
+LlPC6impI"}
+    at 
+create_study_schedule (fil
+e:///C:/Users/76311/OneDri
+ve/Desktop/Active/colege_c
+ommunity_platform/server/a
+gent/tools.js:70:19)
+    at process.processTick
+sAndRejections (node:inter
+nal/process/task_queues:10
+5:5)
+    at async executeTool (
+file:///C:/Users/76311/One
+Drive/Desktop/Active/coleg
+e_community_platform/serve
+r/agent/tools.js:161:12)
+    at async 
+Module.execute (file:///C:
+/Users/76311/OneDrive/Desk
+top/Active/colege_communit
+y_platform/server/agent/br
+ain.js:46:28)
+    at async file:///C:/Us
+ers/76311/OneDrive/Desktop
+/Active/colege_community_p
+latform/server/agent/agent
+.routes.js:31:25
+🤖 Agent Tool: Creating detailed schedule for Solving Linear Equations...
+❌ Agent Tool Failed: 
+Error: OpenRouter API 
+Error: 404 - 
+{"error":{"message":"No 
+endpoints found for meta-l
+lama/llama-3-8b-instruct:f
+ree.","code":404},"user_id
+":"user_39RgoHnWs7J1CiORBs
+LlPC6impI"}
+    at 
+create_study_schedule (fil
+e:///C:/Users/76311/OneDri
+ve/Desktop/Active/colege_c
+ommunity_platform/server/a
+gent/tools.js:70:19)
+    at process.processTick
+sAndRejections (node:inter
+nal/process/task_queues:10
+5:5)
+    at async executeTool (
+file:///C:/Users/76311/One
+Drive/Desktop/Active/coleg
+e_community_platform/serve
+r/agent/tools.js:161:12)
+    at async 
+Module.execute (file:///C:
+/Users/76311/OneDrive/Desk
+top/Active/colege_communit
+y_platform/server/agent/br
+ain.js:46:28)
+    at async file:///C:/Us
+ers/76311/OneDrive/Desktop
+/Active/colege_community_p
+latform/server/agent/agent
+.routes.js:31:25
+🤖 Agent Tool: Creating detailed schedule for Linear Transformations...
+❌ Agent Tool Failed: 
+Error: OpenRouter API 
+Error: 404 - 
+{"error":{"message":"No 
+endpoints found for meta-l
+lama/llama-3-8b-instruct:f
+ree.","code":404},"user_id
+":"user_39RgoHnWs7J1CiORBs
+LlPC6impI"}
+    at 
+create_study_schedule (fil
+e:///C:/Users/76311/OneDri
+ve/Desktop/Active/colege_c
+ommunity_platform/server/a
+gent/tools.js:70:19)
+    at process.processTick
+sAndRejections (node:inter
+nal/process/task_queues:10
+5:5)
+    at async executeTool (
+file:///C:/Users/76311/One
+Drive/Desktop/Active/coleg
+e_community_platform/serve
+r/agent/tools.js:161:12)
+    at async 
+Module.execute (file:///C:
+/Users/76311/OneDrive/Desk
+top/Active/colege_communit
+y_platform/server/agent/br
+ain.js:46:28)
+    at async file:///C:/Us
+ers/76311/OneDrive/Desktop
+/Active/colege_community_p
+latform/server/agent/agent
+.routes.js:31:25
+🤖 Agent Tool: Creating detailed schedule for Eigenvalues and Eigenvectors...
+❌ Agent Tool Failed: 
+Error: OpenRouter API 
+Error: 404 - 
+{"error":{"message":"No 
+endpoints found for meta-l
+lama/llama-3-8b-instruct:f
+ree.","code":404},"user_id
+":"user_39RgoHnWs7J1CiORBs
+LlPC6impI"}
+    at 
+create_study_schedule (fil
+e:///C:/Users/76311/OneDri
+ve/Desktop/Active/colege_c
+ommunity_platform/server/a
+gent/tools.js:70:19)
+    at process.processTick
+sAndRejections (node:inter
+nal/process/task_queues:10
+5:5)
+    at async executeTool (
+file:///C:/Users/76311/One
+Drive/Desktop/Active/coleg
+e_community_platform/serve
+r/agent/tools.js:161:12)
+    at async 
+Module.execute (file:///C:
+/Users/76311/OneDrive/Desk
+top/Active/colege_communit
+y_platform/server/agent/br
+ain.js:46:28)
+    at async file:///C:/Us
+ers/76311/OneDrive/Desktop
+/Active/colege_community_p
+latform/server/agent/agent
+.routes.js:31:25
+🤖 Agent Tool: Creating detailed schedule for Applications and Review...
+❌ Agent Tool Failed: 
+Error: OpenRouter API 
+Error: 404 - 
+{"error":{"message":"No 
+endpoints found for meta-l
+lama/llama-3-8b-instruct:f
+ree.","code":404},"user_id
+":"user_39RgoHnWs7J1CiORBs
+LlPC6impI"}
+    at 
+create_study_schedule (fil
+e:///C:/Users/76311/OneDri
+ve/Desktop/Active/colege_c
+ommunity_platform/server/a
+gent/tools.js:70:19)
+    at process.processTick
+sAndRejections (node:inter
+nal/process/task_queues:10
+5:5)
+    at async executeTool (
+file:///C:/Users/76311/One
+Drive/Desktop/Active/coleg
+e_community_platform/serve
+r/agent/tools.js:161:12)
+    at async 
+Module.execute (file:///C:
+/Users/76311/OneDrive/Desk
+top/Active/colege_communit
+y_platform/server/agent/br
+ain.js:46:28)
+    at async file:///C:/Us
+ers/76311/OneDrive/Desktop
+/Active/colege_community_p
+latform/server/agent/agent
+.routes.js:31:25
+[2026-02-09T19:52:51.062Z] GET /api/study-planner/my-plans
+[2026-02-09T19:52:51.138Z] GET /api/study-planner/my-plans

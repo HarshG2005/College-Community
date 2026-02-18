@@ -1,0 +1,40 @@
+{
+  "features": [
+    "Branch",
+    "Gender",
+    "CGPA",
+    "Backlogs",
+    "DSA_Score",
+    "Projects",
+    "LeetCode_Problems",
+    "Certifications",
+    "Internship",
+    "Communication_Score"
+  ],
+  "target": "PlacedOrNot",
+  "accuracy": 64.75,
+  "cv_accuracy": 63.38,
+  "feature_importance": {
+    "Branch": 7.5,
+    "Gender": 2.0,
+    "CGPA": 21.7,
+    "Backlogs": 8.7,
+    "DSA_Score": 18.4,
+    "Projects": 6.6,
+    "LeetCode_Problems": 16.9,
+    "Certifications": 6.8,
+    "Internship": 6.1,
+    "Communication_Score": 5.4
+  },
+  "branches": [
+    "AIML",
+    "CSE",
+    "Civil",
+    "ECE",
+    "EEE",
+    "ETE",
+    "ISE",
+    "Mechanical"
+  ],
+  "n_samples": 2000
+}
