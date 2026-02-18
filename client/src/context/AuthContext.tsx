@@ -59,18 +59,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     useEffect(() => {
         const loadUser = async () => {
             if (token) {
-                console.log('🔄 AuthContext: Loading user with token...');
                 try {
                     const res = await api.get('/auth/me');
-                    console.log('✅ AuthContext: User loaded:', res.data.user.email);
                     setUser(res.data.user);
                 } catch (error: any) {
-                    console.error('❌ AuthContext: Failed to load user:', error.message);
+                    console.error('Failed to load user:', error.message);
                     localStorage.removeItem('token');
                     setToken(null);
                 }
-            } else {
-                console.log('ℹ️ AuthContext: No token found in localStorage');
             }
             setLoading(false);
         };
@@ -78,16 +74,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }, [token]);
 
     const login = async (email: string, password: string) => {
-        console.log(`🔑 AuthContext: Attempting login for ${email}...`);
         try {
             const res = await api.post('/auth/login', { email, password });
             const { token: newToken, user: userData } = res.data;
-            console.log('✅ AuthContext: Login successful');
             localStorage.setItem('token', newToken);
             setToken(newToken);
             setUser(userData);
         } catch (error: any) {
-            console.error('❌ AuthContext: Login error:', error.response?.data?.message || error.message);
             throw error;
         }
     };
