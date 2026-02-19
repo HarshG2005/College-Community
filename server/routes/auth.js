@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import { body, validationResult } from 'express-validator';
 import User from '../models/User.js';
 import { auth } from '../middleware/auth.js';
+import { loginRateLimit } from '../middleware/loginRateLimit.js';
 
 const router = express.Router();
 
@@ -69,7 +70,7 @@ router.post('/register', [
 // @route   POST /api/auth/login
 // @desc    Login user
 // @access  Public
-router.post('/login', [
+router.post('/login', loginRateLimit, [
     body('email').isEmail().withMessage('Please enter a valid email'),
     body('password').exists().withMessage('Password is required')
 ], async (req, res) => {
@@ -116,7 +117,7 @@ router.post('/login', [
     } catch (error) {
         console.error('Login error:', error.message);
         console.error('Full error:', JSON.stringify(error, Object.getOwnPropertyNames(error)));
-        res.status(500).json({ message: 'Server error', details: error.message });
+        res.status(500).json({ message: 'Server error' });
     }
 });
 
