@@ -13,7 +13,7 @@ router.get('/', auth, async (req, res) => {
         let query = {};
 
         if (subject && subject !== 'All') {
-            query.subject = subject;
+            query.subject = String(subject);
         }
 
         if (search) {
