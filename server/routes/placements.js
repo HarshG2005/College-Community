@@ -12,12 +12,12 @@ router.get('/', auth, async (req, res) => {
         const { type, search, company } = req.query;
         let query = {};
 
-        if (type && type !== 'All') {
-            query.type = type.toLowerCase();
+        if (type && String(type) !== 'All') {
+            query.type = String(type).toLowerCase();
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            query.company = new RegExp(String(company), 'i');
         }
 
         if (search) {
