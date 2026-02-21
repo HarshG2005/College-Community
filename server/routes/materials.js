@@ -12,8 +12,9 @@ router.get('/', auth, async (req, res) => {
         const { subject, search, sort } = req.query;
         let query = {};
 
-        if (subject && subject !== 'All') {
-            query.subject = subject;
+        // Security: Cast subject to string to prevent NoSQL injection via object payloads
+        if (subject && String(subject) !== 'All') {
+            query.subject = String(subject);
         }
 
         if (search) {
