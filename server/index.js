@@ -19,6 +19,7 @@ import skillTestRoutes from './routes/skillTests.js';
 import studyPlannerRoutes from './routes/studyPlanner.js';
 import agentRoutes from './agent/agent.routes.js';
 import adminStatsRoutes from './routes/adminStats.js';
+import { securityMiddleware } from './middleware/security.js';
 import './agent/agentWorker.js'; // Initialize Agent Worker
 
 const app = express();
@@ -33,6 +34,7 @@ const io = new Server(httpServer, {
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(securityMiddleware);
 
 // Request logging middleware
 app.use((req, res, next) => {
