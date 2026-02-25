@@ -1,6 +1,7 @@
 import express from 'express';
 import SkillTest from '../models/SkillTest.js';
 import { auth } from '../middleware/auth.js';
+import { calculateScore } from '../utils/scoreCalculator.js';
 
 const router = express.Router();
 
@@ -9,7 +10,9 @@ const router = express.Router();
 // @access  Private
 router.post('/', auth, async (req, res) => {
     try {
-        const { testType, score, totalQuestions, correctAnswers, timeTaken, answers } = req.body;
+        const { testType, timeTaken, answers } = req.body;
+
+        const { score, correctAnswers, totalQuestions } = calculateScore(testType, answers);
 
         const skillTest = new SkillTest({
             userId: req.user._id,
