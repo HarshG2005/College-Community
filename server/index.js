@@ -7,6 +7,8 @@ import mongoose from 'mongoose';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
 
+import { securityMiddleware } from './middleware/security.js';
+
 // Route imports
 import authRoutes from './routes/auth.js';
 import noticeRoutes from './routes/notices.js';
@@ -33,6 +35,7 @@ const io = new Server(httpServer, {
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(securityMiddleware);
 
 // Request logging middleware
 app.use((req, res, next) => {
