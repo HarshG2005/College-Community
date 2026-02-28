@@ -1,4 +1,5 @@
 import express from 'express';
+import { body, validationResult } from 'express-validator';
 import Message from '../models/Message.js';
 import { auth } from '../middleware/auth.js';
 
@@ -32,8 +33,18 @@ router.get('/:room', auth, async (req, res) => {
 // @route   POST /api/messages
 // @desc    Send a message
 // @access  Private
-router.post('/', auth, async (req, res) => {
+router.post('/', auth, [
+    body('content').trim().notEmpty().withMessage('Message content is required'),
+    body('room').trim().notEmpty().withMessage('Room is required'),
+    body('type').optional().isIn(['text', 'image', 'file']).withMessage('Invalid message type'),
+    body('fileUrl').optional().isURL().withMessage('Invalid file URL')
+], async (req, res) => {
     try {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ message: errors.array()[0].msg });
+        }
+
         const { content, room, type, fileUrl } = req.body;
 
         const message = new Message({
