@@ -12,12 +12,12 @@ router.get('/', auth, async (req, res) => {
         const { category, search } = req.query;
         let query = {};
 
-        if (category && category !== 'All') {
-            query.category = category.toLowerCase();
+        if (category && String(category) !== 'All') {
+            query.category = String(category).toLowerCase();
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         const notices = await Notice.find(query)
