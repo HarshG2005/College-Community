@@ -9,18 +9,18 @@ const router = express.Router();
 // @access  Private
 router.get('/:room', auth, async (req, res) => {
     try {
-        const { room } = req.params;
+        const room = String(req.params.room);
         const { limit = 50, before } = req.query;
 
         let query = { room };
         if (before) {
-            query.createdAt = { $lt: new Date(before) };
+            query.createdAt = { $lt: new Date(String(before)) };
         }
 
         const messages = await Message.find(query)
             .populate('sender', 'name')
             .sort({ createdAt: -1 })
-            .limit(parseInt(limit));
+            .limit(parseInt(String(limit), 10));
 
         res.json({ messages: messages.reverse() });
     } catch (error) {
