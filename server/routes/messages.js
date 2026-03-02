@@ -9,18 +9,22 @@ const router = express.Router();
 // @access  Private
 router.get('/:room', auth, async (req, res) => {
     try {
-        const { room } = req.params;
-        const { limit = 50, before } = req.query;
+        let { room } = req.params;
+        let { limit = 50, before } = req.query;
+
+        room = String(room);
 
         let query = { room };
         if (before) {
-            query.createdAt = { $lt: new Date(before) };
+            query.createdAt = { $lt: new Date(String(before)) };
         }
+
+        const limitNumber = Math.min(Math.max(parseInt(limit) || 50, 1), 100);
 
         const messages = await Message.find(query)
             .populate('sender', 'name')
             .sort({ createdAt: -1 })
-            .limit(parseInt(limit));
+            .limit(limitNumber);
 
         res.json({ messages: messages.reverse() });
     } catch (error) {
