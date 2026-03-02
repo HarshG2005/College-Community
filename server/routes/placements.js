@@ -9,19 +9,23 @@ const router = express.Router();
 // @access  Private
 router.get('/', auth, async (req, res) => {
     try {
-        const { type, search, company } = req.query;
+        let { type, search, company } = req.query;
         let query = {};
 
         if (type && type !== 'All') {
+            type = String(type);
             query.type = type.toLowerCase();
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            company = String(company);
+            // Escape user input before using in regex to prevent regex injection DoS
+            const escapedCompany = company.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(escapedCompany, 'i');
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         const posts = await PlacementPost.find(query)
