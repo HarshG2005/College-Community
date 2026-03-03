@@ -13,15 +13,17 @@ router.get('/', auth, async (req, res) => {
         let query = {};
 
         if (type && type !== 'All') {
-            query.type = type.toLowerCase();
+            query.type = String(type).toLowerCase(); // Cast to string to prevent Type-Confusion DoS
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            // Escape user input before using it in a regular expression to prevent ReDoS
+            const escapedCompany = String(company).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(escapedCompany, 'i');
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) }; // Cast to string to prevent NoSQL injection via object payloads
         }
 
         const posts = await PlacementPost.find(query)
