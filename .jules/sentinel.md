@@ -1,0 +1,4 @@
+## 2026-03-03 - [ReDoS and Type-Confusion DoS in Express Routes]
+**Vulnerability:** Express `req.query` and `req.params` parameters were used directly without type casting. This allows attackers to send arrays or objects (e.g. `?param[$ne]=val`), causing DoS when string methods like `.toLowerCase()` are called. Furthermore, unescaped user input was passed directly into `new RegExp()`, creating a Regular Expression Denial of Service (ReDoS) vulnerability.
+**Learning:** Never trust the type or content of data coming from `req.query` or `req.params`. The Express parser allows nested objects and arrays unless explicitly configured otherwise.
+**Prevention:** Always explicitly cast query parameters to strings (e.g., `String(param)`) before using them. To prevent ReDoS, user input must be strictly escaped before being used in Mongoose queries via `new RegExp` (e.g., `input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`).
