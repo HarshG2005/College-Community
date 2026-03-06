@@ -1,0 +1,4 @@
+## 2024-05-24 - Object Injection and ReDoS via req.query
+**Vulnerability:** Unsanitized user inputs `req.query` directly used in MongoDB queries in `server/routes/placements.js`, including passing unescaped user string into `new RegExp()`.
+**Learning:** `express` parses nested query params into objects (e.g. `?company[$ne]=x`). If object methods are absent, `.toLowerCase()` crashes causing DoS. And if unescaped strings are passed to `new RegExp`, attackers can supply crafted regex like `(a+)+` causing ReDoS leading to server exhaustion.
+**Prevention:** Always explicitly cast `req.query` params to `String()` before using them, especially if they are used to call string methods or directly in database queries. Also always sanitize and escape strings before placing them into `new RegExp` using `input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`.
