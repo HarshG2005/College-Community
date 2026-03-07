@@ -1,0 +1,4 @@
+## 2024-05-20 - Unescaped Regex Input and Uncast Query Parameters
+**Vulnerability:** Regex Denial of Service (ReDoS) and Denial of Service (DoS) risks in `/api/placements` and potentially other endpoints due to unescaped regex strings passed directly to `new RegExp` and uncast `req.query` parameters being acted upon by string methods like `.toLowerCase()`.
+**Learning:** In Express, query parameters can be arrays or objects (e.g., `?type[$ne]=All`). Using string methods without explicit casting causes crashes. Similarly, passing unsanitized user input into `new RegExp` allows malicious actors to craft complex patterns that lock up the event loop (ReDoS).
+**Prevention:** Always explicitly cast `req.query` and `req.params` values to strings using `String()` when expecting string input. Before using user input in `new RegExp`, it must be strictly escaped using a secure escaping function like `.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`.
