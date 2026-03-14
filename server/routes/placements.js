@@ -9,7 +9,11 @@ const router = express.Router();
 // @access  Private
 router.get('/', auth, async (req, res) => {
     try {
-        const { type, search, company } = req.query;
+        // Explicitly cast to string to prevent NoSQL injection via object payloads (e.g. ?company[$ne]=val)
+        // and DoS from string methods failing on objects
+        const type = req.query.type ? String(req.query.type) : undefined;
+        const search = req.query.search ? String(req.query.search) : undefined;
+        const company = req.query.company ? String(req.query.company) : undefined;
         let query = {};
 
         if (type && type !== 'All') {
@@ -17,7 +21,9 @@ router.get('/', auth, async (req, res) => {
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            // Escape user input to prevent Regex Denial of Service (ReDoS)
+            const safeCompany = company.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(safeCompany, 'i');
         }
 
         if (search) {
