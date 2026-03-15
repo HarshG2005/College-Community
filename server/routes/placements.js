@@ -17,7 +17,9 @@ router.get('/', auth, async (req, res) => {
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            // Prevent ReDoS and NoSQL injection
+            const safeCompany = String(company).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(safeCompany, 'i');
         }
 
         if (search) {
