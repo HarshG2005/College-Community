@@ -1,0 +1,4 @@
+## 2024-05-24 - ReDoS via Unescaped Regular Expression in Placement Search
+**Vulnerability:** User input passed via query parameters (e.g., `company`) in `server/routes/placements.js` was directly used to construct a `new RegExp(company, 'i')`. This allows an attacker to provide maliciously crafted regex strings, potentially causing a Regular Expression Denial of Service (ReDoS) or crashing the server (500 Internal Server Error).
+**Learning:** Node.js backend using MongoDB with Mongoose often uses `new RegExp` for search functionality. If the input is not sanitized, special characters are interpreted as regex meta-characters. Also, query parameters can be arrays/objects, so `String()` cast is necessary to avoid object-related crashes or NoSQL injections.
+**Prevention:** Always cast query parameters to strings and escape all regex meta-characters before using them in `new RegExp`. Example: `const safeInput = String(input).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');`.
