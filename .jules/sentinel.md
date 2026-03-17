@@ -1,0 +1,4 @@
+## 2024-05-24 - [ReDoS and NoSQL Injection via Object Payload in Placements]
+**Vulnerability:** The `/api/placements` endpoint was vulnerable to Regex Denial of Service (ReDoS) due to unescaped user input passed to `new RegExp`. It was also vulnerable to Denial of Service and NoSQL injection because `req.query` parameters were not cast to strings before calling `.toLowerCase()` or using them in queries, which could crash the server if an object array was passed in the query parameters.
+**Learning:** `req.query` inputs are not guaranteed to be strings and user-supplied strings used in Regex must be escaped to prevent computationally expensive queries that hang the thread.
+**Prevention:** Always explicitly cast `req.query` and `req.params` parameters to `String(param)` and escape any string interpolated into `new RegExp(str)` using `str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`.
