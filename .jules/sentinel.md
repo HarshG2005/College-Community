@@ -1,0 +1,5 @@
+## Sentinel Journal
+## 2024-03-18 - [Fix ReDoS Vulnerability]
+**Vulnerability:** A Regular Expression Denial of Service (ReDoS) vulnerability in `server/routes/placements.js` caused by passing unsanitized user input (`req.query.company`) directly into `new RegExp(company, 'i')`. This could allow an attacker to craft a complex regex pattern that causes catastrophic backtracking, degrading server performance or causing a crash. Also prevented NoSQL injection via object payloads.
+**Learning:** Never pass unescaped user input into a regular expression constructor. User input should always be treated as literal strings to be searched for, rather than patterns to match. Additionally, explicitly casting parameters to string limits the possibility of NoSQL injection via object payloads (like `?company[$ne]=x`).
+**Prevention:** Sanitize user input by explicitly casting to string (`String(input)`) and escaping regular expression special characters using `.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')` before using it in `new RegExp()`.
