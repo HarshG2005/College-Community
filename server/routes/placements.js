@@ -17,7 +17,8 @@ router.get('/', auth, async (req, res) => {
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            // Mitigate ReDoS by escaping regex characters and casting to string
+            query.company = new RegExp(String(company).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
         }
 
         if (search) {
