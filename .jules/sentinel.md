@@ -1,0 +1,4 @@
+## 2026-03-19 - [CRITICAL] ReDoS and NoSQL Injection via Unsanitized Regex Input
+**Vulnerability:** User input from `req.query` (e.g., `company` in placement search) was directly passed to `new RegExp()` without escaping, creating a Regular Expression Denial of Service (ReDoS) vulnerability. Furthermore, parameters were not cast to strings, allowing potential NoSQL injection or DoS via object payloads.
+**Learning:** MongoDB queries constructed using Mongoose are vulnerable to ReDoS if they directly interpolate unescaped user strings into a Regex pattern. Passing an object from `req.query` when a string is expected can also trigger runtime errors (e.g., `.toLowerCase()` failing).
+**Prevention:** Always explicitly cast `req.query` and `req.params` parameters to strings (e.g., `String(param)`). To prevent Regex DoS attacks, user input used in Mongoose queries via `new RegExp` must be strictly escaped before use (e.g., `input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`).
