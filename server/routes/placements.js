@@ -9,7 +9,10 @@ const router = express.Router();
 // @access  Private
 router.get('/', auth, async (req, res) => {
     try {
-        const { type, search, company } = req.query;
+        const type = req.query.type ? String(req.query.type) : undefined;
+        const search = req.query.search ? String(req.query.search) : undefined;
+        const company = req.query.company ? String(req.query.company) : undefined;
+
         let query = {};
 
         if (type && type !== 'All') {
@@ -17,7 +20,8 @@ router.get('/', auth, async (req, res) => {
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            const escapedCompany = company.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(escapedCompany, 'i');
         }
 
         if (search) {
@@ -72,7 +76,8 @@ router.post('/', auth, async (req, res) => {
 // @access  Private
 router.put('/:id/like', auth, async (req, res) => {
     try {
-        const post = await PlacementPost.findById(req.params.id);
+        const postId = String(req.params.id);
+        const post = await PlacementPost.findById(postId);
         if (!post) {
             return res.status(404).json({ message: 'Post not found' });
         }
@@ -117,7 +122,8 @@ router.get('/stats', auth, async (req, res) => {
 // @access  Private (owner or admin)
 router.delete('/:id', auth, async (req, res) => {
     try {
-        const post = await PlacementPost.findById(req.params.id);
+        const postId = String(req.params.id);
+        const post = await PlacementPost.findById(postId);
 
         if (!post) {
             return res.status(404).json({ message: 'Post not found' });
