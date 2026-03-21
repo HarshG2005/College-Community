@@ -13,11 +13,11 @@ router.get('/', auth, async (req, res) => {
         let query = {};
 
         if (type && type !== 'All') {
-            query.type = type.toLowerCase();
+            query.type = String(type).toLowerCase();
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            query.company = new RegExp(String(company).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
         }
 
         if (search) {
