@@ -17,7 +17,7 @@ router.get('/', auth, async (req, res) => {
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            query.company = new RegExp(String(company).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
         }
 
         if (search) {
