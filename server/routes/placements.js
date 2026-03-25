@@ -13,11 +13,13 @@ router.get('/', auth, async (req, res) => {
         let query = {};
 
         if (type && type !== 'All') {
-            query.type = type.toLowerCase();
+            query.type = String(type).toLowerCase();
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            // Mitigate NoSQL injection and ReDoS by casting to string, truncating, and escaping
+            const safeCompany = String(company).slice(0, 100).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(safeCompany, 'i');
         }
 
         if (search) {
