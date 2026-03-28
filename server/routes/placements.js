@@ -13,15 +13,17 @@ router.get('/', auth, async (req, res) => {
         let query = {};
 
         if (type && type !== 'All') {
-            query.type = type.toLowerCase();
+            query.type = String(type).toLowerCase();
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            // Escape user input to prevent ReDoS and regex injection
+            const safeCompany = String(company).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(safeCompany, 'i');
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         const posts = await PlacementPost.find(query)

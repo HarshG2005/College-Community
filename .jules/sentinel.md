@@ -1,0 +1,4 @@
+## 2024-05-30 - [Regex Injection / ReDoS in Placements Search]
+**Vulnerability:** Unescaped query parameter `company` passed directly into `new RegExp(company, 'i')` in `server/routes/placements.js`, and uncasted string method `.toLowerCase()` called on `type`.
+**Learning:** `req.query` objects in Express can contain arrays or objects. Calling `.toLowerCase()` directly on them without casting can crash the server (DoS). Furthermore, constructing regular expressions directly from unsanitized input exposes the server to Regex Denial of Service (ReDoS) and regex injection.
+**Prevention:** Always explicitly cast `req.query` parameters to string using `String(input)` before calling string methods or passing to database queries. When using `new RegExp()`, always escape user input first using `String(input).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`.
