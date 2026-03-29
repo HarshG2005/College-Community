@@ -12,16 +12,19 @@ router.get('/', auth, async (req, res) => {
         const { type, search, company } = req.query;
         let query = {};
 
+        // Explicitly cast req.query parameters to string to prevent NoSQL injection via object payloads
         if (type && type !== 'All') {
-            query.type = type.toLowerCase();
+            query.type = String(type).toLowerCase();
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            // Escape special regex characters to prevent ReDoS
+            const safeCompany = String(company).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(safeCompany, 'i');
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         const posts = await PlacementPost.find(query)
