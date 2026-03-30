@@ -1,0 +1,4 @@
+## 2024-03-30 - Uncasted User Input in String Methods and Regex
+**Vulnerability:** User inputs (`req.query`, `req.body`) like `category`, `type`, `email`, and `company` are used directly with `.toLowerCase()` and `new RegExp()` without being explicitly cast to a string or escaped.
+**Learning:** This allows an attacker to pass an array or object in the query (e.g., `?category[$ne]=x`), causing `.toLowerCase()` to crash (DoS) or allowing NoSQL injection via `new RegExp`. Passing unescaped characters into `new RegExp` also introduces a ReDoS (Regular Expression Denial of Service) risk.
+**Prevention:** Always explicitly cast user inputs to strings (e.g., `String(input)`) before applying string methods. For regex, always escape user inputs (e.g., `String(input).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`) before passing them to `new RegExp()`.
