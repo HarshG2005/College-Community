@@ -1,0 +1,4 @@
+## 2024-05-18 - [ReDoS and NoSQL Injection via RegExp]
+**Vulnerability:** Found `req.query.company` being directly passed into `new RegExp(company, 'i')` in `/api/placements`. This allows for ReDoS (Regular Expression Denial of Service) and NoSQL injection if an object or maliciously crafted regular expression is passed instead of a string.
+**Learning:** In MongoDB Node/Express apps, untrusted user inputs used in `new RegExp` or general query constructions must be verified to be strings. Otherwise, attackers can cause unexpected behavior, DOS the application or execute NoSQL injections.
+**Prevention:** Explicitly cast all query strings using `String(param)` and strictly escape special regex characters via `String(param).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')` before placing them in `new RegExp`.

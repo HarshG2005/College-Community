@@ -6,7 +6,8 @@ dotenv.config();
 const MONGODB_URI = process.env.MONGODB_URI;
 
 console.log('Testing MongoDB Connection...');
-console.log('URI:', MONGODB_URI.replace(/:([^:@]+)@/, ':****@')); // Hide password
+// Hide password, but prevent error if undefined
+console.log('URI:', MONGODB_URI ? MONGODB_URI.replace(/:([^:@]+)@/, ':****@') : 'undefined');
 
 mongoose.connect(MONGODB_URI)
     .then(async () => {
