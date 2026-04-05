@@ -1,0 +1,4 @@
+## 2025-04-05 - Fix NoSQL Injection and ReDoS via req.query in Mongoose Queries
+**Vulnerability:** Unsanitized variables from `req.query` (such as objects or strings with regex special characters) were being passed directly into `.toLowerCase()` and `new RegExp()`. This allows NoSQL injection (e.g., `?type[$ne]=something` causes `.toLowerCase()` to crash) and Regular Expression Denial of Service (ReDoS) or data leakage via regex.
+**Learning:** In Node.js/Express with Mongoose, user input from `req.query` or `req.body` must never be trusted. They can be objects or contain special characters that manipulate the query intent.
+**Prevention:** Always explicitly cast query parameters to strings using `String(param)` to prevent object injection, and escape strings used in `new RegExp()` using `String(param).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`.
