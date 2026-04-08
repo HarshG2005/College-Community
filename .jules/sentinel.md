@@ -1,0 +1,4 @@
+## 2026-04-08 - Regex DoS and NoSQL Injection via RegExp
+**Vulnerability:** User input from `req.query.company` was directly passed into a `new RegExp(company, 'i')` in the MongoDB query without sanitization or type casting in `server/routes/placements.js`. This allows attackers to perform Regex Denial of Service (ReDoS) by providing a complex regex pattern, or cause exceptions by passing an object.
+**Learning:** MongoDB's `new RegExp()` queries are vulnerable if user input is not escaped. Express's `req.query` parameters can also be parsed as objects/arrays, which can bypass string-based logic or cause exceptions if string methods are expected.
+**Prevention:** Always explicitly cast query parameters to strings (e.g., `String(input)`) and escape special characters using `replace(/[.*+?^${}()|[\]\\]/g, '\\$&')` before using them in a regex query.
