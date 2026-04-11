@@ -1,0 +1,4 @@
+## 2024-06-11 - NoSQL Injection and ReDoS in Express Routes
+**Vulnerability:** Express routes mapping `req.query` directly to MongoDB queries (e.g. `req.query.search`, `new RegExp(req.query.company)`) are vulnerable to NoSQL Injection via object payloads (like `?search[$ne]=1`) and Denial of Service (ReDoS via regex payloads, or crashes via `toLowerCase()` on non-strings).
+**Learning:** This codebase lacks global security middleware. Consequently, Express automatically parses query parameters into objects or arrays if formatted accordingly in the URL, exposing database queries to untrusted types.
+**Prevention:** All inputs from `req.query`, `req.params`, or `req.body` that are used in MongoDB queries or String methods MUST be explicitly cast to strings (e.g., `String(input)`) and regex inputs must be strictly escaped (e.g., `String(input).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`).
