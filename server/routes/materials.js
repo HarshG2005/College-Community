@@ -12,16 +12,16 @@ router.get('/', auth, async (req, res) => {
         const { subject, search, sort } = req.query;
         let query = {};
 
-        if (subject && subject !== 'All') {
-            query.subject = subject;
+        if (subject && String(subject) !== 'All') {
+            query.subject = String(subject);
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         let sortOption = { createdAt: -1 };
-        if (sort === 'popular') {
+        if (sort && String(sort) === 'popular') {
             sortOption = { downloads: -1 };
         }
 
