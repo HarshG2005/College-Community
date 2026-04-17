@@ -1,0 +1,4 @@
+## 2024-04-17 - Express Request Parameter Injection and ReDoS
+**Vulnerability:** Express `req.query` parameters were passed directly into string methods (`.toLowerCase()`) and `new RegExp()` in `server/routes/placements.js` without explicit type casting or sanitization. This allows NoSQL injection via object payloads (e.g., `?type[$ne]=something`) and Regex Denial of Service (ReDoS) and crashes due to unexpected parameter types.
+**Learning:** In the absence of a global validation middleware, every route must manually cast input parameters (`req.query`, `req.params`) to `String` and escape characters before using them in regex or string operations.
+**Prevention:** Always explicitly cast user input to `String(param)` and strictly escape inputs passed into regex: `String(param).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`.
