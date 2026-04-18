@@ -116,7 +116,7 @@ router.post('/login', loginRateLimit, [
         });
     } catch (error) {
         console.error('Login error:', error.message);
-        console.error('Full error:', JSON.stringify(error, Object.getOwnPropertyNames(error)));
+        // Removed verbose error logging to prevent leaking sensitive information
         res.status(500).json({ message: 'Server error' });
     }
 });
