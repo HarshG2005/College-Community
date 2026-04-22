@@ -12,9 +12,9 @@ router.get('/:room', auth, async (req, res) => {
         const { room } = req.params;
         const { limit = 50, before } = req.query;
 
-        let query = { room };
+        let query = { room: String(room) };
         if (before) {
-            query.createdAt = { $lt: new Date(before) };
+            query.createdAt = { $lt: new Date(String(before)) };
         }
 
         const messages = await Message.find(query)

@@ -12,16 +12,16 @@ router.get('/', auth, async (req, res) => {
         const { subject, search, sort } = req.query;
         let query = {};
 
-        if (subject && subject !== 'All') {
-            query.subject = subject;
+        if (subject && String(subject) !== 'All') {
+            query.subject = String(subject);
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         let sortOption = { createdAt: -1 };
-        if (sort === 'popular') {
+        if (sort && String(sort) === 'popular') {
             sortOption = { downloads: -1 };
         }
 
@@ -71,7 +71,7 @@ router.post('/', auth, async (req, res) => {
 router.put('/:id/vote', auth, async (req, res) => {
     try {
         const { voteType } = req.body; // 'up' or 'down'
-        const material = await StudyMaterial.findById(req.params.id);
+        const material = await StudyMaterial.findById(String(req.params.id));
 
         if (!material) {
             return res.status(404).json({ message: 'Material not found' });
@@ -105,7 +105,7 @@ router.put('/:id/vote', auth, async (req, res) => {
 router.put('/:id/download', auth, async (req, res) => {
     try {
         const material = await StudyMaterial.findByIdAndUpdate(
-            req.params.id,
+            String(req.params.id),
             { $inc: { downloads: 1 } },
             { new: true }
         );
@@ -122,7 +122,7 @@ router.put('/:id/download', auth, async (req, res) => {
 // @access  Private (owner only)
 router.delete('/:id', auth, async (req, res) => {
     try {
-        const material = await StudyMaterial.findById(req.params.id);
+        const material = await StudyMaterial.findById(String(req.params.id));
 
         if (!material) {
             return res.status(404).json({ message: 'Material not found' });
