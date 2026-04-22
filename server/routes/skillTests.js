@@ -102,7 +102,7 @@ router.get('/leaderboard/:testType', async (req, res) => {
 
         // Get best score per user
         const leaderboard = await SkillTest.aggregate([
-            { $match: { testType } },
+            { $match: { testType: String(testType) } },
             { $sort: { score: -1, timeTaken: 1 } },
             {
                 $group: {
