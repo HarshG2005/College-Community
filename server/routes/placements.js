@@ -13,15 +13,16 @@ router.get('/', auth, async (req, res) => {
         let query = {};
 
         if (type && type !== 'All') {
-            query.type = type.toLowerCase();
+            query.type = String(type).toLowerCase();
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            const escapedCompany = String(company).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(escapedCompany, 'i');
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         const posts = await PlacementPost.find(query)
@@ -31,7 +32,7 @@ router.get('/', auth, async (req, res) => {
 
         res.json({ posts });
     } catch (error) {
-        console.error('Get placements error:', error);
+        console.error('Get placements error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -62,7 +63,7 @@ router.post('/', auth, async (req, res) => {
 
         res.status(201).json({ post });
     } catch (error) {
-        console.error('Create placement post error:', error);
+        console.error('Create placement post error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -87,7 +88,7 @@ router.put('/:id/like', auth, async (req, res) => {
         await post.save();
         res.json({ likes: post.likes.length });
     } catch (error) {
-        console.error('Like post error:', error);
+        console.error('Like post error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -107,7 +108,7 @@ router.get('/stats', auth, async (req, res) => {
             totalCompanies: companies.length
         });
     } catch (error) {
-        console.error('Get stats error:', error);
+        console.error('Get stats error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -130,7 +131,7 @@ router.delete('/:id', auth, async (req, res) => {
         await post.deleteOne();
         res.json({ message: 'Post deleted' });
     } catch (error) {
-        console.error('Delete post error:', error);
+        console.error('Delete post error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
