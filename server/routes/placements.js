@@ -13,15 +13,16 @@ router.get('/', auth, async (req, res) => {
         let query = {};
 
         if (type && type !== 'All') {
-            query.type = type.toLowerCase();
+            query.type = String(type).toLowerCase();
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            const safeCompany = String(company).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(safeCompany, 'i');
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         const posts = await PlacementPost.find(query)
@@ -72,7 +73,8 @@ router.post('/', auth, async (req, res) => {
 // @access  Private
 router.put('/:id/like', auth, async (req, res) => {
     try {
-        const post = await PlacementPost.findById(req.params.id);
+        const id = String(req.params.id);
+        const post = await PlacementPost.findById(id);
         if (!post) {
             return res.status(404).json({ message: 'Post not found' });
         }
@@ -117,7 +119,8 @@ router.get('/stats', auth, async (req, res) => {
 // @access  Private (owner or admin)
 router.delete('/:id', auth, async (req, res) => {
     try {
-        const post = await PlacementPost.findById(req.params.id);
+        const id = String(req.params.id);
+        const post = await PlacementPost.findById(id);
 
         if (!post) {
             return res.status(404).json({ message: 'Post not found' });
