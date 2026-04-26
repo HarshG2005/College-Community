@@ -1,0 +1,4 @@
+## 2024-05-24 - [ReDoS and DoS via Express Query Parameters]
+**Vulnerability:** User inputs (`req.query.type` and `req.query.company`) were used without explicit string casting and sanitization. Calling string methods like `.toLowerCase()` on an array/object caused a DoS crash. Passing an unsanitized string into `new RegExp()` caused a ReDoS vulnerability.
+**Learning:** In Express, `req.query` and `req.params` parameters must be manually and explicitly cast to strings (e.g., `String(param)`) to prevent NoSQL injection via object payloads and DoS crashes. For regular expressions, inputs must be strictly escaped.
+**Prevention:** Always explicitly cast route parameters to `String` and escape them before utilizing them in Mongoose queries or string methods, particularly when passed to `new RegExp`.
