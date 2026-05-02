@@ -13,11 +13,11 @@ router.get('/', auth, async (req, res) => {
         let query = {};
 
         if (subject && subject !== 'All') {
-            query.subject = subject;
+            query.subject = String(subject);
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         let sortOption = { createdAt: -1 };
