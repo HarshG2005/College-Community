@@ -12,12 +12,18 @@ router.get('/', auth, async (req, res) => {
         const { type, search, company } = req.query;
         let query = {};
 
-        if (type && type !== 'All') {
-            query.type = type.toLowerCase();
+        // Explicitly cast to string to prevent Type DoS from array inputs
+        const safeType = type ? String(type) : undefined;
+        const safeCompany = company ? String(company) : undefined;
+
+        if (safeType && safeType !== 'All') {
+            query.type = safeType.toLowerCase();
         }
 
-        if (company) {
-            query.company = new RegExp(company, 'i');
+        if (safeCompany) {
+            // Escape string for RegExp to prevent ReDoS
+            const escapedCompany = safeCompany.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(escapedCompany, 'i');
         }
 
         if (search) {
