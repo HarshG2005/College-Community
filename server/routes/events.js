@@ -12,11 +12,15 @@ router.get('/', auth, async (req, res) => {
         const { category, upcoming } = req.query;
         let query = { isActive: true };
 
-        if (category && category !== 'All') {
-            query.category = category.toLowerCase();
+        // Explicitly cast to string to prevent Type DoS from array inputs
+        const safeCategory = category ? String(category) : undefined;
+        const safeUpcoming = upcoming ? String(upcoming) : undefined;
+
+        if (safeCategory && safeCategory !== 'All') {
+            query.category = safeCategory.toLowerCase();
         }
 
-        if (upcoming === 'true') {
+        if (safeUpcoming === 'true') {
             query.date = { $gte: new Date() };
         }
 
