@@ -1,0 +1,4 @@
+## 2024-05-10 - Explicit String Casting and ReDoS Prevention
+**Vulnerability:** Type DoS and Regular Expression DoS (ReDoS) due to unvalidated, uncasted req.query objects/arrays being processed directly via string methods (e.g., .toLowerCase()) and passed directly to new RegExp() without escaping. Found in `server/routes/placements.js`.
+**Learning:** `req.query` and `req.body` parameters from Express can be objects or arrays instead of strings (e.g., `?param=1&param=2` or `?param[$ne]=val`). When string methods or regex operations are called on these uncasted inputs, it causes exceptions (Type DoS) or potential ReDoS attacks.
+**Prevention:** Always explicitly cast `req.query` and `req.body` inputs to String before using string methods or regex, and rigorously escape any user input dynamically injected into `new RegExp(...)` (e.g., using `String(input).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`).
