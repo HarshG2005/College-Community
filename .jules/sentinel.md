@@ -1,0 +1,4 @@
+## 2024-05-15 - [Unescaped Regex in Mongoose Query]
+**Vulnerability:** Regex Denial of Service (ReDoS) and NoSQL Injection exist when user input from `req.query` is passed directly into a Mongoose `new RegExp(input, 'i')` query without explicit string casting and escaping of special regex characters.
+**Learning:** `req.query` variables can be arrays or objects (causing Type DoS if string methods like `.toLowerCase()` are applied), and unescaped input to `new RegExp` allows attackers to craft complex queries that either crash the server (ReDoS) or alter the query logic (NoSQL Injection).
+**Prevention:** Always cast inputs from `req.query` or `req.body` explicitly to strings (e.g., `String(input)`) and escape them using `.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')` before using them in `new RegExp`.
