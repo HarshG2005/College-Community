@@ -14,17 +14,17 @@ router.get('/:room', auth, async (req, res) => {
 
         let query = { room };
         if (before) {
-            query.createdAt = { $lt: new Date(before) };
+            query.createdAt = { $lt: new Date(String(before)) };
         }
 
         const messages = await Message.find(query)
             .populate('sender', 'name')
             .sort({ createdAt: -1 })
-            .limit(parseInt(limit));
+            .limit(parseInt(String(limit)) || 50);
 
         res.json({ messages: messages.reverse() });
     } catch (error) {
-        console.error('Get messages error:', error);
+        console.error('Get messages error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -49,7 +49,7 @@ router.post('/', auth, async (req, res) => {
 
         res.status(201).json({ message });
     } catch (error) {
-        console.error('Send message error:', error);
+        console.error('Send message error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -74,7 +74,7 @@ router.get('/rooms/list', auth, async (req, res) => {
 
         res.json({ rooms });
     } catch (error) {
-        console.error('Get rooms error:', error);
+        console.error('Get rooms error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });

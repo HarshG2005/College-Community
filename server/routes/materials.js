@@ -12,16 +12,16 @@ router.get('/', auth, async (req, res) => {
         const { subject, search, sort } = req.query;
         let query = {};
 
-        if (subject && subject !== 'All') {
-            query.subject = subject;
+        if (subject && String(subject) !== 'All') {
+            query.subject = String(subject);
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         let sortOption = { createdAt: -1 };
-        if (sort === 'popular') {
+        if (String(sort) === 'popular') {
             sortOption = { downloads: -1 };
         }
 
@@ -32,7 +32,7 @@ router.get('/', auth, async (req, res) => {
 
         res.json({ materials });
     } catch (error) {
-        console.error('Get materials error:', error);
+        console.error('Get materials error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -60,7 +60,7 @@ router.post('/', auth, async (req, res) => {
 
         res.status(201).json({ material });
     } catch (error) {
-        console.error('Upload material error:', error);
+        console.error('Upload material error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -94,7 +94,7 @@ router.put('/:id/vote', auth, async (req, res) => {
             downvotes: material.downvotes.length
         });
     } catch (error) {
-        console.error('Vote error:', error);
+        console.error('Vote error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -112,7 +112,7 @@ router.put('/:id/download', auth, async (req, res) => {
 
         res.json({ downloads: material.downloads });
     } catch (error) {
-        console.error('Download count error:', error);
+        console.error('Download count error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -135,7 +135,7 @@ router.delete('/:id', auth, async (req, res) => {
         await material.deleteOne();
         res.json({ message: 'Material deleted' });
     } catch (error) {
-        console.error('Delete material error:', error);
+        console.error('Delete material error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
