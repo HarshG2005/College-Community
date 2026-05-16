@@ -12,12 +12,12 @@ router.get('/', auth, async (req, res) => {
         const { category, search } = req.query;
         let query = {};
 
-        if (category && category !== 'All') {
-            query.category = category.toLowerCase();
+        if (category && String(category) !== 'All') {
+            query.category = String(category).toLowerCase();
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         const notices = await Notice.find(query)
@@ -27,7 +27,7 @@ router.get('/', auth, async (req, res) => {
 
         res.json({ notices });
     } catch (error) {
-        console.error('Get notices error:', error);
+        console.error('Get notices error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -52,7 +52,7 @@ router.post('/', auth, adminOnly, async (req, res) => {
 
         res.status(201).json({ notice });
     } catch (error) {
-        console.error('Create notice error:', error);
+        console.error('Create notice error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -77,7 +77,7 @@ router.put('/:id/like', auth, async (req, res) => {
         await notice.save();
         res.json({ likes: notice.likes.length });
     } catch (error) {
-        console.error('Like notice error:', error);
+        console.error('Like notice error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -102,7 +102,7 @@ router.post('/:id/comments', auth, async (req, res) => {
 
         res.json({ comments: notice.comments });
     } catch (error) {
-        console.error('Add comment error:', error);
+        console.error('Add comment error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -115,7 +115,7 @@ router.delete('/:id', auth, adminOnly, async (req, res) => {
         await Notice.findByIdAndDelete(req.params.id);
         res.json({ message: 'Notice deleted' });
     } catch (error) {
-        console.error('Delete notice error:', error);
+        console.error('Delete notice error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });

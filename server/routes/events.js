@@ -12,11 +12,11 @@ router.get('/', auth, async (req, res) => {
         const { category, upcoming } = req.query;
         let query = { isActive: true };
 
-        if (category && category !== 'All') {
-            query.category = category.toLowerCase();
+        if (category && String(category) !== 'All') {
+            query.category = String(category).toLowerCase();
         }
 
-        if (upcoming === 'true') {
+        if (String(upcoming) === 'true') {
             query.date = { $gte: new Date() };
         }
 
@@ -27,7 +27,7 @@ router.get('/', auth, async (req, res) => {
 
         res.json({ events });
     } catch (error) {
-        console.error('Get events error:', error);
+        console.error('Get events error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -58,7 +58,7 @@ router.post('/', auth, adminOnly, async (req, res) => {
 
         res.status(201).json({ event });
     } catch (error) {
-        console.error('Create event error:', error);
+        console.error('Create event error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -94,7 +94,7 @@ router.put('/:id/register', auth, async (req, res) => {
             participants: event.participants.length
         });
     } catch (error) {
-        console.error('Register event error:', error);
+        console.error('Register event error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -111,7 +111,7 @@ router.get('/my-events', auth, async (req, res) => {
 
         res.json({ events });
     } catch (error) {
-        console.error('Get my events error:', error);
+        console.error('Get my events error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -124,7 +124,7 @@ router.delete('/:id', auth, adminOnly, async (req, res) => {
         await Event.findByIdAndDelete(req.params.id);
         res.json({ message: 'Event deleted' });
     } catch (error) {
-        console.error('Delete event error:', error);
+        console.error('Delete event error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
