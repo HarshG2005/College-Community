@@ -9,7 +9,10 @@ const router = express.Router();
 // @access  Private
 router.get('/', auth, async (req, res) => {
     try {
-        const { type, search, company } = req.query;
+        const type = req.query.type ? String(req.query.type) : undefined;
+        const search = req.query.search ? String(req.query.search) : undefined;
+        const company = req.query.company ? String(req.query.company) : undefined;
+
         let query = {};
 
         if (type && type !== 'All') {
@@ -17,7 +20,8 @@ router.get('/', auth, async (req, res) => {
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            const escapedCompany = company.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(escapedCompany, 'i');
         }
 
         if (search) {
@@ -31,7 +35,7 @@ router.get('/', auth, async (req, res) => {
 
         res.json({ posts });
     } catch (error) {
-        console.error('Get placements error:', error);
+        console.error('Get placements error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -62,7 +66,7 @@ router.post('/', auth, async (req, res) => {
 
         res.status(201).json({ post });
     } catch (error) {
-        console.error('Create placement post error:', error);
+        console.error('Create placement post error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -87,7 +91,7 @@ router.put('/:id/like', auth, async (req, res) => {
         await post.save();
         res.json({ likes: post.likes.length });
     } catch (error) {
-        console.error('Like post error:', error);
+        console.error('Like post error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -107,7 +111,7 @@ router.get('/stats', auth, async (req, res) => {
             totalCompanies: companies.length
         });
     } catch (error) {
-        console.error('Get stats error:', error);
+        console.error('Get stats error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -130,7 +134,7 @@ router.delete('/:id', auth, async (req, res) => {
         await post.deleteOne();
         res.json({ message: 'Post deleted' });
     } catch (error) {
-        console.error('Delete post error:', error);
+        console.error('Delete post error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
