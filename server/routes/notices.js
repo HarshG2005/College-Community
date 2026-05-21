@@ -13,11 +13,11 @@ router.get('/', auth, async (req, res) => {
         let query = {};
 
         if (category && category !== 'All') {
-            query.category = category.toLowerCase();
+            query.category = String(category).toLowerCase();
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         const notices = await Notice.find(query)
@@ -27,7 +27,7 @@ router.get('/', auth, async (req, res) => {
 
         res.json({ notices });
     } catch (error) {
-        console.error('Get notices error:', error);
+        console.error('Get notices error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
