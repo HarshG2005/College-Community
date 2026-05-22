@@ -9,7 +9,9 @@ const router = express.Router();
 // @access  Private
 router.get('/', auth, async (req, res) => {
     try {
-        const { subject, search, sort } = req.query;
+        const subject = req.query.subject ? String(req.query.subject) : undefined;
+        const search = req.query.search ? String(req.query.search) : undefined;
+        const sort = req.query.sort ? String(req.query.sort) : undefined;
         let query = {};
 
         if (subject && subject !== 'All') {
@@ -32,7 +34,7 @@ router.get('/', auth, async (req, res) => {
 
         res.json({ materials });
     } catch (error) {
-        console.error('Get materials error:', error);
+        console.error('Get materials error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -60,7 +62,7 @@ router.post('/', auth, async (req, res) => {
 
         res.status(201).json({ material });
     } catch (error) {
-        console.error('Upload material error:', error);
+        console.error('Upload material error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -70,7 +72,7 @@ router.post('/', auth, async (req, res) => {
 // @access  Private
 router.put('/:id/vote', auth, async (req, res) => {
     try {
-        const { voteType } = req.body; // 'up' or 'down'
+        const voteType = req.body.voteType ? String(req.body.voteType) : undefined; // 'up' or 'down'
         const material = await StudyMaterial.findById(req.params.id);
 
         if (!material) {
@@ -94,7 +96,7 @@ router.put('/:id/vote', auth, async (req, res) => {
             downvotes: material.downvotes.length
         });
     } catch (error) {
-        console.error('Vote error:', error);
+        console.error('Vote error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -112,7 +114,7 @@ router.put('/:id/download', auth, async (req, res) => {
 
         res.json({ downloads: material.downloads });
     } catch (error) {
-        console.error('Download count error:', error);
+        console.error('Download count error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -135,7 +137,7 @@ router.delete('/:id', auth, async (req, res) => {
         await material.deleteOne();
         res.json({ message: 'Material deleted' });
     } catch (error) {
-        console.error('Delete material error:', error);
+        console.error('Delete material error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });

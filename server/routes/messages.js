@@ -10,7 +10,13 @@ const router = express.Router();
 router.get('/:room', auth, async (req, res) => {
     try {
         const { room } = req.params;
-        const { limit = 50, before } = req.query;
+        const limitParam = req.query.limit ? String(req.query.limit) : '50';
+        const before = req.query.before ? String(req.query.before) : undefined;
+
+        let limit = parseInt(limitParam, 10);
+        if (isNaN(limit) || limit < 1) {
+            limit = 50; // fallback to default
+        }
 
         let query = { room };
         if (before) {
@@ -20,11 +26,11 @@ router.get('/:room', auth, async (req, res) => {
         const messages = await Message.find(query)
             .populate('sender', 'name')
             .sort({ createdAt: -1 })
-            .limit(parseInt(limit));
+            .limit(limit);
 
         res.json({ messages: messages.reverse() });
     } catch (error) {
-        console.error('Get messages error:', error);
+        console.error('Get messages error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -49,7 +55,7 @@ router.post('/', auth, async (req, res) => {
 
         res.status(201).json({ message });
     } catch (error) {
-        console.error('Send message error:', error);
+        console.error('Send message error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
@@ -74,7 +80,7 @@ router.get('/rooms/list', auth, async (req, res) => {
 
         res.json({ rooms });
     } catch (error) {
-        console.error('Get rooms error:', error);
+        console.error('Get rooms error:', error.message);
         res.status(500).json({ message: 'Server error' });
     }
 });
