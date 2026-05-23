@@ -4,13 +4,14 @@ import { body, validationResult } from 'express-validator';
 import User from '../models/User.js';
 import { auth } from '../middleware/auth.js';
 import { loginRateLimit } from '../middleware/loginRateLimit.js';
+import { registerRateLimit } from '../middleware/registerRateLimit.js';
 
 const router = express.Router();
 
 // @route   POST /api/auth/register
 // @desc    Register a new user
 // @access  Public
-router.post('/register', [
+router.post('/register', registerRateLimit, [
     body('name').trim().isLength({ min: 2, max: 50 }).withMessage('Name must be 2-50 characters'),
     body('email').isEmail().withMessage('Please enter a valid email'),
     body('password').isLength({ min: 6 }).withMessage('Password must be at least 6 characters')
