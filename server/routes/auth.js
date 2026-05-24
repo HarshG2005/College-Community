@@ -21,7 +21,11 @@ router.post('/register', [
             return res.status(400).json({ message: errors.array()[0].msg });
         }
 
-        const { name, email, password, branch, year } = req.body;
+        const { year } = req.body;
+        const name = req.body.name !== undefined ? String(req.body.name) : undefined;
+        const email = req.body.email !== undefined ? String(req.body.email) : undefined;
+        const password = req.body.password !== undefined ? String(req.body.password) : undefined;
+        const branch = req.body.branch !== undefined ? String(req.body.branch) : undefined;
 
         // Check if user exists
         let user = await User.findOne({ email: email.toLowerCase() });
@@ -80,7 +84,8 @@ router.post('/login', loginRateLimit, [
             return res.status(400).json({ message: errors.array()[0].msg });
         }
 
-        const { email, password } = req.body;
+        const email = req.body.email !== undefined ? String(req.body.email) : undefined;
+        const password = req.body.password !== undefined ? String(req.body.password) : undefined;
 
         // Find user
         const user = await User.findOne({ email: email.toLowerCase() }).select('+password');
@@ -149,7 +154,11 @@ router.get('/me', auth, async (req, res) => {
 // @access  Private
 router.put('/profile', auth, async (req, res) => {
     try {
-        const { name, branch, year, skills, bio } = req.body;
+        const { year } = req.body;
+        const name = req.body.name !== undefined ? String(req.body.name) : undefined;
+        const branch = req.body.branch !== undefined ? String(req.body.branch) : undefined;
+        const bio = req.body.bio !== undefined ? String(req.body.bio) : undefined;
+        const skills = Array.isArray(req.body.skills) ? req.body.skills.map(String) : req.body.skills;
 
         const user = await User.findByIdAndUpdate(
             req.user._id,
