@@ -1,0 +1,5 @@
+
+## 2024-05-25 - Prevent ReDoS and NoSQL Injection in RegExp creation
+**Vulnerability:** User input from `req.query.company` in the GET `/api/placements` endpoint was directly passed into `new RegExp(company, 'i')` without string casting or regex character escaping. This allowed attackers to potentially trigger a Regular Expression Denial of Service (ReDoS) with specially crafted payloads or to inject NoSQL query objects (NoSQL injection).
+**Learning:** Using `new RegExp()` dynamically with user-provided parameters is highly risky. Express query parameters can sometimes parse as arrays or objects (leading to type errors/crashes, i.e., Type DoS), and unescaped strings can contain regex quantifiers leading to exponential matching times (ReDoS).
+**Prevention:** Always explicitly cast variables from `req.query` or `req.body` to `String` and correctly escape special characters (e.g., `String(input).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`) before passing them to a regular expression constructor.
