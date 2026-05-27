@@ -1,0 +1,4 @@
+## 2024-05-18 - [Type DoS and ReDoS in Query Parameters]
+**Vulnerability:** Type Denial of Service (DoS), NoSQL injection, and Regular Expression Denial of Service (ReDoS) due to missing string casting and escaping on `req.query` inputs like `company` and `type` in Mongoose queries (e.g., `new RegExp(company, 'i')`).
+**Learning:** Even standard query parameters in Express route handlers (`req.query` and `req.body`) can be supplied as objects or arrays by clients. Calling string methods on these directly, or passing unescaped user input into `new RegExp()`, will either crash the server or lead to DoS.
+**Prevention:** Always manually cast query inputs to `String()` before using string methods or regex operations. Explicitly escape user-supplied strings before constructing regular expressions with `new RegExp()`.
