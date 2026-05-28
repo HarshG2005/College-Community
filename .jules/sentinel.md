@@ -1,0 +1,4 @@
+## 2025-05-28 - NoSQL Injection Mitigation Reverts Truthiness
+**Vulnerability:** Type DoS and NoSQL injection vulnerabilities affecting `req.query` variables where arrays or objects could bypass expected string methods or be evaluated as MongoDB operators.
+**Learning:** When explicitly casting optional `req.query` parameters to strings using `String(param)` or applying string methods, preserving existing truthiness checks (e.g., `if (search)`) is crucial. Changing them to strict `undefined` checks (e.g., `if (search !== undefined)`) causes functional regressions because empty query parameters (like `?search=&category=`) will execute with an empty string, crashing `$text` queries and erroneously filtering by empty fields.
+**Prevention:** Always maintain existing falsy checks (`if (val)`) when securing `req.query` parameters, explicitly casting the value only if the check passes (`if (val) { query.val = String(val); }`).
