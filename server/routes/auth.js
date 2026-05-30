@@ -21,7 +21,9 @@ router.post('/register', [
             return res.status(400).json({ message: errors.array()[0].msg });
         }
 
-        const { name, email, password, branch, year } = req.body;
+        const { name, branch, year } = req.body;
+        const email = req.body.email !== undefined ? String(req.body.email) : undefined;
+        const password = req.body.password !== undefined ? String(req.body.password) : undefined;
 
         // Check if user exists
         let user = await User.findOne({ email: email.toLowerCase() });
@@ -80,7 +82,8 @@ router.post('/login', loginRateLimit, [
             return res.status(400).json({ message: errors.array()[0].msg });
         }
 
-        const { email, password } = req.body;
+        const email = req.body.email !== undefined ? String(req.body.email) : undefined;
+        const password = req.body.password !== undefined ? String(req.body.password) : undefined;
 
         // Find user
         const user = await User.findOne({ email: email.toLowerCase() }).select('+password');

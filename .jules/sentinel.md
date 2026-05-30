@@ -1,0 +1,4 @@
+## 2025-02-28 - [Type DoS via Express-Validator Array Bypass]
+**Vulnerability:** Type DoS in authentication endpoints (`/api/auth/register`, `/api/auth/login`) caused by unmitigated string manipulation (`.toLowerCase()`) on `req.body` fields post-validation.
+**Learning:** `express-validator`'s `isEmail()` does not coerce input type unless explicitly extracting with `matchedData`. Further, if an array of emails (e.g., `["test@example.com", {}]`) is sent, the validator passes the array through because the first element is a string. Subsequent operations like `.toLowerCase()` on this array crash the Node.js process, leading to a Denial of Service.
+**Prevention:** Always explicitly coerce `req.body` and `req.query` inputs to `String` (with undefined checks) before applying string methods or using them in database queries, even if pre-validated.
