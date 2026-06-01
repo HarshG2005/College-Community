@@ -1,0 +1,4 @@
+## 2024-06-01 - [Type DoS and NoSQL Injection via Array/Object inputs]
+**Vulnerability:** Attackers could bypass validation or string methods by passing arrays or objects in `req.query` or `req.body`, crashing the server via Type DoS (e.g., `[].toLowerCase()`) or executing NoSQL injections.
+**Learning:** `express-validator`'s `isEmail()` validator sometimes allows an array through if the first element is a valid email. Furthermore, lacking a global middleware, all input variables dynamically passed into Mongoose operations must explicitly be cast to a string type before use.
+**Prevention:** Always explicitly coerce user input to strings using `String(input)` before applying string methods or injecting into database operations. Additionally, ensure `RegExp` objects safely escape coercion results.
