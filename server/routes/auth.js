@@ -23,19 +23,21 @@ router.post('/register', [
 
         const { name, email, password, branch, year } = req.body;
 
+        const safeEmail = String(email).toLowerCase();
+
         // Check if user exists
-        let user = await User.findOne({ email: email.toLowerCase() });
+        let user = await User.findOne({ email: safeEmail });
         if (user) {
             return res.status(400).json({ message: 'User already exists with this email' });
         }
 
         // Create user
         user = new User({
-            name,
-            email: email.toLowerCase(),
-            password,
-            branch,
-            year,
+            name: name !== undefined ? String(name) : undefined,
+            email: safeEmail,
+            password: password !== undefined ? String(password) : undefined,
+            branch: branch !== undefined ? String(branch) : undefined,
+            year: year !== undefined ? String(year) : undefined,
             role: 'student'
         });
 
@@ -83,13 +85,13 @@ router.post('/login', loginRateLimit, [
         const { email, password } = req.body;
 
         // Find user
-        const user = await User.findOne({ email: email.toLowerCase() }).select('+password');
+        const user = await User.findOne({ email: String(email).toLowerCase() }).select('+password');
         if (!user) {
             return res.status(400).json({ message: 'Invalid credentials' });
         }
 
         // Check password
-        const isMatch = await user.comparePassword(password);
+        const isMatch = await user.comparePassword(String(password));
         if (!isMatch) {
             return res.status(400).json({ message: 'Invalid credentials' });
         }
@@ -151,9 +153,16 @@ router.put('/profile', auth, async (req, res) => {
     try {
         const { name, branch, year, skills, bio } = req.body;
 
+        const updateData = {};
+        if (name !== undefined) updateData.name = String(name);
+        if (branch !== undefined) updateData.branch = String(branch);
+        if (year !== undefined) updateData.year = String(year);
+        if (skills !== undefined) updateData.skills = skills;
+        if (bio !== undefined) updateData.bio = String(bio);
+
         const user = await User.findByIdAndUpdate(
             req.user._id,
-            { name, branch, year, skills, bio },
+            updateData,
             { new: true, runValidators: true }
         );
 
