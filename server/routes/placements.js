@@ -17,7 +17,8 @@ router.get('/', auth, async (req, res) => {
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            const escapedCompany = String(company).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(escapedCompany, 'i');
         }
 
         if (search) {

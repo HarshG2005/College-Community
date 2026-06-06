@@ -1,0 +1,4 @@
+## 2024-06-06 - ReDoS Vulnerability in Database Search Query
+**Vulnerability:** A Regular Expression Denial of Service (ReDoS) vulnerability was present in the placement routes (`/api/placements`), where user input (`req.query.company`) was directly fed into `new RegExp(company, 'i')` without sanitization. An attacker could provide a computationally expensive regex pattern like `(((a+)+)+)+$` to exhaust server CPU and block the Node.js event loop.
+**Learning:** Even simple search filters (like searching for a company name) that use Mongoose/MongoDB regex matching can lead to ReDoS if the user input contains regex metacharacters.
+**Prevention:** Always escape regex special characters from user input using a replacement pattern like `.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')` and explicitly cast to String before passing it to the `RegExp` constructor.
