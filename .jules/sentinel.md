@@ -1,0 +1,4 @@
+## 2024-06-13 - [CRITICAL] ReDoS and Type DoS via uncast req.query in Mongoose regex
+**Vulnerability:** Express routes (e.g. placements API) were using raw `req.query` parameters directly in `new RegExp()` and string methods like `.toLowerCase()` without type coercion or regex escaping. This allowed attackers to cause Type DoS crashes using arrays, or trigger Regular Expression Denial of Service (ReDoS) by passing complex, unescaped regex strings causing catastrophic backtracking.
+**Learning:** In the absence of global security middleware or input validation strictly mapping query structures, Mongoose string/regex queries derived from user input are inherently unsafe.
+**Prevention:** Always explicitly cast user input to a string (`String(param)`) prior to calling any string methods, and escape regex special characters (e.g., using `.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`) before passing input to the `RegExp` constructor.
