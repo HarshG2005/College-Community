@@ -1,0 +1,4 @@
+## 2025-02-24 - [CRITICAL] Fix ReDoS, Type DoS and NoSQL Injection in Placements Route
+**Vulnerability:** The `GET /api/placements` route was directly taking `type`, `company`, and `search` query parameters and passing them to string methods like `.toLowerCase()` and directly to `new RegExp()` and MongoDB's `$search` operator. This allowed attackers to crash the server by providing non-string inputs (Type DoS) or craft complex regular expressions to consume high CPU (ReDoS).
+**Learning:** Even simple query parameters in GET requests must be explicitly cast to strings when string methods or Regex constructors are used. User input must *always* be escaped before being dynamically inserted into a regular expression.
+**Prevention:** Always explicitly cast user input to a String (e.g. `String(req.query.company)`) and escape regex special characters (e.g. using `replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`) before compiling a `new RegExp` pattern from user input.
