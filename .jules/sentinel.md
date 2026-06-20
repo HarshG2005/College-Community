@@ -1,0 +1,4 @@
+## 2024-05-24 - [ReDoS and Type DoS in Express Route Parameters]
+**Vulnerability:** Type DoS and ReDoS due to calling string methods (`toLowerCase`, `new RegExp()`) directly on `req.query` fields (e.g. `req.query.company`) which can be an Array or Object.
+**Learning:** In Express, query parameters can be arrays or objects (e.g., `?company[$ne]=`). Passing an uncast value to `new RegExp()` with unescaped special characters allows ReDoS, and calling string methods like `.toLowerCase()` on an array or object causes a Type DoS crash. Express validators do not strictly cast to string by default.
+**Prevention:** Always explicitly coerce `req.query` and `req.body` parameters to `String()` and escape regex special characters before calling string methods or executing database regex queries. Use: `String(input).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`.
