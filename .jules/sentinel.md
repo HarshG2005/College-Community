@@ -1,0 +1,5 @@
+
+## 2024-06-29 - [Fix ReDoS and Type DoS in Placements Routes]
+**Vulnerability:** The `/api/placements` endpoint allowed querying by `company` using an unescaped string passed to `new RegExp()`, leading to a Regular Expression Denial of Service (ReDoS) vulnerability. Additionally, properties like `type` and `search` weren't cast to strings, leading to potential Type DoS crashes when calling string methods like `.toLowerCase()` on non-string inputs.
+**Learning:** In MongoDB queries via Mongoose, dynamically generating RegExps without sanitizing user input is a significant risk. Even if fields appear to come from the query string and are usually strings, malicious actors can send arrays or objects that bypass string expectations, causing Type DoS.
+**Prevention:** Always cast `req.query` fields to String if string operations are going to be performed on them. When using user input to construct a `RegExp` in Mongoose, always escape special characters using `.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`.
