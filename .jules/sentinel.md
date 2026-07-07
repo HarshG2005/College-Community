@@ -1,0 +1,4 @@
+## 2024-05-18 - [Type DoS, ReDoS, and NoSQL Injection via Uncast Query Parameters]
+**Vulnerability:** Express route handlers (`server/routes/*.js`) calling string methods like `.toLowerCase()` or `new RegExp()` on uncast `req.query` inputs, or passing uncast `req.query.search` to `$text` queries.
+**Learning:** `req.query` parameters can be objects or arrays depending on query string formatting (e.g., `?category[]=val` or `?search[$ne]=val`). If they are arrays or objects, `.toLowerCase()` throws a TypeError, leading to an unhandled DoS. If they are objects with Mongo operators, it leads to NoSQL injection.
+**Prevention:** Always explicitly cast `req.query` and `req.body` parameters to `String()` before calling string methods or using them in MongoDB query objects, especially `$text` and `RegExp`. Also, properly escape inputs passed to `new RegExp()`.
