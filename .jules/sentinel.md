@@ -1,0 +1,4 @@
+## 2024-05-24 - [HIGH] Fix Type DoS, ReDoS, and NoSQL injection vulnerabilities in routes
+**Vulnerability:** Systemic Type DoS, ReDoS, and NoSQL injection vulnerabilities caused by calling string methods like `.toLowerCase()` or `new RegExp()` on uncast user inputs (`req.query` and `req.body`), and directly passing these to MongoDB operators like `$search` in routes (auth, events, notices, materials, placements).
+**Learning:** `express-validator` validators (like `isEmail()`) can bypass validation if an array is passed (where the first element is valid), causing crashes if string methods are called directly on the parameter. `req.query` params are also untyped.
+**Prevention:** Always explicitly cast user inputs (`req.query`, `req.body`) to `String(param)` before calling string methods or using them in database queries (e.g., regex search or NoSQL text search), and escape regex special characters.
