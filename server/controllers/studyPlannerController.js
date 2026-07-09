@@ -10,7 +10,11 @@ export const generatePlan = async (req, res) => {
         const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
         const model = genAI.getGenerativeModel({ model: "gemma-3-27b-it" });
 
-        const { subject, goal, level, daysPerWeek, hoursPerDay } = req.body;
+        const subject = req.body.subject !== undefined ? String(req.body.subject) : undefined;
+        const goal = req.body.goal !== undefined ? String(req.body.goal) : undefined;
+        const level = req.body.level !== undefined ? String(req.body.level) : undefined;
+        const daysPerWeek = req.body.daysPerWeek !== undefined ? String(req.body.daysPerWeek) : undefined;
+        const hoursPerDay = req.body.hoursPerDay !== undefined ? String(req.body.hoursPerDay) : undefined;
         const userId = req.user._id;
 
         console.log(`🤖 Generative AI: Creating Study Plan for ${subject} (${level})`);
@@ -92,7 +96,8 @@ export const getPlans = async (req, res) => {
 
 export const updateProgress = async (req, res) => {
     try {
-        const { planId, weekNumber, dayNumber, isCompleted } = req.body;
+        const planId = req.body.planId !== undefined ? String(req.body.planId) : undefined;
+        const { weekNumber, dayNumber, isCompleted } = req.body;
 
         const plan = await StudyPlan.findOne({ _id: planId, userId: req.user._id });
         if (!plan) return res.status(404).json({ message: 'Plan not found' });
@@ -133,7 +138,7 @@ export const updateProgress = async (req, res) => {
 // The Agentic "Brain" to check and reschedule
 export const syncAgent = async (req, res) => {
     try {
-        const { planId } = req.body;
+        const planId = req.body.planId !== undefined ? String(req.body.planId) : undefined;
         const plan = await StudyPlan.findOne({ _id: planId, userId: req.user._id });
 
         if (!plan) return res.status(404).json({ message: 'Plan not found' });
