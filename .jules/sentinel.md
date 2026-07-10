@@ -1,0 +1,4 @@
+## 2024-07-10 - Type DoS, ReDoS, and NoSQL Injection via Uncast User Inputs
+**Vulnerability:** Found vulnerabilities in `server/routes/placements.js` and other routes where `req.query` variables are directly used with `.toLowerCase()`, `new RegExp()`, and in MongoDB `$text` queries without string casting.
+**Learning:** `req.query` and `req.body` parameters can be objects or arrays. Calling string methods directly on them without explicit casting can lead to Type DoS (server crashes), NoSQL Injection (if object payloads bypass checks), and ReDoS (if regex characters are not escaped). Express `req.params` are inherently strings but `req.query` and `req.body` must be cast explicitly due to lack of global validation middleware.
+**Prevention:** Always explicitly cast `req.query` and `req.body` variables to String (e.g. `String(type)`). Additionally, escape any user input used in regex (e.g. `company_str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`).
