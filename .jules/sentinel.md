@@ -1,0 +1,4 @@
+## 2025-02-27 - NoSQL Injection, Type DoS, and ReDoS in placements route
+**Vulnerability:** The `/api/placements` endpoint was vulnerable to Type DoS, ReDoS, and NoSQL injection because user-supplied query parameters (`type`, `company`, `search`) were used directly in string methods (`.toLowerCase()`), regex instantiation (`new RegExp()`), and MongoDB `$text` queries without proper type casting and sanitization.
+**Learning:** Even simple query parameters must be defensively handled. Type Juggling attacks can bypass basic string-method assumptions. Regex injection via unsanitized strings is a critical crash risk.
+**Prevention:** Always explicitly cast `req.query` and `req.body` parameters to `String()` before passing them to string methods, MongoDB queries (like `$text`), or dynamically constructing regular expressions. Always escape user input before using it in a regular expression.
