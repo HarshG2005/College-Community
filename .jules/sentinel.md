@@ -1,0 +1,4 @@
+## 2024-05-23 - Type DoS, ReDoS, and NoSQL Injection in Express Routes
+**Vulnerability:** Uncast user input from `req.query` being directly used in string methods (like `.toLowerCase()`), RegExp constructors, and Mongoose `$text` search queries.
+**Learning:** `req.query` in Express can contain objects or arrays if the query string is formatted a certain way (e.g., `?param[$ne]=val` or `?param=1&param=2`). Calling string methods on these directly causes Type DoS (crashing the server). Passing them to Mongoose without string casting allows NoSQL injection. Passing them to RegExp without escaping causes ReDoS.
+**Prevention:** Always explicitly cast user input from `req.query` and `req.body` to a string (e.g., `String(param)`) before passing it to string methods, MongoDB queries, or RegExp constructors. Use regex escaping functions when creating regular expressions from user input.
