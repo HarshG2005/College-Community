@@ -1,0 +1,5 @@
+
+## 2024-05-24 - [Express Route Payload Vulnerabilities: Type DoS & NoSQL Injection]
+**Vulnerability:** Type DoS and NoSQL object injection across Express routes.
+**Learning:** `req.body` and `req.query` parameters are inherently uncast in Express, allowing attackers to inject objects or arrays (e.g., `?category[]=test`, `?search[$ne]=test`). Calling string methods like `.toLowerCase()` on arrays or objects crashes the application (Type DoS). Uncast inputs passed to MongoDB `$text: { $search: query }` queries can execute NoSQL injection. Express Validator also does not intrinsically enforce string typing on fields unless `matchedData(req)` is utilized.
+**Prevention:** Always explicitly coerce `req.query` and `req.body` parameters to strings using `String(param)` *before* passing them to MongoDB queries or executing string methods. Avoid mutating the original truthiness checks when fixing this to prevent functional regressions on empty query strings. Express route parameters (`req.params`) are already inherently strings and do not strictly require this defense.

@@ -13,7 +13,8 @@ router.get('/', auth, async (req, res) => {
         let query = { isActive: true };
 
         if (category && category !== 'All') {
-            query.category = category.toLowerCase();
+            // Security: Cast category to string to prevent Type DoS from array/object payloads
+            query.category = String(category).toLowerCase();
         }
 
         if (upcoming === 'true') {
