@@ -1,0 +1,4 @@
+## 2026-08-13 - [Explicit String Casting on Request Queries]
+**Vulnerability:** Type DoS and NoSQL injection vulnerabilities exist when query parameters (`req.query`) in Express.js are used directly in string methods (e.g., `.toLowerCase()`) or database queries without explicitly validating their type. An attacker can pass arrays or objects (e.g., `?category[$ne]=foo` or `?upcoming=true&upcoming=false`), causing unexpected application crashes or unauthorized database actions.
+**Learning:** `req.query` elements are not strictly strings; Express's query parser constructs objects or arrays for bracketed syntax or duplicate keys. String methods fail if the input is an object or array. Mongoose queries are also vulnerable to operator injection if given an unexpected object input.
+**Prevention:** Always explicitly cast user inputs from `req.query` (and `req.body`) using `String(value)` before performing any string manipulation or inserting into a database query.

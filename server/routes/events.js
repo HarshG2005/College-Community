@@ -9,14 +9,14 @@ const router = express.Router();
 // @access  Private
 router.get('/', auth, async (req, res) => {
     try {
-        const { category, upcoming } = req.query;
+        let { category, upcoming } = req.query;
         let query = { isActive: true };
 
-        if (category && category !== 'All') {
-            query.category = category.toLowerCase();
+        if (category && String(category) !== 'All') {
+            query.category = String(category).toLowerCase();
         }
 
-        if (upcoming === 'true') {
+        if (upcoming && String(upcoming) === 'true') {
             query.date = { $gte: new Date() };
         }
 
