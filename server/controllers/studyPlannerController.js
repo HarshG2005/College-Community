@@ -93,8 +93,9 @@ export const getPlans = async (req, res) => {
 export const updateProgress = async (req, res) => {
     try {
         const { planId, weekNumber, dayNumber, isCompleted } = req.body;
+        const safePlanId = planId !== undefined ? String(planId) : undefined;
 
-        const plan = await StudyPlan.findOne({ _id: planId, userId: req.user._id });
+        const plan = await StudyPlan.findOne({ _id: safePlanId, userId: req.user._id });
         if (!plan) return res.status(404).json({ message: 'Plan not found' });
 
         // Find the day and update
@@ -134,7 +135,9 @@ export const updateProgress = async (req, res) => {
 export const syncAgent = async (req, res) => {
     try {
         const { planId } = req.body;
-        const plan = await StudyPlan.findOne({ _id: planId, userId: req.user._id });
+        const safePlanId = planId !== undefined ? String(planId) : undefined;
+
+        const plan = await StudyPlan.findOne({ _id: safePlanId, userId: req.user._id });
 
         if (!plan) return res.status(404).json({ message: 'Plan not found' });
 

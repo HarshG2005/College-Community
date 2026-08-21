@@ -1,0 +1,4 @@
+## 2024-11-20 - [NoSQL Injection in findOne with req.body Object]
+**Vulnerability:** The `planId` from `req.body` was being passed directly into `StudyPlan.findOne({ _id: planId, ... })` without being cast to a string. This allowed for NoSQL injection via object payloads (e.g., `{"planId": {"$ne": null}}`).
+**Learning:** Even fields that are conceptually IDs can be exploited if they come from `req.body` and are directly injected into database queries because `req.body` can contain arbitrary JSON objects, unlike `req.params` which are always strings.
+**Prevention:** Always explicitly cast variables extracted from `req.body` or `req.query` to strings before using them in database queries (e.g., `String(planId)`).
