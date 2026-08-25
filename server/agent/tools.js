@@ -110,7 +110,7 @@ const create_study_schedule = async (userId, params) => {
         // DEBUG: Write to log file
         try {
             const logMsg = `[${new Date().toISOString()}] Saved Plan | User: ${userId} | Subject: ${params.subject} | ID: ${newPlan._id}\n`;
-            fs.appendFileSync('server/debug_tools_log.txt', logMsg);
+            await fs.promises.appendFile('server/debug_tools_log.txt', logMsg);
         } catch (logErr) { console.error("Log file error", logErr); }
 
         return {
@@ -128,7 +128,7 @@ const create_study_schedule = async (userId, params) => {
         // DEBUG: Log failure
         try {
             const failMsg = `[${new Date().toISOString()}] Plan FAILED | User: ${userId} | Subject: ${params.subject} | Error: ${error.message}\n`;
-            fs.appendFileSync('server/debug_tools_log.txt', failMsg);
+            await fs.promises.appendFile('server/debug_tools_log.txt', failMsg);
         } catch (l) { }
 
         return { status: "error", message: `Failed to generate detailed plan: ${error.message}` };
