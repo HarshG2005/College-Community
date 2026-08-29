@@ -13,11 +13,13 @@ router.get('/', auth, async (req, res) => {
         let query = {};
 
         if (category && category !== 'All') {
-            query.category = category.toLowerCase();
+            // Security: Cast to String to prevent Type DoS and NoSQL injection
+            query.category = String(category).toLowerCase();
         }
 
         if (search) {
-            query.$text = { $search: search };
+            // Security: Cast to String to prevent NoSQL injection via $text
+            query.$text = { $search: String(search) };
         }
 
         const notices = await Notice.find(query)

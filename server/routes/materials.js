@@ -13,11 +13,13 @@ router.get('/', auth, async (req, res) => {
         let query = {};
 
         if (subject && subject !== 'All') {
-            query.subject = subject;
+            // Security: Cast to String to prevent NoSQL injection
+            query.subject = String(subject);
         }
 
         if (search) {
-            query.$text = { $search: search };
+            // Security: Cast to String to prevent NoSQL injection via $text
+            query.$text = { $search: String(search) };
         }
 
         let sortOption = { createdAt: -1 };
