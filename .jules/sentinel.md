@@ -1,0 +1,4 @@
+## 2024-05-18 - Prevent Type DoS in Express Validator Endpoints
+**Vulnerability:** Type DoS via uncast user inputs in `/api/auth/register` and `/api/auth/login`. An array containing a valid email as its first element can bypass `express-validator`'s `isEmail()` check. If passed to `email.toLowerCase()`, this crashes the server because arrays don't have a `toLowerCase` method.
+**Learning:** `express-validator` validates fields but does not automatically coerce them to the expected type in `req.body` unless `matchedData(req)` is used. Directly accessing `req.body` variables and calling string methods on them remains dangerous even after validation.
+**Prevention:** Always explicitly cast user inputs to strings (e.g., `String(input).toLowerCase()`) before calling string methods or passing them to Mongoose queries, or strictly use `matchedData(req)` to retrieve sanitized, coerced data from the validator.
