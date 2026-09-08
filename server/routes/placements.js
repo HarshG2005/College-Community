@@ -12,16 +12,21 @@ router.get('/', auth, async (req, res) => {
         const { type, search, company } = req.query;
         let query = {};
 
+        // Security: Explicitly cast query parameters to String to prevent NoSQL injection via objects
+        // and Type DoS via arrays/objects.
         if (type && type !== 'All') {
-            query.type = type.toLowerCase();
+            query.type = String(type).toLowerCase();
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            // Security: Escape regex special characters to prevent ReDoS (Regular Expression DoS)
+            const escapedCompany = String(company).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(escapedCompany, 'i');
         }
 
         if (search) {
-            query.$text = { $search: search };
+            // Security: Explicitly cast to String to prevent $text NoSQL injection via object payloads
+            query.$text = { $search: String(search) };
         }
 
         const posts = await PlacementPost.find(query)
