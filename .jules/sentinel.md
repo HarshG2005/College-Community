@@ -1,0 +1,4 @@
+## 2024-05-18 - [DoS Risk] Event Loop Blocking via Synchronous File Operations
+**Vulnerability:** Found synchronous file operations (`fs.readFileSync`, `fs.unlinkSync`, `fs.appendFileSync`) in asynchronous Express route handlers (`server/controllers/resumeController.js` and `server/agent/tools.js`).
+**Learning:** Node.js is single-threaded. Calling synchronous I/O operations inside route handlers blocks the event loop, preventing the server from handling other incoming requests while the I/O completes. This introduces a Denial of Service (DoS) risk, where an attacker could repeatedly trigger the endpoint with large files or frequent requests, effectively halting the entire application.
+**Prevention:** Always use asynchronous, non-blocking I/O operations (e.g., `fs.promises.readFile`, `fs.promises.unlink`, `fs.promises.appendFile`) in request handlers and wrap them with `await` and appropriate `try...catch` blocks for error handling.
