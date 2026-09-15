@@ -1,0 +1,4 @@
+## 2024-05-24 - Express Request Parsing Vulnerabilities
+**Vulnerability:** Type DoS and NoSQL injection vulnerabilities exist across multiple Express route handlers due to directly calling string methods like `.toLowerCase()` on uncast user inputs (e.g., `req.query.category`, `req.body.email`), and passing object payloads to `$text` search queries.
+**Learning:** `express-validator`'s `isEmail()` can bypass validation for arrays if the first element is a valid email, passing the array into the handler. When an array or object is passed, calling string methods on it causes unhandled exceptions and Type DoS. Express `req.query` and `req.body` parameters are not inherently strings.
+**Prevention:** Always explicitly cast `req.query` and `req.body` variables to strings (e.g., `String(param)`) before calling string methods or passing them into Mongoose queries. Express route parameters (`req.params`) are already strictly strings.
