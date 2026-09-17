@@ -22,9 +22,10 @@ router.post('/register', [
         }
 
         const { name, email, password, branch, year } = req.body;
+        const normalizedEmail = String(email).toLowerCase();
 
         // Check if user exists
-        let user = await User.findOne({ email: email.toLowerCase() });
+        let user = await User.findOne({ email: normalizedEmail });
         if (user) {
             return res.status(400).json({ message: 'User already exists with this email' });
         }
@@ -32,7 +33,7 @@ router.post('/register', [
         // Create user
         user = new User({
             name,
-            email: email.toLowerCase(),
+            email: normalizedEmail,
             password,
             branch,
             year,
@@ -83,7 +84,7 @@ router.post('/login', loginRateLimit, [
         const { email, password } = req.body;
 
         // Find user
-        const user = await User.findOne({ email: email.toLowerCase() }).select('+password');
+        const user = await User.findOne({ email: String(email).toLowerCase() }).select('+password');
         if (!user) {
             return res.status(400).json({ message: 'Invalid credentials' });
         }
