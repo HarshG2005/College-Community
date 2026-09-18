@@ -1,0 +1,4 @@
+## 2024-05-16 - Prevent NoSQL Injection in Study Planner
+**Vulnerability:** Found a NoSQL injection risk in `server/controllers/studyPlannerController.js` where user-supplied `req.body.planId` was passed uncast into `StudyPlan.findOne({ _id: planId, ... })`. A malicious payload like `planId: {"$ne": null}` could bypass intended queries.
+**Learning:** Even internal endpoints using complex controllers need explicit input casting to string when interacting with MongoDB to prevent object injection. However, using `String(payload)` on objects results in `"[object Object]"`, which successfully mitigates the attack but causes a Mongoose `CastError`.
+**Prevention:** Consider explicit strict type checking (`typeof req.body.planId !== 'string'`) to reject malformed inputs earlier with a 400 Bad Request, rather than relying on Mongoose throwing a `CastError` during the query phase due to type coercion.
