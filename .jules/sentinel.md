@@ -1,0 +1,4 @@
+## 2026-09-21 - Event-Loop Blocking via Synchronous File Operations
+**Vulnerability:** Node.js server responsiveness and availability were compromised by synchronous file system operations (`fs.readFileSync`, `fs.unlinkSync`, `fs.appendFileSync`) in asynchronous route handlers (`resumeController.js`, `tools.js`).
+**Learning:** In a single-threaded event-loop architecture like Node.js, synchronous I/O blocks all concurrent request processing. Attackers could exploit these endpoints to cause a Denial of Service (DoS) by sending repeated requests that intentionally trigger these blocking paths. Additionally, `fs.existsSync` followed by `fs.unlinkSync` creates a Time-of-Check to Time-of-Use (TOCTOU) race condition.
+**Prevention:** Strictly enforce the use of asynchronous I/O (e.g., `fs.promises`) in all web server request-handling paths. Wrap unlinking operations in a `try...catch` block to handle `ENOENT` gracefully instead of checking for existence beforehand.
