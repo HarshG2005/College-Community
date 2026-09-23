@@ -9,19 +9,19 @@ const router = express.Router();
 // @access  Private
 router.get('/', auth, async (req, res) => {
     try {
-        const { subject, search, sort } = req.query;
+        let { subject, search, sort } = req.query;
         let query = {};
 
         if (subject && subject !== 'All') {
-            query.subject = subject;
+            query.subject = String(subject);
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         let sortOption = { createdAt: -1 };
-        if (sort === 'popular') {
+        if (String(sort) === 'popular') {
             sortOption = { downloads: -1 };
         }
 
