@@ -1,0 +1,4 @@
+## 2026-09-28 - Route Query Parameter Casting
+**Vulnerability:** Type DoS, ReDoS, and NoSQL injection vulnerabilities in Express routes (like `placements.js`) caused by uncast user inputs (e.g., `req.query`, `req.body`) being processed by string methods like `.toLowerCase()` or `new RegExp()`, and in `$text` `$search` operations.
+**Learning:** `req.query` and `req.body` parameters are not inherently strings and can be objects or arrays. Passing an object like `?company[$regex]=...` or `?type[]=...` can bypass logic or cause application crashes if string methods are expected but the input is uncast.
+**Prevention:** Always explicitly cast user input to a string (e.g., `String(req.query.type)`) before calling string methods or passing to database queries unless strict validation or Mongoose schema casting safely handles it. Escape regex special characters when passing user input to `new RegExp()`.
