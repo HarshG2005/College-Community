@@ -17,7 +17,7 @@ router.get('/', auth, async (req, res) => {
         }
 
         if (search) {
-            query.$text = { $search: search };
+            query.$text = { $search: String(search) };
         }
 
         let sortOption = { createdAt: -1 };
