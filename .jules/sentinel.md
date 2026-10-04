@@ -1,0 +1,4 @@
+## 2023-10-04 - Fix Event Loop Blocking DoS
+**Vulnerability:** Synchronous file system operations (`fs.readFileSync`, `fs.unlinkSync`, `fs.appendFileSync`) in an Express route handler (`server/controllers/resumeController.js`) blocked the Node.js event loop, creating a Denial of Service (DoS) vulnerability.
+**Learning:** In asynchronous applications, seemingly innocuous synchronous file operations, especially around file uploads, can pause all incoming request processing. Using `if (fs.existsSync(...)) { fs.unlinkSync(...); }` also introduces a Time-Of-Check to Time-Of-Use (TOCTOU) race condition.
+**Prevention:** Always use asynchronous equivalents from `fs.promises` in route handlers. When deleting files, bypass `existsSync` checks and instead directly `await fs.promises.unlink(...)` within a `try...catch` block to safely ignore "Not Found" errors.

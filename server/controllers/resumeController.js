@@ -33,7 +33,7 @@ export const analyzeResume = async (req, res) => {
                 size: req.file.size
             });
             try {
-                const dataBuffer = fs.readFileSync(req.file.path);
+                const dataBuffer = await fs.promises.readFile(req.file.path);
                 console.log('📄 Buffer size:', dataBuffer.length, 'bytes');
 
                 // Use pdfjs-dist to extract text
@@ -44,8 +44,10 @@ export const analyzeResume = async (req, res) => {
                 console.error('❌ Error stack:', pdfError.stack);
                 return res.status(400).json({ message: 'Failed to parse PDF file. Error: ' + pdfError.message });
             } finally {
-                if (fs.existsSync(req.file.path)) {
-                    fs.unlinkSync(req.file.path);
+                try {
+                    await fs.promises.unlink(req.file.path);
+                } catch (unlinkError) {
+                    // Ignore if file doesn't exist
                 }
             }
         } else if (req.body.resumeText) {
@@ -127,7 +129,7 @@ export const analyzeResume = async (req, res) => {
             res.json(analysisData);
 
         } catch (aiError) {
-            fs.appendFileSync('gemini_error.log', `[${new Date().toISOString()}] AI Error: ${aiError.message}\n${JSON.stringify(aiError, null, 2)}\n\n`);
+            await fs.promises.appendFile('gemini_error.log', `[${new Date().toISOString()}] AI Error: ${aiError.message}\n${JSON.stringify(aiError, null, 2)}\n\n`);
             console.error('⚠️ AI Analysis Failed:', aiError.message);
             console.error('Full Error Details:', JSON.stringify(aiError, null, 2));
             // console.error(aiError); 
