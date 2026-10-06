@@ -1,0 +1,6 @@
+## 2025-02-12 - Critical Type DoS and NoSQL Injection in Express Routes
+**Vulnerability:** Widespread NoSQL Injection and Type DoS across `req.query` and `req.body` variables in multiple routes (`events.js`, `notices.js`, `materials.js`, `placements.js`, `auth.js`). Specifically, passing an object instead of a string triggered application crashes when string prototype functions like `.toLowerCase()` were called without prior type enforcement. This allowed attackers to crash the server (DoS) or inject malicious Mongoose objects via `$ne` or similar payload objects.
+
+**Learning:** It's dangerous to assume that variables drawn from `req.query` or `req.body` are primitive strings, even when parsed by middleware like `express-validator` (e.g., if array payloads bypass some validations). Calling `.toLowerCase()` or instantiating a `new RegExp(user_input)` immediately creates vectors for ReDoS and Type DoS unless strictly coerced into Strings. Similarly, passing an Object payload into a Mongoose field via NoSQL injection opens up logic bypass vulnerabilities.
+
+**Prevention:** Always explicitly coerce request inputs into Strings (`String(req.query.field)`) prior to validation, conversion (e.g., `.toLowerCase()`), escaping (`replace()`), or database processing to avoid object type coercion vulnerabilities and guarantee consistent data handling.
