@@ -9,7 +9,9 @@ const router = express.Router();
 // @access  Private
 router.get('/', auth, async (req, res) => {
     try {
-        const { type, search, company } = req.query;
+        const type = req.query.type !== undefined ? String(req.query.type) : undefined;
+        const search = req.query.search !== undefined ? String(req.query.search) : undefined;
+        const company = req.query.company !== undefined ? String(req.query.company) : undefined;
         let query = {};
 
         if (type && type !== 'All') {
@@ -17,7 +19,8 @@ router.get('/', auth, async (req, res) => {
         }
 
         if (company) {
-            query.company = new RegExp(company, 'i');
+            const escapedCompany = company.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            query.company = new RegExp(escapedCompany, 'i');
         }
 
         if (search) {

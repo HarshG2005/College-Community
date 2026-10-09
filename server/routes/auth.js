@@ -22,9 +22,11 @@ router.post('/register', [
         }
 
         const { name, email, password, branch, year } = req.body;
+        const safeEmail = email !== undefined ? String(email) : undefined;
+        const safePassword = password !== undefined ? String(password) : undefined;
 
         // Check if user exists
-        let user = await User.findOne({ email: email.toLowerCase() });
+        let user = await User.findOne({ email: safeEmail.toLowerCase() });
         if (user) {
             return res.status(400).json({ message: 'User already exists with this email' });
         }
@@ -32,8 +34,8 @@ router.post('/register', [
         // Create user
         user = new User({
             name,
-            email: email.toLowerCase(),
-            password,
+            email: safeEmail.toLowerCase(),
+            password: safePassword,
             branch,
             year,
             role: 'student'
@@ -81,15 +83,17 @@ router.post('/login', loginRateLimit, [
         }
 
         const { email, password } = req.body;
+        const safeEmail = email !== undefined ? String(email) : undefined;
+        const safePassword = password !== undefined ? String(password) : undefined;
 
         // Find user
-        const user = await User.findOne({ email: email.toLowerCase() }).select('+password');
+        const user = await User.findOne({ email: safeEmail.toLowerCase() }).select('+password');
         if (!user) {
             return res.status(400).json({ message: 'Invalid credentials' });
         }
 
         // Check password
-        const isMatch = await user.comparePassword(password);
+        const isMatch = await user.comparePassword(safePassword);
         if (!isMatch) {
             return res.status(400).json({ message: 'Invalid credentials' });
         }

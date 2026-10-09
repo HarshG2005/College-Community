@@ -9,7 +9,9 @@ const router = express.Router();
 // @access  Private
 router.get('/', auth, async (req, res) => {
     try {
-        const { subject, search, sort } = req.query;
+        const subject = req.query.subject !== undefined ? String(req.query.subject) : undefined;
+        const search = req.query.search !== undefined ? String(req.query.search) : undefined;
+        const sort = req.query.sort !== undefined ? String(req.query.sort) : undefined;
         let query = {};
 
         if (subject && subject !== 'All') {

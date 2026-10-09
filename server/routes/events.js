@@ -9,7 +9,8 @@ const router = express.Router();
 // @access  Private
 router.get('/', auth, async (req, res) => {
     try {
-        const { category, upcoming } = req.query;
+        const category = req.query.category !== undefined ? String(req.query.category) : undefined;
+        const upcoming = req.query.upcoming !== undefined ? String(req.query.upcoming) : undefined;
         let query = { isActive: true };
 
         if (category && category !== 'All') {
