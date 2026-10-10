@@ -1,0 +1,4 @@
+## 2025-05-18 - Event Loop Blocking via Sync FS Operations
+**Vulnerability:** Denial of Service (DoS) vulnerability caused by the use of synchronous file operations (`fs.readFileSync`, `fs.unlinkSync`, `fs.appendFileSync`) inside asynchronous Express route handlers and controller functions.
+**Learning:** In Node.js, synchronous file operations block the main event loop. If multiple users hit an endpoint utilizing these methods simultaneously (e.g., uploading and processing resumes), the server will block entirely, preventing other requests from being handled and leading to DoS.
+**Prevention:** Always use the asynchronous versions of file operations from `fs.promises` (e.g., `await fs.promises.readFile`) in asynchronous route handlers. Replace existence checks (`fs.existsSync`) before deletion with a `try...catch` block around `fs.promises.unlink` to avoid race conditions and blocking the event loop.
