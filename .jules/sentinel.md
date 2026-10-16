@@ -1,0 +1,4 @@
+## 2024-05-24 - File System I/O Blocking DoS (CWE-400)
+**Vulnerability:** Synchronous file system operations (`fs.readFileSync`, `fs.appendFileSync`, `fs.unlinkSync`) were used directly within asynchronous route handlers in `server/controllers/resumeController.js` and `server/agent/tools.js`.
+**Learning:** Node.js executes on a single event loop. Synchronous file system operations block the entire event loop until the OS disk I/O completes. An attacker could intentionally abuse these endpoints (e.g., repeatedly uploading a resume) to force the server to execute blocking I/O, preventing the application from serving other users and causing a Denial of Service (DoS).
+**Prevention:** Always use asynchronous, non-blocking file system operations (like `fs.promises.readFile`, `fs.promises.unlink`, and `fs.promises.appendFile`) inside Express.js route handlers. Wrap operations like `unlink` in `try...catch` and ignore `ENOENT` to safely prevent race conditions (TOCTOU).
