@@ -1,0 +1,4 @@
+## 2025-02-27 - [Type DoS / NoSQL Injection in Express Routes]
+**Vulnerability:** Calling string methods like `.toLowerCase()` on uncast user input (`req.query` and `req.body`) across various routes (e.g., `/api/events`, `/api/notices`, `/api/placements`, `/api/auth/register`, `/api/auth/login`).
+**Learning:** `req.query` parameters can be parsed as arrays or objects (e.g., `?type=a&type=b` -> `['a', 'b']`), not just strings, causing a Type DoS crash when `.toLowerCase()` is called on them. Also, `req.body` parameters can be objects that bypass intended string logic and potentially enable NoSQL injection.
+**Prevention:** Always explicitly cast user inputs to strings (e.g., `String(input)`) before calling string methods or passing them into database queries to ensure type safety and prevent injection vulnerabilities.
