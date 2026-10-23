@@ -1,0 +1,4 @@
+## 2026-10-23 - express-validator Type DoS Bypass
+**Vulnerability:** A Type DoS crash (and potential bypass) caused by arrays being sent to fields validated by `express-validator`'s `isEmail()`. If an array like `["test@example.com", "other"]` is submitted, `isEmail()` only validates the first element. The array passes validation, but when `.toLowerCase()` is called on it directly without type casting, it causes a server crash because arrays do not have a `.toLowerCase()` method.
+**Learning:** `express-validator` (e.g. `isEmail()`) can return `true` for an array if its first element meets the condition, allowing unexpected data structures to reach the route handler.
+**Prevention:** Always explicitly cast user inputs (e.g. `req.body.email` or `req.query.param`) to a String (e.g. `String(email)`) before calling string-specific methods, even if the input has passed `express-validator` checks, unless using `matchedData()` or `.isString()`.
