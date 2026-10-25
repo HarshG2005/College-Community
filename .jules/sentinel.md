@@ -1,0 +1,4 @@
+## 2026-10-25 - Type DoS via express-validator Array Bypass
+**Vulnerability:** Type DoS and NoSQL injection vulnerabilities exist where string methods like `.toLowerCase()` are called directly on user inputs like `email` in Express routes, even when `express-validator` is used.
+**Learning:** `express-validator` does not strictly coerce validated fields into strings unless `matchedData()` is explicitly used. An array payload where the first element is a valid email can bypass the `isEmail()` check. Calling string methods on this array will cause the Node process to crash with a Type DoS.
+**Prevention:** Always explicitly cast user inputs (e.g., `req.body`, `req.query`) to String using `String(input)` before calling string methods or passing them to Mongoose queries, regardless of `express-validator` usage, unless using `matchedData()`.
