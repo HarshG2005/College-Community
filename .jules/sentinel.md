@@ -1,0 +1,4 @@
+## 2024-05-16 - Type DoS and ReDoS in placements route
+**Vulnerability:** The `/api/placements` endpoint parses `req.query.company`, `req.query.type`, and `req.query.search`. It passed `req.query.company` directly into the `RegExp` constructor without type validation or escaping. This allows Type DoS (e.g. crashing `.toLowerCase()` when passed an array) or ReDoS/NoSQL injection (by using unescaped special characters in the regex query).
+**Learning:** Even simple optional search parameters in Express queries are an attack vector if they aren't cast to strings. Arrays and objects can bypass string methods or create malformed regex queries.
+**Prevention:** Always cast `req.query` elements to `String` (e.g., `String(req.query.company)`) and safely escape special characters (e.g., `replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`) before using them in database queries, particularly inside `new RegExp(...)`.
