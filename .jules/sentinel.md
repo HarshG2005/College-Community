@@ -1,0 +1,4 @@
+## 2024-05-18 - [Fix NoSQL Object Injection in studyPlannerController]
+**Vulnerability:** Found NoSQL Object Injection in `server/controllers/studyPlannerController.js` where user-supplied `req.body.planId` was directly passed to `StudyPlan.findOne({ _id: planId, ... })` without being explicitly cast to a string. An attacker could potentially pass an object (e.g. `{$ne: null}`) to bypass checks and access other users' plans or cause unexpected behaviour.
+**Learning:** Object injection often occurs when querying by IDs sent via POST/PUT body if we rely on Mongoose's implicit casting, which only protects if the payload format matches the expected schema type exactly. Mongoose attempts to cast objects, resulting in `[object Object]` string, or throws errors.
+**Prevention:** Explicitly cast inputs like `planId` to strings (`String(planId)`) when they originate from `req.body` and are used in `findOne` or similar Mongoose queries.
