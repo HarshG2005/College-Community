@@ -1,0 +1,4 @@
+## 2024-05-15 - [Express Query Parameter Vulnerabilities]
+**Vulnerability:** Type DoS, NoSQL injection, and ReDoS via uncast Express query parameters in Mongoose/MongoDB queries (e.g., in `server/routes/placements.js`, uncast `search`, `type`, and `company` query parameters).
+**Learning:** In this codebase's architecture, Express `req.query` parameters are directly passed into string methods (like `.toLowerCase()`), Mongoose queries, or RegExp constructors without explicit casting. Since Express allows arrays/objects in `req.query`, passing them directly can cause unexpected behavior, crashes (Type DoS), or NoSQL injection.
+**Prevention:** Always explicitly cast all user inputs (`req.query` and `req.body`) to strings (e.g., `String(param)`) before using them in string methods or MongoDB queries. Also, escape regex special characters (e.g., using `.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')`) when using user input in RegExp constructors.
